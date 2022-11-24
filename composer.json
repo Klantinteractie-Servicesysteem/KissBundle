@@ -1,5 +1,5 @@
 {
-    "name": "common-gateway/pet-store-bundle",
+    "name": "common-gateway/kiss-bundle",
     "description": "An example package for creating symfony flex bundles as plugins",
     "type" : "symfony-bundle",
 	"keywords" : [
@@ -8,20 +8,24 @@
 		"gateway",
 		"conduction",
 		"symfony",
-		"common-gateway-plugin"
+		"common-gateway-plugin",
+		"kiss",
+		"dimpact"
 	],
-	"homepage" : "https://commongatway.nl",
+	"homepage" : "https://commongateway.nl",
+	"version": "1.0",
     "license": "EUPL-1.2",
     "minimum-stability" : "dev",
     "require": {
-        "php": ">=7.4"
+        "php": ">=7.4",
+		"commongateway/corebundle": ">=1.0"
     },
 	"require-dev" : {
 		"symfony/dependency-injection" : "~3.4|~4.1|~5.0"
 	},
 	"autoload" : {
 		"psr-4" : {
-			"CommonGateway\\PetStoreBundle\\" : ""
+			"CommonGateway\\KissBundle\\" : ""
 		}
 	}
 }
