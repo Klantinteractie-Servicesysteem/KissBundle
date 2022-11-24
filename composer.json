@@ -1,5 +1,5 @@
 {
-    "name": "common-gateway/kiss-bundle",
+    "name": "klantinteractie-servicesysteem/kiss-bundle",
     "description": "An example package for creating symfony flex bundles as plugins",
     "type" : "symfony-bundle",
 	"keywords" : [
