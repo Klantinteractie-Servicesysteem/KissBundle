@@ -2,7 +2,7 @@
 
 // src/Service/KissService.php
 
-namespace CommonGateway\PetStoreBundle\Service;
+namespace CommonGateway\KissBundle\Service;
 
 class KissService
 {

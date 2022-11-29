@@ -1,8 +1,8 @@
 <?php
 
-namespace CommonGateway\PetStoreBundle\ActionHandler;
+namespace CommonGateway\KissBundle\ActionHandler;
 
-use CommonGateway\PetStoreBundle\Service\KissService;
+use CommonGateway\KissBundle\Service\KissService;
 
 class PetStoreHandler
 {
