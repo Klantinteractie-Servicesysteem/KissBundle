@@ -1,6 +1,6 @@
 <?php
 // src/KissBundle.php
-namespace CommonGateway\PetStoreBundle;
+namespace CommonGateway\KissBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
