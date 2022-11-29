@@ -1,0 +1,43 @@
+{
+    "https://kissdevelopment.commonground.nu/kiss_openpub_type.schema.json": [
+        {
+            "name": "Nieuws"
+        },
+        {
+            "name": "Werkinstructie"
+        }
+    ],
+    "https://kissdevelopment.commonground.nu/kiss_openpub_type.schema.json": [
+        {
+            "name": "Afval"
+        },
+        {
+            "name": "Algemeen"
+        },
+        {
+            "name": "Belastingen"
+        },
+        {
+            "name": "Bouw en ruimtelijke ordening"
+        },
+        {
+            "name": "Burgerzaken"
+        },
+        {
+            "name": "Openbare ruimte en groen"
+        },
+        {
+            "name": "KCC"
+        },
+        {
+            "name": "Milieu"
+        },
+        {
+            "name": "Vergunningen"
+        },
+        {
+            "name": "Werk en inkomen"
+        }
+
+    ]
+}
