@@ -1,0 +1,9 @@
+{
+    "$id": "https://kissdevelopment.commonground.nu/kiss_openpub_type.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1",
+    "title": "kiss_openpub_type",
+    "type": "object",
+    "required": [],
+    "properties": { "name": { "type": "string", "nullable": true } }
+}
