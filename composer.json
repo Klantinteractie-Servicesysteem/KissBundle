@@ -27,5 +27,10 @@
 		"psr-4" : {
 			"CommonGateway\\KissBundle\\" : ""
 		}
+	},
+	"scripts": {
+		"post-package-install": "bin/console commongateway:install klantinteractie-servicesysteem/kiss-bundle",
+		"post-package-update": "bin/console commongateway:update klantinteractie-servicesysteem/kiss-bundle",
+		"post-package-uninstall": "bin/console commongateway:uninstall klantinteractie-servicesysteem/kiss-bundle"
 	}
 }
