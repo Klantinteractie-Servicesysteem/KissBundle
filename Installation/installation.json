@@ -1,0 +1,3 @@
+{
+  "installationService": "Kiss\\KissBundle\\Service\\InstallationService"
+}

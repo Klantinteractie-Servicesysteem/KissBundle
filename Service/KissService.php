@@ -2,7 +2,7 @@
 
 // src/Service/KissService.php
 
-namespace CommonGateway\KissBundle\Service;
+namespace Kiss\KissBundle\Service;
 
 class KissService
 {

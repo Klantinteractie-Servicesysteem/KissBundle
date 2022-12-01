@@ -1,10 +1,10 @@
 <?php
 
-namespace CommonGateway\KissBundle\ActionHandler;
+namespace Kiss\KissBundle\ActionHandler;
 
-use CommonGateway\KissBundle\Service\KissService;
+use Kiss\KissBundle\Service\KissService;
 
-class PetStoreHandler
+class KissHandler
 {
     private KissService $petStoreService;
 

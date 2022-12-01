@@ -1,6 +1,6 @@
 <?php
 // src/KissBundle.php
-namespace CommonGateway\KissBundle;
+namespace Kiss\KissBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
