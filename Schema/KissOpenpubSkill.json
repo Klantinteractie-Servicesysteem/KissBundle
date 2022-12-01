@@ -4,6 +4,10 @@
     "version": "0.1",
     "title": "kiss_openpub_skill",
     "type": "object",
-    "required": [],
-    "properties": { "name": { "type": "string", "nullable": true } }
+    "properties": {
+      "name": {
+        "type": "string",
+        "nullable": true
+      }
+    }
 }
