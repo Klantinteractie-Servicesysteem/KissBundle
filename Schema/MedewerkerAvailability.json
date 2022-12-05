@@ -1,0 +1,17 @@
+{
+    "$id": "https://kissdevelopment.commonground.nu/medewerkerAvailability.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1",
+    "title": "MedewerkerAvailability",
+    "type": "object",
+    "properties": {
+      "ochtend": {
+        "type": "boolean",
+        "nullable": true
+      },
+      "middag": {
+        "type": "boolean",
+        "nullable": true
+      }
+    }
+}

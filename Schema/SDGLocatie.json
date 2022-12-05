@@ -1,0 +1,26 @@
+{
+    "$id": "https://kissdevelopment.commonground.nu/sdgLocatie.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1",
+    "title": "SDGLocatie",
+    "type": "object",
+    "properties": {
+      "url": {
+        "type": "string",
+        "nullable": true
+      },
+      "owmsIdentifier": {
+        "type": "string",
+        "nullable": true
+      },
+      "owmsPrefLabel": {
+        "type": "string",
+        "nullable": true
+      },
+      "owmsEndDate": {
+        "type": "string",
+        "nullable": true,
+        "format": "datetime"
+      }
+    }
+}

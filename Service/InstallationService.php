@@ -1,6 +1,5 @@
 <?php
 
-// src/Service/LarpingService.php
 namespace Kiss\KissBundle\Service;
 
 use App\Entity\DashboardCard;

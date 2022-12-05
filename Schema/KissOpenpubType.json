@@ -5,8 +5,48 @@
     "title": "kiss_openpub_type",
     "type": "object",
     "properties": {
+      "identifier": {
+        "type": "number",
+        "nullable": true
+      },
+      "count": {
+        "type": "integer",
+        "nullable": true
+      },
+      "description": {
+        "type": "string",
+        "nullable": true
+      },
+      "link": {
+        "type": "string",
+        "nullable": true
+      },
       "name": {
         "type": "string",
+        "nullable": true
+      },
+      "slug": {
+        "type": "string",
+        "nullable": true
+      },
+      "taxonomy": {
+        "type": "string",
+        "nullable": true
+      },
+      "parent": {
+        "type": "number",
+        "nullable": true
+      },
+      "meta": {
+        "type": "object",
+        "nullable": true
+      },
+      "acf": {
+        "type": "object",
+        "nullable": true
+      },
+      "_links": {
+        "type": "object",
         "nullable": true
       }
     }

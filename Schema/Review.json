@@ -1,0 +1,41 @@
+{
+    "$id": "https://kissdevelopment.commonground.nu/review.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1",
+    "title": "Review",
+    "type": "object",
+    "properties": {
+      "author": {
+        "type": "string",
+        "nullable": true,
+        "format": "uri"
+      },
+      "topic": {
+        "type": "string",
+        "nullable": true,
+        "format": "uri"
+      },
+      "name": {
+        "type": "string",
+        "nullable": true
+      },
+      "description": {
+        "type": "string",
+        "nullable": true
+      },
+      "rating": {
+        "type": "integer",
+        "nullable": true
+      },
+      "dateCreated": {
+        "type": "string",
+        "nullable": true,
+        "format": "datetime"
+      },
+      "dateModified": {
+        "type": "string",
+        "nullable": true,
+        "format": "datetime"
+      }
+    }
+}

@@ -1,0 +1,113 @@
+{
+    "$id": "https://kissdevelopment.commonground.nu/sdgVertaling.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1",
+    "title": "SDGVertaling",
+    "type": "object",
+    "properties": {
+      "taal": {
+        "type": "string",
+        "nullable": true
+      },
+      "productTitelDecentraal": {
+        "type": "string",
+        "nullable": true
+      },
+      "specifiekeTekst": {
+        "type": "string",
+        "nullable": true
+      },
+      "procedureBeschrijving": {
+        "type": "string",
+        "nullable": true
+      },
+      "kostenEnBetaalmethoden": {
+        "type": "string",
+        "nullable": true
+      },
+      "uitersteTermijn": {
+        "type": "string",
+        "nullable": true
+      },
+      "conditions": {
+        "type": "string",
+        "nullable": true
+      },
+      "bezwaarEnBeroep": {
+        "type": "string",
+        "nullable": true
+      },
+      "notice": {
+        "type": "string",
+        "nullable": true
+      },
+      "decentraleProcedureLink": {
+        "type": "string",
+        "nullable": true
+      },
+      "vereisten": {
+        "type": "string",
+        "nullable": true
+      },
+      "bewijs": {
+        "type": "string",
+        "nullable": true
+      },
+      "contact": {
+        "type": "string",
+        "nullable": true
+      },
+      "verwijzingLinks": {
+        "type": "array",
+        "nullable": true,
+        "items": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string",
+              "nullable": true
+            },
+            "url": {
+              "type": "string",
+              "nullable": true,
+              "format": "uri"
+            }
+          }
+        }
+      },
+      "synonyms": {
+        "type": "array",
+        "nullable": true,
+        "items": {
+          "type": "object",
+          "properties": {
+            "synonym": {
+              "type": "string",
+              "nullable": true
+            }
+          }
+        }
+      },
+      "wtdBijGeenReactie": {
+        "type": "string",
+        "nullable": true
+      },
+      "datumWijziging": {
+        "type": "string",
+        "nullable": true,
+        "format": "datetime"
+      },
+      "deskMemo": {
+        "type": "string",
+        "nullable": true
+      },
+      "productAanwezigToelichting": {
+        "type": "string",
+        "nullable": true
+      },
+      "productValtOnderToelichting": {
+        "type": "string",
+        "nullable": true
+      }
+    }
+}

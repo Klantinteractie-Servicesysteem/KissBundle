@@ -1,0 +1,32 @@
+{
+    "$id": "https://kissdevelopment.commonground.nu/link.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1",
+    "title": "Link",
+    "type": "object",
+    "properties": {
+      "category": {
+        "type": "string",
+        "nullable": true
+      },
+      "title": {
+        "type": "string",
+        "nullable": true
+      },
+      "url": {
+        "type": "string",
+        "nullable": true,
+        "format": "uri"
+      },
+      "dateCreated": {
+        "type": "string",
+        "nullable": true,
+        "format": "datetime"
+      },
+      "dateModified": {
+        "type": "string",
+        "nullable": true,
+        "format": "datetime"
+      }
+    }
+}
