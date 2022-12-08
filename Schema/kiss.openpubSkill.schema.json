@@ -1,5 +1,5 @@
 {
-    "$id": "https://kissdevelopment.commonground.nu/kiss_openpub_skill.schema.json",
+    "$id": "https://kissdevelopment.commonground.nu/kiss.openpubSkill.schema.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "version": "0.1",
     "title": "kiss_openpub_skill",

@@ -1,23 +1,29 @@
 {
-    "$id": "https://kissdevelopment.commonground.nu/sdgLocatie.schema.json",
+    "$id": "https://kissdevelopment.commonground.nu/kiss.link.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "version": "0.1",
-    "title": "SDGLocatie",
+    "title": "Link",
     "type": "object",
     "properties": {
+      "category": {
+        "type": "string",
+        "nullable": true
+      },
+      "title": {
+        "type": "string",
+        "nullable": true
+      },
       "url": {
         "type": "string",
-        "nullable": true
+        "nullable": true,
+        "format": "uri"
       },
-      "owmsIdentifier": {
+      "dateCreated": {
         "type": "string",
-        "nullable": true
+        "nullable": true,
+        "format": "datetime"
       },
-      "owmsPrefLabel": {
-        "type": "string",
-        "nullable": true
-      },
-      "owmsEndDate": {
+      "dateModified": {
         "type": "string",
         "nullable": true,
         "format": "datetime"
