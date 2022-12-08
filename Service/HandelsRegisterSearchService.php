@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Service;
+namespace Kiss\KissBundle\Service;
 
 use App\Entity\Entity;
+use App\Service\EavService;
 use App\Exception\GatewayException;
 use Doctrine\ORM\EntityManagerInterface;
 use Psr\Cache\CacheException;

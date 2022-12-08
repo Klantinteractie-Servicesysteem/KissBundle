@@ -1,12 +1,13 @@
 <?php
 
-namespace App\ActionHandler;
+namespace Kiss\KissBundle\ActionHandler;
 
-use App\Service\HandelsRegisterSearchService;
+use Kiss\KissBundle\Service\HandelsRegisterSearchService;
 use Symfony\Component\Mailer\Exception\TransportExceptionInterface;
 use Twig\Error\LoaderError;
 use Twig\Error\RuntimeError;
 use Twig\Error\SyntaxError;
+use CommonGateway\CoreBundle\ActionHandler\ActionHandlerInterface;
 
 class HandelsRegisterSearchHandler implements ActionHandlerInterface
 {
