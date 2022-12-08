@@ -1,8 +1,8 @@
 {
-    "$id": "https://kissdevelopment.commonground.nu/kiss_openpub_type.schema.json",
+    "$id": "https://kissdevelopment.commonground.nu/kiss.afdelingsnaam.schema.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "version": "0.1",
-    "title": "kiss_openpub_type",
+    "title": "Afdelingsnaam",
     "type": "object",
     "properties": {
       "name": {

@@ -1,0 +1,42 @@
+{
+    "$id": "https://kissdevelopment.commonground.nu/kiss.medewerker.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1",
+    "title": "Medewerker",
+    "type": "object",
+    "properties": {
+      "user": {
+        "type": "string",
+        "nullable": true,
+        "format": "email"
+      },
+      "contact": {
+        "type": "string",
+        "nullable": true
+      },
+      "department": {
+        "type": "string",
+        "nullable": true
+      },
+      "function": {
+        "type": "string",
+        "nullable": true
+      },
+      "availabilities": {
+        "$ref": "#/definitions/MedewerkerAvailabilities"
+      },
+      "replacement": {
+        "type": "string",
+        "nullable": true,
+        "format": "uri"
+      },
+      "skills": {
+        "type": "string",
+        "nullable": true
+      },
+      "description": {
+        "type": "string",
+        "nullable": true
+      }
+    }
+}

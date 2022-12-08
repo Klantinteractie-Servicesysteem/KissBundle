@@ -1,0 +1,65 @@
+{
+    "$id": "https://kissdevelopment.commonground.nu/kiss.sdgProduct.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1",
+    "title": "SDGProduct",
+    "type": "object",
+    "properties": {
+      "upnLabel": {
+        "type": "string",
+        "nullable": true
+      },
+      "upnUri": {
+        "type": "string",
+        "nullable": true
+      },
+      "versie": {
+        "type": "string",
+        "nullable": true
+      },
+      "publicatieDatum": {
+        "type": "string",
+        "nullable": true
+      },
+      "productAanwezig": {
+        "type": "boolean",
+        "nullable": true
+      },
+      "productValtOnder": {
+        "type": "string",
+        "nullable": true
+      },
+      "verantwoordelijkeOrganisatie": {
+        "$ref": "#/definitions/SDGLocatie"
+      },
+      "bevoegdeOrganisatie": {
+        "$ref": "#/definitions/SDGLocatie"
+      },
+      "catalogus": {
+        "type": "string",
+        "nullable": true
+      },
+      "locaties": {
+        "type": "array",
+        "nullable": true
+      },
+      "doelgroep": {
+        "type": "string",
+        "nullable": true
+      },
+      "vertalingen": {
+        "type": "array",
+        "nullable": true,
+        "items": {
+          "$ref": "#/definitions/SDGVertaling"
+        }
+      },
+      "gerelateerdeProducten": {
+        "type": "array",
+        "nullable": true,
+        "items": {
+          "$ref": "#/definitions/SDGProduct"
+        }
+      }
+    }
+}
