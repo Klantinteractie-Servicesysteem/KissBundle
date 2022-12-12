@@ -17,7 +17,10 @@
     "minimum-stability" : "dev",
     "require": {
         "php": ">=7.4",
-		"commongateway/corebundle": "dev-master"
+		"commongateway/corebundle": "dev-master",
+		"common-gateway/brp-bundle": "dev-main",
+		"common-gateway/zgw-bundle": "dev-main",
+		"common-gateway/klanten-bundle": "dev-main"
 	},
 	"require-dev" : {
 		"symfony/dependency-injection" : "~3.4|~4.1|~5.0"

@@ -1,5 +1,5 @@
 {
-    "https://kissdevelopment.commonground.nu/kiss_openpub_type.schema.json": [
+    "https://kissdevelopment.commonground.nu/kiss.openpubSkill.schema.json": [
         {
             "name": "Nieuws"
         },
@@ -7,7 +7,7 @@
             "name": "Werkinstructie"
         }
     ],
-    "https://kissdevelopment.commonground.nu/kiss_openpub_type.schema.json": [
+    "https://kissdevelopment.commonground.nu/kiss.openpubType.schema.json": [
         {
             "name": "Afval"
         },
@@ -39,5 +39,580 @@
             "name": "Werk en inkomen"
         }
 
+    ],
+    "https://vng.brp.nl/schemas/brp.ingeschrevenPersoon.schema.json": [
+        {
+            "burgerservicenummer": "999993653",
+            "aNummer": "8940402024",
+            "geheimhoudingPersoonsgegevens": false,
+            "leeftijd": 36,
+            "geslachtsaanduiding": "vrouw",
+            "naam": {
+                "geslachtsnaam": "Moulin",
+                "voorletters": "S.",
+                "voornamen": "Suzanne",
+                "aanduidingNaamgebruik": "eigen"
+            },
+            "geboorte": {
+                "datum": {
+                    "dag": 1,
+                    "datum": "1985-12-01",
+                    "jaar": 1985,
+                    "maand": 12
+                }
+            },
+            "ouders": [
+                {
+                    "geslachtsaanduiding": "vrouw",
+                    "naam": {
+                        "voornamen": "Lisette",
+                        "geslachtsnaam": "Beamont"
+                    },
+                    "geboorte": {
+                        "datum": {
+                            "dag": 12,
+                            "datum": "1956-12-01",
+                            "jaar": 1956,
+                            "maand": 5
+                        },
+                        "land": {
+                            "code": "5002"
+                        },
+                        "plaats": {
+                            "omschrijving": "Clermont-Ferrand"
+                        }
+                    },
+                    "datumIngangFamilierechtelijkeBetrekking": {
+                        "dag": 1,
+                        "datum": "1989-05-03",
+                        "jaar": 1989,
+                        "maand": 5
+                    }
+                },
+                {
+                    "geslachtsaanduiding": "man",
+                    "naam": {
+                        "voornamen": "Guillaume",
+                        "geslachtsnaam": "Moulin"
+                    },
+                    "geboorte": {
+                        "datum": {
+                            "dag": 3,
+                            "datum": "1955-04-03",
+                            "jaar": 1955,
+                            "maand": 4
+                        },
+                        "land": {
+                            "code": "5002"
+                        },
+                        "plaats": {
+                            "omschrijving": "Toulon"
+                        }
+                    },
+                    "datumIngangFamilierechtelijkeBetrekking": {
+                        "dag": 1,
+                        "datum": "1985-12-01",
+                        "jaar": 1985,
+                        "maand": 12
+                    }
+                }
+            ],
+            "nationaliteiten": [
+                {
+                    "datumIngangGeldigheid": {
+                        "dag": 5,
+                        "datum": "2013-11-05",
+                        "jaar": 2013,
+                        "maand": 11
+                    },
+                    "nationaliteit": {
+                        "code": "6030"
+                    },
+                    "redenOpname": {
+                        "code": "301"
+                    }
+                }
+            ],
+            "partners": [
+                {
+                    "naam": {
+                        "voornamen": "Jean Marie",
+                        "geslachtsnaam": "Beaudelaire"
+                    },
+                    "geslachtsaanduiding": "man",
+                    "geboorte": {
+                        "datum": {
+                            "dag": 1,
+                            "datum": "1976-08-01",
+                            "jaar": 1976,
+                            "maand": 8
+                        },
+                        "land": {
+                            "code": "5002"
+                        },
+                        "plaats": {
+                            "omschrijving": "Saint Amarin"
+                        }
+                    },
+                    "aangaanHuwelijkPartnerschap": {
+                        "datum": {
+                            "dag": 1,
+                            "datum": "2008-12-01",
+                            "jaar": 2008,
+                            "maand": 12
+                        },
+                        "land": {
+                            "code": "5002"
+                        },
+                        "plaats": {
+                            "omschrijving": "Thann"
+                        }
+                    },
+                    "soortVerbintenis": "H"
+                }
+            ],
+            "verblijfplaats": {
+                "straat": "Boterdiep",
+                "huisnummer": 31,
+                "postcode": "3077AW",
+                "woonplaats": "Rotterdam",
+                "functieAdres": "woonadres",
+                "nummeraanduidingIdentificatie": "0599010000208579",
+                "datumVestigingInNederland": {
+                    "datum": {
+                        "dag": 2,
+                        "datum": "2013-11-02",
+                        "jaar": 2013,
+                        "maand": 11
+                    },
+                    "land": {
+                        "code": "5002"
+                    },
+                    "gemeenteVanInschrijving": {
+                        "code": "0599"
+                    },
+                    "datumInschrijvingInGemeente": {
+                        "dag": 2,
+                        "datum": "2013-11-02",
+                        "jaar": 2013,
+                        "maand": 11
+                    },
+                    "datumAanvangAdreshouding": {
+                        "dag": 8,
+                        "datum": "2015-08-08",
+                        "jaar": 2015,
+                        "maand": 8
+                    },
+                    "datumIngangGeldigheid": {
+                        "dag": 8,
+                        "datum": "2015-08-08",
+                        "jaar": 2015,
+                        "maand": 8
+                    }
+                }
+            }
+        },
+        {
+            "burgerservicenummer": "999990172",
+            "aNummer": "4391026595",
+            "geheimhoudingPersoonsgegevens": false,
+            "leeftijd": 56,
+            "geslachtsaanduiding": "vrouw",
+            "naam": {
+                "geslachtsnaam": "Żywiałowska",
+                "voorletters": "R",
+                "voornamen": "Róza Mstyslava",
+                "aanduidingNaamgebruik": "eigen"
+            },
+            "geboorte": {
+                "datum": {
+                    "dag": 17,
+                    "datum": "1965-09-17",
+                    "jaar": 1965,
+                    "maand": 9
+                }
+            },
+            "ouders": [
+                {
+                    "geslachtsaanduiding": "vrouw",
+                    "naam": {
+                        "voornamen": "Lisette",
+                        "geslachtsnaam": "Beamont"
+                    },
+                    "geboorte": {
+                        "datum": {
+                            "dag": 12,
+                            "datum": "1956-12-01",
+                            "jaar": 1956,
+                            "maand": 5
+                        },
+                        "land": {
+                            "code": "5002"
+                        },
+                        "plaats": {
+                            "omschrijving": "Clermont-Ferrand"
+                        }
+                    },
+                    "datumIngangFamilierechtelijkeBetrekking": {
+                        "dag": 1,
+                        "datum": "1989-05-03",
+                        "jaar": 1989,
+                        "maand": 5
+                    }
+                },
+                {
+                    "geslachtsaanduiding": "man",
+                    "naam": {
+                        "voornamen": "Guillaume",
+                        "geslachtsnaam": "Moulin"
+                    },
+                    "geboorte": {
+                        "datum": {
+                            "dag": 3,
+                            "datum": "1955-04-03",
+                            "jaar": 1955,
+                            "maand": 4
+                        },
+                        "land": {
+                            "code": "5002"
+                        },
+                        "plaats": {
+                            "omschrijving": "Toulon"
+                        }
+                    },
+                    "datumIngangFamilierechtelijkeBetrekking": {
+                        "dag": 1,
+                        "datum": "1985-12-01",
+                        "jaar": 1985,
+                        "maand": 12
+                    }
+                }
+            ],
+            "nationaliteiten": [
+                {
+                    "datumIngangGeldigheid": {
+                        "dag": 5,
+                        "datum": "2013-11-05",
+                        "jaar": 2013,
+                        "maand": 11
+                    },
+                    "nationaliteit": {
+                        "code": "6030"
+                    },
+                    "redenOpname": {
+                        "code": "301"
+                    }
+                }
+            ],
+            "verblijfplaats": {
+                "straat": "Paadje van duizend treê",
+                "huisnummer": 33,
+                "postcode": "3039ME",
+                "woonplaats": "Rotterdam",
+                "functieAdres": "woonadres",
+                "nummeraanduidingIdentificatie": "0599010000208579",
+                "datumVestigingInNederland": {
+                    "datum": {
+                        "dag": 2,
+                        "datum": "2013-11-02",
+                        "jaar": 2013,
+                        "maand": 11
+                    },
+                    "land": {
+                        "code": "5002"
+                    },
+                    "gemeenteVanInschrijving": {
+                        "code": "0599"
+                    },
+                    "datumInschrijvingInGemeente": {
+                        "dag": 2,
+                        "datum": "2013-11-02",
+                        "jaar": 2013,
+                        "maand": 11
+                    },
+                    "datumAanvangAdreshouding": {
+                        "dag": 8,
+                        "datum": "2015-08-08",
+                        "jaar": 2015,
+                        "maand": 8
+                    },
+                    "datumIngangGeldigheid": {
+                        "dag": 8,
+                        "datum": "2015-08-08",
+                        "jaar": 2015,
+                        "maand": 8
+                    }
+                }
+            }
+        },
+        {
+            "burgerservicenummer": "999993872",
+            "aNummer": "6940397872",
+            "geheimhoudingPersoonsgegevens": false,
+            "leeftijd": 63,
+            "geslachtsaanduiding": "man",
+            "naam": {
+                "geslachtsnaam": "Meijden",
+                "voorletters": "PJ",
+                "voornamen": "Peter-Jan",
+                "voorvoegsel": "van der",
+                "aanduidingNaamgebruik": "eigen"
+            },
+            "geboorte": {
+                "datum": {
+                    "dag": 17,
+                    "datum": "1959-04-17",
+                    "jaar": 1959,
+                    "maand": 4
+                }
+            },
+            "ouders": [
+                {
+                    "geslachtsaanduiding": "vrouw",
+                    "naam": {
+                        "voornamen": "Lisette",
+                        "geslachtsnaam": "Beamont"
+                    },
+                    "geboorte": {
+                        "datum": {
+                            "dag": 12,
+                            "datum": "1956-12-01",
+                            "jaar": 1956,
+                            "maand": 5
+                        },
+                        "land": {
+                            "code": "5002"
+                        },
+                        "plaats": {
+                            "omschrijving": "Clermont-Ferrand"
+                        }
+                    },
+                    "datumIngangFamilierechtelijkeBetrekking": {
+                        "dag": 1,
+                        "datum": "1989-05-03",
+                        "jaar": 1989,
+                        "maand": 5
+                    }
+                },
+                {
+                    "geslachtsaanduiding": "man",
+                    "naam": {
+                        "voornamen": "Guillaume",
+                        "geslachtsnaam": "Moulin"
+                    },
+                    "geboorte": {
+                        "datum": {
+                            "dag": 3,
+                            "datum": "1955-04-03",
+                            "jaar": 1955,
+                            "maand": 4
+                        },
+                        "land": {
+                            "code": "5002"
+                        },
+                        "plaats": {
+                            "omschrijving": "Toulon"
+                        }
+                    },
+                    "datumIngangFamilierechtelijkeBetrekking": {
+                        "dag": 1,
+                        "datum": "1985-12-01",
+                        "jaar": 1985,
+                        "maand": 12
+                    }
+                }
+            ],
+            "nationaliteiten": [
+                {
+                    "datumIngangGeldigheid": {
+                        "dag": 5,
+                        "datum": "2013-11-05",
+                        "jaar": 2013,
+                        "maand": 11
+                    },
+                    "nationaliteit": {
+                        "code": "6030"
+                    },
+                    "redenOpname": {
+                        "code": "301"
+                    }
+                }
+            ],
+            "verblijfplaats": {
+                "straat": "Goudsesingel",
+                "huisnummer": 72,
+                "postcode": "3011KD",
+                "woonplaats": "Rotterdam",
+                "functieAdres": "woonadres",
+                "nummeraanduidingIdentificatie": "0599010000208579",
+                "datumVestigingInNederland": {
+                    "datum": {
+                        "dag": 2,
+                        "datum": "2013-11-02",
+                        "jaar": 2013,
+                        "maand": 11
+                    },
+                    "land": {
+                        "code": "5002"
+                    },
+                    "gemeenteVanInschrijving": {
+                        "code": "0599"
+                    },
+                    "datumInschrijvingInGemeente": {
+                        "dag": 2,
+                        "datum": "2013-11-02",
+                        "jaar": 2013,
+                        "maand": 11
+                    },
+                    "datumAanvangAdreshouding": {
+                        "dag": 8,
+                        "datum": "2015-08-08",
+                        "jaar": 2015,
+                        "maand": 8
+                    },
+                    "datumIngangGeldigheid": {
+                        "dag": 8,
+                        "datum": "2015-08-08",
+                        "jaar": 2015,
+                        "maand": 8
+                    }
+                }
+            }
+        },
+        {
+            "burgerservicenummer": "123456782",
+            "aNummer": "1234567890",
+            "geheimhoudingPersoonsgegevens": false,
+            "leeftijd": 25,
+            "geslachtsaanduiding": "man",
+            "naam": {
+                "geslachtsnaam": "Dooper",
+                "voorletters": "JMA",
+                "voornamen": "Johannes Maria Alphonse",
+                "voorvoegsel": "den",
+                "aanduidingNaamgebruik": "eigen"
+            },
+            "geboorte": {
+                "datum": {
+                    "dag": 18,
+                    "datum": "1997-01-18",
+                    "jaar": 1997,
+                    "maand": 1
+                }
+            },
+            "ouders": [
+                {
+                    "geslachtsaanduiding": "vrouw",
+                    "naam": {
+                        "voornamen": "Lisette",
+                        "geslachtsnaam": "Beamont"
+                    },
+                    "geboorte": {
+                        "datum": {
+                            "dag": 12,
+                            "datum": "1956-12-01",
+                            "jaar": 1956,
+                            "maand": 5
+                        },
+                        "land": {
+                            "code": "5002"
+                        },
+                        "plaats": {
+                            "omschrijving": "Clermont-Ferrand"
+                        }
+                    },
+                    "datumIngangFamilierechtelijkeBetrekking": {
+                        "dag": 1,
+                        "datum": "1989-05-03",
+                        "jaar": 1989,
+                        "maand": 5
+                    }
+                },
+                {
+                    "geslachtsaanduiding": "man",
+                    "naam": {
+                        "voornamen": "Guillaume",
+                        "geslachtsnaam": "Moulin"
+                    },
+                    "geboorte": {
+                        "datum": {
+                            "dag": 3,
+                            "datum": "1955-04-03",
+                            "jaar": 1955,
+                            "maand": 4
+                        },
+                        "land": {
+                            "code": "5002"
+                        },
+                        "plaats": {
+                            "omschrijving": "Toulon"
+                        }
+                    },
+                    "datumIngangFamilierechtelijkeBetrekking": {
+                        "dag": 1,
+                        "datum": "1985-12-01",
+                        "jaar": 1985,
+                        "maand": 12
+                    }
+                }
+            ],
+            "nationaliteiten": [
+                {
+                    "datumIngangGeldigheid": {
+                        "dag": 5,
+                        "datum": "2013-11-05",
+                        "jaar": 2013,
+                        "maand": 11
+                    },
+                    "nationaliteit": {
+                        "code": "6030"
+                    },
+                    "redenOpname": {
+                        "code": "301"
+                    }
+                }
+            ],
+            "verblijfplaats": {
+                "straat": "Anna van Westrienenstr",
+                "huisnummer": 1,
+                "huisletter": "A",
+                "postcode": "3051EG",
+                "woonplaats": "Rotterdam",
+                "functieAdres": "woonadres",
+                "nummeraanduidingIdentificatie": "0599010000208579",
+                "datumVestigingInNederland": {
+                    "datum": {
+                        "dag": 2,
+                        "datum": "2013-11-02",
+                        "jaar": 2013,
+                        "maand": 11
+                    },
+                    "land": {
+                        "code": "5002"
+                    },
+                    "gemeenteVanInschrijving": {
+                        "code": "0599"
+                    },
+                    "datumInschrijvingInGemeente": {
+                        "dag": 2,
+                        "datum": "2013-11-02",
+                        "jaar": 2013,
+                        "maand": 11
+                    },
+                    "datumAanvangAdreshouding": {
+                        "dag": 8,
+                        "datum": "2015-08-08",
+                        "jaar": 2015,
+                        "maand": 8
+                    },
+                    "datumIngangGeldigheid": {
+                        "dag": 8,
+                        "datum": "2015-08-08",
+                        "jaar": 2015,
+                        "maand": 8
+                    }
+                }
+            }
+        }
     ]
 }

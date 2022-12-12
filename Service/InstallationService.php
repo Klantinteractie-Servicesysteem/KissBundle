@@ -133,8 +133,8 @@ class InstallationService implements InstallerInterface
 
         // Lets create some genneric dashboard cards
         $objectsThatShouldHaveCards = [
-            'https://kissdevelopment.commonground.nu/kiss_openpub_skill.schema.json',
-            'https://kissdevelopment.commonground.nu/kiss_openpub_type.schema.json'
+            'https://kissdevelopment.commonground.nu/kiss.openpubSkill.schema.json',
+            'https://kissdevelopment.commonground.nu/kiss.openpubType.schema.json'
         ];
 
         foreach($objectsThatShouldHaveCards as $object){
@@ -163,8 +163,8 @@ class InstallationService implements InstallerInterface
         (isset($this->io)?$this->io->writeln(''):'');
         // Let create some endpoints
         $objectsThatShouldHaveEndpoints = [
-            'https://kissdevelopment.commonground.nu/kiss_openpub_skill.schema.json',
-            'https://kissdevelopment.commonground.nu/kiss_openpub_type.schema.json',
+            'https://kissdevelopment.commonground.nu/kiss.openpubSkill.schema.json',
+            'https://kissdevelopment.commonground.nu/kiss.openpubType.schema.json',
             'https://kissdevelopment.commonground.nu/afdelingsnaam.schema.json',
             'https://kissdevelopment.commonground.nu/link.schema.json',
             'https://kissdevelopment.commonground.nu/medewerker.schema.json',
@@ -206,7 +206,7 @@ class InstallationService implements InstallerInterface
         {
             $cronjob = new Cronjob();
             $cronjob->setName('Kiss');
-            $cronjob->setDescription("This cronjob fires all the kiss actions ever 5 minutes");
+            $cronjob->setDescription("This cronjob fires all the kiss actions every 5 minutes");
             $cronjob->setThrows(['kiss.default.listens']);
 
             $this->entityManager->persist($cronjob);
@@ -214,7 +214,7 @@ class InstallationService implements InstallerInterface
             (isset($this->io)?$this->io->writeln(['','Created a cronjob for Kiss']):'');
         }
         else {
-            (isset($this->io)?$this->io->writeln(['','There is alreade a cronjob for Kiss']):'');
+            (isset($this->io)?$this->io->writeln(['','There is already a cronjob for Kiss']):'');
         }
 
         $this->entityManager->flush();
