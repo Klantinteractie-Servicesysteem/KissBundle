@@ -1,5 +1,5 @@
 {
-    "https://kissdevelopment.commonground.nu/kiss_openpub_type.schema.json": [
+    "https://kissdevelopment.commonground.nu/kiss.openpubType.schema.json": [
         {
             "name": "Nieuws"
         },
@@ -7,7 +7,7 @@
             "name": "Werkinstructie"
         }
     ],
-    "https://kissdevelopment.commonground.nu/kiss_openpub_type.schema.json": [
+    "https://kissdevelopment.commonground.nu/kiss.openpubSkill.schema.json": [
         {
             "name": "Afval"
         },
