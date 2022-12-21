@@ -7,7 +7,40 @@
             "name": "Werkinstructie"
         }
     ],
-    	"https://kissdevelopment.commonground.nu/kiss.afdelingsnaam.schema.json": [
+    "https://kissdevelopment.commonground.nu/kiss.openpubType.schema.json": [
+        {
+            "name": "Afval"
+        },
+        {
+            "name": "Algemeen"
+        },
+        {
+            "name": "Belastingen"
+        },
+        {
+            "name": "Bouw en ruimtelijke ordening"
+        },
+        {
+            "name": "Burgerzaken"
+        },
+        {
+            "name": "Openbare ruimte en groen"
+        },
+        {
+            "name": "KCC"
+        },
+        {
+            "name": "Milieu"
+        },
+        {
+            "name": "Vergunningen"
+        },
+        {
+            "name": "Werk en inkomen"
+        }
+
+    ],
+    "https://kissdevelopment.commonground.nu/kiss.afdelingsnaam.schema.json": [
 		{
 			"name": "Afval"
 		},
@@ -77,39 +110,6 @@
 			"url": "https://ovi.rdw.nl/"
 		}
 	],
-    "https://kissdevelopment.commonground.nu/kiss.openpubType.schema.json": [
-        {
-            "name": "Afval"
-        },
-        {
-            "name": "Algemeen"
-        },
-        {
-            "name": "Belastingen"
-        },
-        {
-            "name": "Bouw en ruimtelijke ordening"
-        },
-        {
-            "name": "Burgerzaken"
-        },
-        {
-            "name": "Openbare ruimte en groen"
-        },
-        {
-            "name": "KCC"
-        },
-        {
-            "name": "Milieu"
-        },
-        {
-            "name": "Vergunningen"
-        },
-        {
-            "name": "Werk en inkomen"
-        }
-
-    ],
     "https://vng.brp.nl/schemas/brp.ingeschrevenPersoon.schema.json": [
         {
             "burgerservicenummer": "999993653",
