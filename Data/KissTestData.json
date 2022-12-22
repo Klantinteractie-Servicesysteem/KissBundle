@@ -40,6 +40,76 @@
         }
 
     ],
+    "https://kissdevelopment.commonground.nu/kiss.afdelingsnaam.schema.json": [
+		{
+			"name": "Afval"
+		},
+		{
+			"name": "Bestrating en meubilair"
+		},
+		{
+			"name": "Burgerzaken"
+		},
+		{
+			"name": "Evenementen"
+		},
+		{
+			"name": "Groenbeheer"
+		},
+		{
+			"name": "Horeca"
+		},
+		{
+			"name": "Juridische zaken"
+		},
+		{
+			"name": "Omgevingswet"
+		},
+		{
+			"name": "Overlast"
+		},
+		{
+			"name": "Parkeren"
+		},
+		{
+			"name": "Vergunningen"
+		},
+		{
+			"name": "Werk en inkomen"
+		}
+	],
+	"https://kissdevelopment.commonground.nu/kiss.link.json": [
+		{
+			"category": "Applicaties",
+			"title": "Zaaksysteem: e-Suite",
+			"url": "https://atos.net/nl/nederland/e-suite"
+		},
+		{
+			"category": "Applicaties",
+			"title": "https://mijn.2park.nl/login",
+			"url": ""
+		},
+		{
+			"category": "Formulieren",
+			"title": "Klacht namens burgers",
+			"url": "https://www.deventer.nl/klachtoverdegemeente"
+		},
+		{
+			"category": "Formulieren",
+			"title": "Afspraak maken (burgerzaken en sociaal domein)",
+			"url": "https://www.deventer.nl/afspraak-maken"
+		},
+		{
+			"category": "Formulieren",
+			"title": "Signalen",
+			"url": "https://meldingen.amsterdam.nl/"
+		},
+		{
+			"category": "Websites",
+			"title": "RDW Kentekencheck",
+			"url": "https://ovi.rdw.nl/"
+		}
+	],
     "https://vng.brp.nl/schemas/brp.ingeschrevenPersoon.schema.json": [
         {
             "burgerservicenummer": "999993653",
