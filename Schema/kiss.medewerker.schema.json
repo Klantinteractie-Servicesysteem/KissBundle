@@ -23,7 +23,7 @@
         "nullable": true
       },
       "availabilities": {
-        "$ref": "#/definitions/MedewerkerAvailabilities"
+        "$ref": "https://kissdevelopment.commonground.nu/kiss.medewerkerAvailabilities.schema.json"
       },
       "replacement": {
         "type": "string",
