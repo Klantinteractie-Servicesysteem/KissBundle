@@ -30,10 +30,10 @@
         "nullable": true
       },
       "verantwoordelijkeOrganisatie": {
-        "$ref": "#/definitions/SDGLocatie"
+        "$ref": "https://kissdevelopment.commonground.nu/kiss.sdgLocatie.schema.json"
       },
       "bevoegdeOrganisatie": {
-        "$ref": "#/definitions/SDGLocatie"
+        "$ref": "https://kissdevelopment.commonground.nu/kiss.sdgLocatie.schema.json"
       },
       "catalogus": {
         "type": "string",
@@ -51,14 +51,14 @@
         "type": "array",
         "nullable": true,
         "items": {
-          "$ref": "#/definitions/SDGVertaling"
+          "$ref": "https://kissdevelopment.commonground.nu/sdgVertaling.schema.json"
         }
       },
       "gerelateerdeProducten": {
         "type": "array",
         "nullable": true,
         "items": {
-          "$ref": "#/definitions/SDGProduct"
+          "$ref": "https://kissdevelopment.commonground.nu/kiss.sdgProduct.schema.json"
         }
       }
     }

@@ -6,19 +6,19 @@
     "type": "object",
     "properties": {
       "maandag": {
-        "$ref": "#/definitions/MedewerkerAvailability"
+        "$ref": "https://kissdevelopment.commonground.nu/kiss.medewerkerAvailability.schema.json"
       },
       "dinsdag": {
-        "$ref": "#/definitions/MedewerkerAvailability"
+        "$ref": "https://kissdevelopment.commonground.nu/kiss.medewerkerAvailability.schema.json"
       },
       "woensdag": {
-        "$ref": "#/definitions/MedewerkerAvailability"
+        "$ref": "https://kissdevelopment.commonground.nu/kiss.medewerkerAvailability.schema.json"
       },
       "donderdag": {
-        "$ref": "#/definitions/MedewerkerAvailability"
+        "$ref": "https://kissdevelopment.commonground.nu/kiss.medewerkerAvailability.schema.json"
       },
       "vrijdag": {
-        "$ref": "#/definitions/MedewerkerAvailability"
+        "$ref": "https://kissdevelopment.commonground.nu/kiss.medewerkerAvailability.schema.json"
       }
     }
 }
