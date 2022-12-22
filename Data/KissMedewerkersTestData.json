@@ -1,0 +1,621 @@
+{
+    "https://kissdevelopment.commonground.nu/kiss.medewerker.schema.json": [
+        {
+            "user": "dabbasoglu@demodam.nl",
+            "contact": {
+                "telefoonnummers": [
+                    {
+                        "telefoonnummer": "020 666 0003",
+                        "naam": null
+                    }
+                ],
+                "emails": [
+                    {
+                        "email": "dabbasoglu@demodam.nl",
+                        "naam": null
+                    }
+                ],
+                "achternaam": "Abbasoğlu",
+                "voorvoegselAchternaam": null,
+                "voornaam": "Dalal",
+                "bronorganisatie": "999994207"        
+
+            },
+            "department": "Vergunningen",
+            "function": "Specialist omgevingsvergunningen",
+            "availabilities": {
+                "vrijdag": {
+                    "middag": true,
+                    "ochtend": true
+                },
+                "donderdag": {
+                    "middag": false,
+                    "ochtend": false
+                },
+                "woensdag": {
+                    "middag": false,
+                    "ochtend": true
+                },
+                "dinsdag": {
+                    "middag": true,
+                    "ochtend": false
+                },
+                "maandag": {
+                    "middag": false,
+                    "ochtend": true
+                }
+            },
+            "replacement": "Bert Bovenkerken",
+            "skills": "Omgevingsvergunning, milieu zaken, gebruiksmelding oude stijl, milieu delicten",
+            "description": "-"
+        },
+        {
+            "user": "test35@kiss.commonground.nu",
+            "contact": {
+                "telefoonnummers": [
+                    {
+                        "telefoonnummer": "0206383068",
+                        "naam": null
+                    },
+                    {
+                        "telefoonnummer": "0611223344",
+                        "naam": null
+                    }
+                ],
+                "emails": [
+                    {
+                        "email": "sytske@icatt.nl",
+                        "naam": null
+                    },
+                    {
+                        "email": "syps@icatt.nl",
+                        "naam": null
+                    }
+                ],
+                "achternaam": "Hasselt",
+                "voorvoegselAchternaam": "van",
+                "voornaam": "Sytske",
+                "bronorganisatie": "999994207"
+            },
+            "department": "IV Dienstvelening en IT",
+            "function": "Functioneel tester, functioneel ontwerper",
+            "availabilities": {
+                "vrijdag": {
+                    "middag": true,
+                    "ochtend": true
+                },
+                "donderdag": {
+                    "middag": false,
+                    "ochtend": false
+                },
+                "woensdag": {
+                    "middag": true,
+                    "ochtend": true
+                },
+                "dinsdag": {
+                    "middag": false,
+                    "ochtend": false
+                },
+                "maandag": {
+                    "middag": true,
+                    "ochtend": true
+                }
+            },
+            "replacement": null,
+            "skills": "Testen, testscenario's, api, json, postman",
+            "description": "description"
+        },
+        {
+            "user": "jkuitenbrouwer@demodam.nl",
+            "contact": {
+                "telefoonnummers": [
+                    {
+                        "telefoonnummer": "020 666 0002",
+                        "naam": null
+                    }
+                ],
+                "emails": [
+                    {
+                        "email": "jkuitenbrouwer@demodam.nl",
+                        "naam": null
+                    }
+                ],
+                "achternaam": "Kuitenbrouwer",
+                "voorvoegselAchternaam": null,
+                "voornaam": "Jan",
+                "bronorganisatie": "999994207"
+            },
+            "department": "Openbare ruimte",
+            "function": "Planner openbare ruimte",
+            "availabilities": {
+                "vrijdag": {
+                    "middag": true,
+                    "ochtend": false
+                },
+                "donderdag": {
+                    "middag": true,
+                    "ochtend": false
+                },
+                "woensdag": {
+                    "middag": true,
+                    "ochtend": false
+                },
+                "dinsdag": {
+                    "middag": true,
+                    "ochtend": false
+                },
+                "maandag": {
+                    "middag": true,
+                    "ochtend": false
+                }
+            },
+            "skills": "Werken in de openbare ruimte, kabels en leidingen, afstemmen graven in de grond",
+            "replacement": "Ernie van Sesamstraat",
+            "description": "-"
+        },
+        {
+            "user": "f.delaBrioche@demodam.nl",
+            "department": "Facilitaire diensten",
+            "function": "Hoofd inkoop kantoorartikelen",
+            "availabilities": {
+                "vrijdag": {
+                    "middag": false,
+                    "ochtend": true
+                },
+                "dinsdag": {
+                    "middag": true,
+                    "ochtend": true
+                },
+                "donderdag": {
+                    "middag": true,
+                    "ochtend": true
+                },
+                "woensdag": {
+                    "middag": null,
+                    "ochtend": true
+                },
+                "maandag": {
+                    "middag": false,
+                    "ochtend": false
+                }
+            },
+            "contact": {
+                "adres": {
+                    "straatnaam": "Amstel",
+                    "huisnummer": 1,
+                    "huisletter": "",
+                    "huisnummertoevoeging": "",
+                    "postcode": "1011 PN ",
+                    "woonplaatsnaam": "Amsterdam"
+                },
+                "emails": [
+                    {
+                        "email": "f.delaBrioche@demodam.nl",
+                        "naam": null
+                    }
+                ],
+                "telefoonnummers": [
+                    {
+                        "naam": null,
+                        "telefoonnummer": "020 444 8888"
+                    }
+                ],
+                "bronorganisatie": "999994207",
+                "achternaam": "de la Brioche",
+                "voornaam": "Francine",
+                "voorvoegselAchternaam": null
+            },
+            "skills": "Inkoop en beheer kantoorartikelen. Mis je iets in de inventaris, laat het me weten. Dan kijken we wat we voor je kunnen doen.",
+            "replacement": "Donald Trump",
+            "description": "-"
+        },
+        {
+            "user": "s.de.bruin@demodam.nl",
+            "contact": {
+                "adres": {
+                    "straatnaam": "Nieuwe Achtergracht",
+                    "huisnummer": 100,
+                    "huisletter": "",
+                    "huisnummertoevoeging": "",
+                    "postcode": "1018WT",
+                    "woonplaatsnaam": "Amsterdam"
+                },
+                "telefoonnummers": [
+                    {
+                        "naam": null,
+                        "telefoonnummer": "06 1212 2323"
+                    },
+                    {
+                        "naam": null,
+                        "telefoonnummer": "020 543 9876"
+                    }
+                ],
+                "emails": [
+                    {
+                        "email": "saskia.de.bruin@demodam.nl",
+                        "naam": "Saskia de Bruin"
+                    },
+                    {
+                        "email": "s.de.bruin@demodam.nl",
+                        "naam": "Saskia de Bruin"
+                    }                    
+                ],
+                "voornaam": "Saskia",
+                "voorvoegselAchternaam": "de",
+                "achternaam": "Bruin",
+                "bronorganisatie": "999994207"
+            },
+            "department": "Burgerzaken",
+            "function": "Baliemedewerker",
+            "availabilities": {
+                "maandag": {
+                    "ochtend": true,
+                    "middag": true
+                },
+                "dinsdag": {
+                    "ochtend": true,
+                    "middag": false
+                },
+                "woendag": {
+                    "ochtend": true,
+                    "middag": false
+                },
+                "donderdag": {
+                    "ochtend": true,
+                    "middag": false
+                },
+                "vrijdag": {
+                    "ochtend": false,
+                    "middag": false
+                }
+            },
+            "skills": "dienstverlening, burgerzaken",
+            "replacement": "Johanna Tersteege",
+            "optionalProfilePicture": "https://cdn.vectorstock.com/i/1000x1000/51/05/male-profile-avatar-with-brown-hair-vector-12055105.webp",
+            "description": "-"
+        },
+        {
+            "user": "m.bounoun@demodam.nl",
+            "contact": {
+                "adres": {
+                    "straatnaam": "Nieuwe Achtergracht",
+                    "huisnummer": 100,
+                    "huisletter": "",
+                    "huisnummertoevoeging": "",
+                    "postcode": "1018WT",
+                    "woonplaatsnaam": "Amsterdam"
+                },
+                "telefoonnummers": [
+                    {
+                        "naam": null,
+                        "telefoonnummer": "06 1452 9898"
+                    },
+                    {
+                        "naam": null,
+                        "telefoonnummer": "020 345 6789"
+                    }
+                ],
+                "emails": [
+                    {
+                        "email": "mehmet.bounoun@demodam.nl",
+                        "naam": null
+                    }
+                ],
+                "voornaam": "Mehmet",
+                "voorvoegselAchternaam": "",
+                "achternaam": "Bounoun",
+                "bronorganisatie": "999994207"
+            },
+            "department": "Burgerzaken",
+            "function": "Beleidsmedewerker",
+            "availabilities": {
+                "maandag": {
+                    "ochtend": true,
+                    "middag": true
+                },
+                "dinsdag": {
+                    "ochtend": true,
+                    "middag": true
+                },
+                "woendag": {
+                    "ochtend": true,
+                    "middag": true
+                },
+                "donderdag": {
+                    "ochtend": false,
+                    "middag": true
+                },
+                "vrijdag": {
+                    "ochtend": false,
+                    "middag": false
+                }
+            },
+            "skills": "identificatiedocumenten, identiteitscontrole, digitalisering, eHerkenning",
+            "replacement": "Johanna Tersteege",
+            "optionalProfilePicture": "https://cdn.vectorstock.com/i/1000x1000/51/05/male-profile-avatar-with-brown-hair-vector-12055105.webp",
+            "description": "-"
+        },
+        {
+            "user": "j.tersteeege@demodam.nl",
+            "contact": {
+                "adres": {
+                    "straatnaam": "Amstel",
+                    "huisnummer": 1,
+                    "huisletter": "",
+                    "huisnummertoevoeging": "",
+                    "postcode": "1011 PN ",
+                    "woonplaatsnaam": "Amsterdam"
+                },
+                "telefoonnummers": [
+                    {
+                        "naam": null,
+                        "telefoonnummer": "06 7788 9966"
+                    },
+                    {
+                        "naam": null,
+                        "telefoonnummer": "020 234 5678"
+                    }
+                ],
+                "emails": [
+                    {
+                        "email": "johanne.tersteege@demodam.nl",
+                        "naam": "Johanne Tersteege"
+                    }
+                ],
+                "voornaam": "Johanne",
+                "voorvoegselAchternaam": "",
+                "achternaam": "Tersteege",
+                "bronorganisatie": "999994207"
+            },
+            "department": "Burgerzaken",
+            "function": "Baliemedewerker",
+            "availabilities": {
+                "maandag": {
+                    "ochtend": true,
+                    "middag": true
+                },
+                "dinsdag": {
+                    "ochtend": true,
+                    "middag": false
+                },
+                "woendag": {
+                    "ochtend": true,
+                    "middag": false
+                },
+                "donderdag": {
+                    "ochtend": true,
+                    "middag": true
+                },
+                "vrijdag": {
+                    "ochtend": false,
+                    "middag": false
+                }
+            },
+            "skills": "Bij de balie hou ik me vooral bezig met het uitleveren van aktes uit de burgerlijke stand, en met inschrijven van nieuwe bewoners. Ik weet alles van het systeem waarmee we akte ophalen. Daarnaast ben ik momenteel bezig met een opleiding tot eHerkenning specialist.",
+            "replacement": "Johan Tersteege",
+            "optionalProfilePicture": "https://cdn.vectorstock.com/i/1000x1000/51/05/male-profile-avatar-with-brown-hair-vector-12055105.webp",
+            "description": "-"
+        },
+        {
+            "user": "rintveld@demodam.nl",
+            "contact": {
+                "telefoonnummers": [
+                    {
+                        "telefoonnummer": "020 666 0001",
+                        "naam": null
+                    },
+                    {
+                        "telefoonnummer": "06 6666 0001",
+                        "naam": null
+                    }
+                ],
+                "emails": [
+                    {
+                        "email": "rintveld@demodam.nl",
+                        "naam": null
+                    },
+                    {
+                        "email": "robyn.veld@demodam.nl",
+                        "naam": null
+                    }
+                ],
+                "achternaam": "Veld",
+                "voorvoegselAchternaam": "in 't",
+                "voornaam": "Robyn",
+                "bronorganisatie": "999994207"
+            },
+            "department": "Werk- en inkomen",
+            "function": "Inkomensconsulent zelfstandigen",
+            "availabilities": {
+                "maandag": {
+                    "ochtend": true,
+                    "middag": true
+                },
+                "dinsdag": {
+                    "ochtend": true,
+                    "middag": true
+                },
+                "woendag": {
+                    "ochtend": true,
+                    "middag": false
+                },
+                "donderdag": {
+                    "ochtend": true,
+                    "middag": true
+                },
+                "vrijdag": {
+                    "ochtend": true,
+                    "middag": true
+                }
+            },            
+            "skills": "Bbz, Ioaz, tozo alle rondes, TVL 2020, 2021 en 2022. Ik help zelfstandige ondernemers in alle fases van hun onderneming.",
+            "replacement": null,
+            "description": "-"
+        },
+        {
+            "user": "test02@kiss.commonground.nu",
+            "contact": {
+                "telefoonnummers": [
+                    {
+                        "telefoonnummer": "020 666 0005",
+                        "naam": null
+                    }
+                ],
+                "emails": [
+                    {
+                        "email": "qjones@demodam.nl",
+                        "naam": "e-mailadres 1"
+                    }
+                ],
+                "achternaam": "Jones",
+                "voorvoegselAchternaam": null,
+                "voornaam": "Quincy",
+                "bronorganisatie": "999994207"
+            },
+            "department": "Burgerzaken ",
+            "function": "Baliemedewerker",
+            "availabilities": {
+                "vrijdag": {
+                    "middag": false,
+                    "ochtend": true
+                },
+                "donderdag": {
+                    "middag": null,
+                    "ochtend": null
+                },
+                "woensdag": {
+                    "middag": true,
+                    "ochtend": true
+                },
+                "dinsdag": {
+                    "middag": true,
+                    "ochtend": true
+                },
+                "maandag": {
+                    "middag": false,
+                    "ochtend": false
+                }
+            },
+            "skills": "dienstverlening, burgerzaken, identiteitsbewijzen",
+            "replacement": "Michael Jackson",
+            "description": "TestData"
+        },
+        {
+            "user": "s.koendjibiharie@demodam.nl",
+            "contact": {
+                "adres": {
+                    "straatnaam": "Amstel",
+                    "huisnummer": 1,
+                    "huisletter": "",
+                    "huisnummertoevoeging": "",
+                    "postcode": "1011 PN ",
+                    "woonplaatsnaam": "Amsterdam"
+                },
+                "emails": [
+                    {
+                        "email": "sum.koendjibiharie@demodam.nl",
+                        "naam": null
+                    },
+                    {
+                        "email": "s.koendjibiharie@demodam.nll",
+                        "naam": "Sumirno Koendjibiharie"
+                    }
+                ],
+                "telefoonnummers": [
+                    {
+                        "naam": null,
+                        "telefoonnummer": "020 345 6789"
+                    }
+                ],
+                "voornaam": "Sumirno",
+                "voorvoegselAchternaam": null,
+                "achternaam": "Koendjibiharie",
+                "bronorganisatie": "999994207"
+            },
+            "department": "Dienstverlening",
+            "function": "Verbetermanager Sociaal Domein",
+            "availabilities": {
+                "maandag": {
+                    "ochtend": false,
+                    "middag": false
+                },
+                "dinsdag": {
+                    "ochtend": true,
+                    "middag": true
+                },
+                "woendag": {
+                    "ochtend": true,
+                    "middag": true
+                },
+                "donderdag": {
+                    "ochtend": true,
+                    "middag": true
+                },
+                "vrijdag": {
+                    "ochtend": true,
+                    "middag": true
+                }
+            },
+            "skills": "Sociaal domein, armoedevoorzieningen, inkomensondersteuning. Ik hou me veel bezig met inkomensondersteuning voor startende ondernemers, en het behandelen van Bbz-aanvragen",
+            "replacement": "Samira van Wijdeveld",
+            "description": "-"
+        },
+        {
+            "user": "p.deboer@demodam.nl",
+            "contact": {
+                "emails": [
+                    {
+                        "email": "p.deboer@demodam.nl",
+                        "naam": null
+                    }
+                ],
+                "telefoonnummers": [
+                    {
+                        "naam": null,
+                        "telefoonnummer": "020 334 4555"
+                    }
+                ],
+                "adres": {
+                    "straatnaam": "Amstel",
+                    "huisnummer": 1,
+                    "huisletter": "",
+                    "huisnummertoevoeging": "",
+                    "postcode": "1011 PN ",
+                    "woonplaatsnaam": "Amsterdam"
+                },
+                "voornaam": "Pjotr",
+                "voorvoegselAchternaam": "de",
+                "achternaam": "Boer",
+                "bronorganisatie": "999994207"
+             },
+            "department": "VTH",
+            "function": "Adviseur kapvergunningen",
+            "availabilities": {
+                "maandag": {
+                    "ochtend": true,
+                    "middag": true
+                },
+                "dinsdag": {
+                    "ochtend": true,
+                    "middag": true
+                },
+                "woendag": {
+                    "ochtend": false,
+                    "middag": false
+                },
+                "donderdag": {
+                    "ochtend": true,
+                    "middag": true
+                },
+                "vrijdag": {
+                    "ochtend": true,
+                    "middag": true
+                }
+            },
+            "replacement": "Boris Nooteboom", 
+            "skills": "Omgevingsvergunning, boomkap houtopstand. Specialist in bomen en ander groen. Ik weet ook veel van boomtaxatie",
+            "optionalProfilePicture": "https://cdn.vectorstock.com/i/1000x1000/51/05/male-profile-avatar-with-brown-hair-vector-12055105.webp",
+            "description": "-"
+        }
+    ]
+}xmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
