@@ -1,0 +1,567 @@
+{
+    "https://vng.opencatalogi.nl/schemas/ztc.catalogus.schema.json": [
+        {
+            "domein": "VRG",
+            "rsin": "999994207",
+            "id": "ZAAKCATOLGUSID",
+            "contactpersoonBeheerNaam": "Sytske van Hasselt",
+            "contactpersoonBeheerEmailadres": "sytsk@icatt.nl"
+        }
+    ],
+    "https://vng.opencatalogi.nl/schemas/ztc.zaakType.schema.json": [
+        {
+            "id": "ZAAKTYPE-MOR",
+            "omschrijving": "Melding openbare ruimte",
+            "omschrijvingGeneriek": "Melding openbare ruimte",
+            "vertrouwelijkheidaanduiding": "openbaar",
+            "doel": "Ziet u iets op straat, een park, een sportveld, water of plein dat niet in orde is? Dan kunt u een melding openbare ruimte doen bij de gemeente.",
+            "aanleiding": "Ziet u iets op straat, een park, een sportveld, water of plein dat niet in orde is? Dan kunt u een melding openbare ruimte doen bij de gemeente.",
+            "indicatieInternOfExtern": "extern",
+            "handelingInitiator": "Melden",
+            "onderwerp": "Melding over de openbare ruimte",
+            "handelingBehandelaar": "Behandelen",
+            "doorlooptijd": "56 dagen",
+            "servicenorm": "3 dagen",
+            "opschortingEnAanhoudingMogelijk": true,
+            "verlengingMogelijk": true,
+            "publicatieIndicatie": true,
+            "productenOfDiensten": [
+                "https://www.deventer.nl/meldpunt-openbare-ruimte/maak-direct-online-een-melding"
+            ],
+            "referentieproces": {
+                "naam": "string",
+                "link": "http://example.com"
+            },
+            "catalogus": "ZAAKCATOLGUSID",
+            "roltypen": [
+                {
+                    "id": "ROLTYPE-AANVRAGER_MOR",
+                    "zaaktype": "ZAAKTYPE-MOR",
+                    "omschrijving": "indiener",
+                    "omschrijvingGeneriek": "initiator"
+                },
+                {
+                    "id": "ROLTYPE-BEHANDELAAR_MOR",
+                    "zaaktype": "ZAAKTYPE-MOR",
+                    "omschrijving": "behandelaar",
+                    "omschrijvingGeneriek": "behandelaar"
+                }
+            ],
+            "besluittypen": [
+                "http://example.com"
+            ],
+            "gerelateerdeZaaktypen": [
+                {
+                    "zaaktype": "http://example.com",
+                    "aardRelatie": "vervolg",
+                    "toelichting": "string"
+                }
+            ],
+            "beginGeldigheid": "2019-08-24",
+            "versiedatum": "2019-08-24",
+            "concept": true
+        },
+        {
+            "id": "ZAAKTYPE-BBZ",
+            "omschrijving": "Besluit bijstandverlening voor zelfstandigen",
+            "omschrijvingGeneriek": "Bbz aanvragen",
+            "vertrouwelijkheidaanduiding": "openbaar",
+            "doel": "Het nemen van een besluit naar aanleiding van een aanvraag van een zelfstandige ondernemer met weinig inkomen.",
+            "aanleiding": "Een zelfstandig ondernemer wil ondersteuning op het gebied van inkomen of van bedrijfskapitaal",
+            "indicatieInternOfExtern": "extern",
+            "handelingInitiator": "Aanvragen",
+            "onderwerp": "Toekenning Besluit bijstandverlening zelfstandigen",
+            "handelingBehandelaar": "Behandelen",
+            "doorlooptijd": "91 dagen",
+            "servicenorm": "56 dagen",
+            "opschortingEnAanhoudingMogelijk": true,
+            "verlengingMogelijk": true,
+            "publicatieIndicatie": true,
+            "productenOfDiensten": [
+                "https://www.deventer.nl/bijstandzelfstandigen"
+            ],
+            "referentieproces": {
+                "naam": "string",
+                "link": "http://example.com"
+            },
+            "catalogus": "http://verwijzing.naar/ZAAKCATOLGUSID",
+            "roltypen": [
+                {
+                    "id": "ROLTYPE-AANVRAGER_BBZ",
+                    "zaaktype": "ZAAKTYPE-BBZ",
+                    "omschrijving": "indiener",
+                    "omschrijvingGeneriek": "initiator"
+                },
+                {
+                    "id": "ROLTYPE-BEHANDELAAR_BBZ",
+                    "zaaktype": "ZAAKTYPE-BBZ",
+                    "omschrijving": "behandelaar",
+                    "omschrijvingGeneriek": "behandelaar"
+                }
+            ],
+            "besluittypen": [
+                "http://example.com"
+            ],
+            "gerelateerdeZaaktypen": [
+                {
+                    "zaaktype": "http://example.com",
+                    "aardRelatie": "vervolg",
+                    "toelichting": "string"
+                }
+            ],
+            "beginGeldigheid": "2019-08-24",
+            "versiedatum": "2019-08-24",
+            "concept": true
+        },
+        {
+            "id": "ZAAKTYPE-IOAZ",
+            "omschrijving": "Aanvraag IOAZ",
+            "omschrijvingGeneriek": " IOAZ-uitkering oudere gewezen zelfstandigen",
+            "vertrouwelijkheidaanduiding": "openbaar",
+            "doel": "Het nemen van een besluit naar aanleiding van een aanvraag voor ondersteuning door een oudere gewezen zelfstandige.",
+            "aanleiding": "Een oudere zelfstandige ondernemer wil stoppen met zijn onderneming omdat die onvoldoende inkomen uit de onderneming heeft.",
+            "indicatieInternOfExtern": "extern",
+            "handelingInitiator": "Aanvragen",
+            "onderwerp": "IOAZ-uitkering",
+            "handelingBehandelaar": "Behandelen",
+            "doorlooptijd": "91 dagen",
+            "servicenorm": "56 dagen",
+            "opschortingEnAanhoudingMogelijk": true,
+            "verlengingMogelijk": true,
+            "publicatieIndicatie": true,
+            "productenOfDiensten": [
+                "https://www.deventer.nl/dzd"
+            ],
+            "referentieproces": {
+                "naam": "string",
+                "link": "http://example.com"
+            },
+            "catalogus": "http://verwijzing.naar/ZAAKCATOLGUSID",
+            "roltypen": [
+                {
+                    "id": "ROLTYPE-AANVRAGER_IOAZ",
+                    "zaaktype": "ZAAKTYPE-IOAZ",
+                    "omschrijving": "indiener",
+                    "omschrijvingGeneriek": "initiator"
+                },
+                {
+                    "id": "ROLTYPE-BEHANDELAAR_IOAZ",
+                    "zaaktype": "ZAAKTYPE-IOAZ",
+                    "omschrijving": "behandelaar",
+                    "omschrijvingGeneriek": "behandelaar"
+                }
+            ],
+            "besluittypen": [
+                "http://example.com"
+            ],
+            "gerelateerdeZaaktypen": [
+                {
+                    "zaaktype": "http://example.com",
+                    "aardRelatie": "vervolg",
+                    "toelichting": "string"
+                }
+            ],
+            "beginGeldigheid": "2019-08-24",
+            "eindeGeldigheid": "2019-08-24",
+            "versiedatum": "2019-08-24",
+            "concept": true
+        },
+        {
+            "id": "ZAAKTYPE-OMGBOUWEN",
+            "omschrijving": "Aanvraag omgevingsvergunning voor bouwen",
+            "omschrijvingGeneriek": "Aanvraag omgevingsvergunning voor bouwen",
+            "vertrouwelijkheidaanduiding": "openbaar",
+            "doel": "Het nemen van een besluit naar aanleiding van een aanvraag omgevingsvergunning voor de activiteit bouwen.",
+            "aanleiding": "Een natuurlijk of niet-natuurlijk persoon wenst aanpassingen, die vergunningplichtig zijn, te doen aan een bouwwerk.",
+            "indicatieInternOfExtern": "extern",
+            "handelingInitiator": "Aanvragen",
+            "onderwerp": "Vergunning",
+            "handelingBehandelaar": "Behandelen",
+            "doorlooptijd": "56 dagen",
+            "servicenorm": "42 dagen",
+            "opschortingEnAanhoudingMogelijk": true,
+            "verlengingMogelijk": true,
+            "publicatieIndicatie": true,
+            "productenOfDiensten": [
+                "https://www.deventer.nl/bouwvergunning"
+            ],
+            "referentieproces": {
+                "naam": "string",
+                "link": "http://example.com"
+            },
+            "catalogus": "http://verwijzing.naar/ZAAKCATOLGUSID",
+            "roltypen": [
+                {
+                    "id": "ROLTYPE-AANVRAGER_BOUW",
+                    "zaaktype": "ZAAKTYPE-OMGBOUWEN",
+                    "omschrijving": "indiener",
+                    "omschrijvingGeneriek": "initiator"
+                },
+                {
+                    "id": "ROLTYPE-BEHANDELAAR_BOUW",
+                    "zaaktype": "ZAAKTYPE-OMGBOUWEN",
+                    "omschrijving": "behandelaar",
+                    "omschrijvingGeneriek": "behandelaar"
+                }
+            ],
+            "besluittypen": [
+                "http://example.com"
+            ],
+            "beginGeldigheid": "2019-08-24",
+            "versiedatum": "2019-08-24",
+            "concept": true
+        }
+    ],
+    "https://vng.opencatalogi.nl/schemas/zrc.zaak.schema.json": [
+        {
+            "id": "ZAAKID-01",
+            "identificatie": "ZAAK-1",
+            "bronorganisatie": "999994207",
+            "omschrijving": "Melding openbare ruimte",
+            "toelichting": "Losse stoeptegel op het plein",
+            "zaaktype": "ZAAKTYPE-MOR",
+            "registratiedatum": "2022-12-16",
+            "verantwoordelijkeOrganisatie": "999994207",
+            "startdatum": "2022-12-16",
+            "publicatiedatum": "2022-12-16",
+            "vertrouwelijkheidaanduiding": "openbaar",
+            "betalingsindicatie": "nvt",
+            "archiefnominatie": "vernietigen",
+            "archiefstatus": "nog_te_archiveren",
+            "archiefactiedatum": "2027-12-16",
+            "startdatumBewaartermijn": "2027-12-16",
+            "status": {
+                "datumStatusGezet": "2022-12-16T16:22:26.620Z",
+                "statustoelichting": "In behandeling"
+            },
+            "rollen": [
+                {
+                    "zaak": "ZAAKID-01",
+                    "roltype": "ROLTYPE-AANVRAGER_MOR",
+                    "indicatieMachtiging": "machtiginggever",
+                    "roltoelichting": "Indiener van de melding",
+                    "omschrijvingGeneriek": "initiator",
+                    "omschrijving": "initiator",
+                    "betrokkeneType": "natuurlijk_persoon",
+                    "betrokkeneIdentificatie": {
+                        "inpBsn": "999993653",
+                        "geslachtsnaam": "Moulin",
+                        "voornamen": "Suzanne"
+                    }
+                },
+                {
+                    "zaak": "ZAAKID-01",
+                    "roltype": "ROLTYPE-BEHANDELAAR_MOR",
+                    "roltoelichting": "Behandelaar van de melding",
+                    "omschrijvingGeneriek": "Behandelaar",
+                    "omschrijving": "Behandelaar",
+                    "betrokkeneType": "medewerker",
+                    "betrokkeneIdentificatie": {
+                        "voorletters": "J.H.",
+                        "voorvoegselGeslachtsnaam": "van",
+                        "geslachtsnaam": "Bovenkarspel"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ZAAKID-02",
+            "identificatie": "ZAAK-2",
+            "bronorganisatie": "999994207",
+            "omschrijving": "Aanvraag Bbz voor startende ondernemer",
+            "toelichting": "Aanvrager wil vanuit uitkeringssituatie eigen onderneming beginnen",
+            "zaaktype": "ZAAKTYPE-BBZ",
+            "registratiedatum": "2022-11-27",
+            "verantwoordelijkeOrganisatie": "999994207",
+            "startdatum": "2022-11-28",
+            "publicatiedatum": "2022-12-16",
+            "vertrouwelijkheidaanduiding": "vertrouwelijk",
+            "betalingsindicatie": "nvt",
+            "archiefnominatie": "blijvend_bewaren",
+            "archiefstatus": "nog_te_archiveren",
+            "archiefactiedatum": "2032-11-28",
+            "startdatumBewaartermijn": "2032-11-28",
+            "status": {
+                "statustoelichting": "In behandeling - indieningsvereisten toetsen",
+                "datumStatusGezet": "2022-11-28T16:22:26+00:00"
+            },
+            "rollen": [
+                {
+                    "zaak": "ZAAKID-02",
+                    "roltype": "ROLTYPE-AANVRAGER_BBZ",
+                    "roltoelichting": "Aanvrager van de zaak",
+                    "omschrijvingGeneriek": "initiator",
+                    "omschrijving": "initiator",
+                    "betrokkeneType": "natuurlijk_persoon",
+                    "betrokkeneIdentificatie": {
+                        "inpBsn": "999993653",
+                        "geslachtsnaam": "Moulin",
+                        "voornamen": "Suzanne"
+                    }
+                },
+                {
+                    "zaak": "ZAAKID-02",
+                    "roltype": "ROLTYPE-BEHANDELAAR_BBZ",
+                    "roltoelichting": "Behandelaar van de melding",
+                    "omschrijvingGeneriek": "Behandelaar",
+                    "omschrijving": "Behandelaar",
+                    "betrokkeneType": "medewerker",
+                    "betrokkeneIdentificatie": {
+                        "voorletters": "J.H.",
+                        "voorvoegselGeslachtsnaam": "van",
+                        "geslachtsnaam": "Bovenkarspel"
+                    }
+                }
+            ],
+            "zaakinformatieobjecten": [
+                {
+                    "titel": "Contract 1",
+                    "beschrijving": "Contract 1 beschrijving",
+                    "registratiedatum": "2022-11-27T09:44:22.811Z",
+                    "aardRelatieWeergave": "Hoort bij, omgekeerd: kent",
+                    "informatieobject": {
+                        "bronorganisatie": "999994207",
+                        "creatiedatum": "2022-11-27",
+                        "titel": "Contract 1",
+                        "auteur": "Indiener",
+                        "taal": "NLD",
+                        "informatieobjecttype": null,
+                        "status": "definitief",
+                        "formaat": "application/pdf",
+                        "vertrouwelijkheidaanduiding": "beperkt_openbaar",
+                        "beginRegistratie": "2022-11-27T12:01:20.216Z",
+                        "bestandsnaam": "contract1.pdf",
+                        "inhoud": "JVBERi0xLjIKJcDIzNINCjEgMCBvYmoKPDwKL1RpdGxlIChGaWxtc2NyaXB0MS5kb2MpCi9BdXRob3IgKHN5dHNrZSkKL0NyZWF0b3IgKHBkZkZhY3RvcnkgUHJvIHd3dy5wZGZmYWN0b3J5LmNvbSkKL1Byb2R1Y2VyIChwZGZGYWN0b3J5IFBybyAyLjAyIFwoV2luZG93cyBYUCBEdXRjaFwpKQovQ3JlYXRpb25EYXRlIChEOjIwMDcxMDE4MTEwODI1KQo+PgplbmRvYmoKNCAwIG9iago8PAovRmlsdGVyIC9GbAovTGVuZ3RoIDUgMCBSCj4+CnN0cmVhbQ0KSIm9kMEOgjAMhu88RY94WG3rwuZVkSfYCxiCiSZgovj+wga4jBhv3tavf9e//8Fl24qBCcmCu2SG0IIpGEmDKyGHDbhbRqBYUFYoqreVAPsvho4QxlqRYvhVCaONsbIadcwVIY82asjLsGSpr30YGXzuC08gVUy2xvfzm5iM+LppZgWz9qSDZcYGcpwXTIr7aiRx0EcOHuc67YYF883iA/9kYXao9X+y6F5Ru23TaOIrfuXIAZzcG7AzfP1lbmRzdHJlYW0KZW5kb2JqCjUgMCBvYmoKMTg4CmVuZG9iago2IDAgb2JqCjw8Ci9UeXBlIC9QYWdlCi9QYXJlbnQgMyAwIFIKL01lZGlhQm94IFswIDAgNTk1IDg0MV0KL1Jlc291cmNlcwo8PAovUHJvY1NldCBbL1BERi9UZXh0XQovRm9udAo8PAovRjEgNyAwIFIKL0YyIDggMCBSCj4+Cj4+Ci9Db250ZW50cyA0IDAgUgo+PgplbmRvYmoKNyAwIG9iago8PAovVHlwZSAvRm9udAovU3VidHlwZSAvVHJ1ZVR5cGUKL05hbWUgL0YxCi9CYXNlRm9udCAvVmVyZGFuYQovRmlyc3RDaGFyIDMyCi9MYXN0Q2hhciAyNTUKL1dpZHRocyBbMzUyIDM5NCA0NTkgODE4IDYzNiAxMDc2IDcyNyAyNjkgNDU0IDQ1NCA2MzYgODE4IDM2NCA0NTQgMzY0IDQ1NAo2MzYgNjM2IDYzNiA2MzYgNjM2IDYzNiA2MzYgNjM2IDYzNiA2MzYgNDU0IDQ1NCA4MTggODE4IDgxOCA1NDUKMTAwMCA2ODQgNjg2IDY5OCA3NzEgNjMyIDU3NSA3NzUgNzUxIDQyMSA0NTUgNjkzIDU1NyA4NDMgNzQ4IDc4Nwo2MDMgNzg3IDY5NSA2ODQgNjE2IDczMiA2ODQgOTg5IDY4NSA2MTUgNjg1IDQ1NCA0NTQgNDU0IDgxOCA2MzYKNjM2IDYwMSA2MjMgNTIxIDYyMyA1OTYgMzUyIDYyMyA2MzMgMjc0IDM0NCA1OTIgMjc0IDk3MyA2MzMgNjA3CjYyMyA2MjMgNDI3IDUyMSAzOTQgNjMzIDU5MiA4MTggNTkyIDU5MiA1MjUgNjM1IDQ1NCA2MzUgODE4IDEwMDAKNjM2IDEwMDAgMjY5IDYzNiA0NTkgODE4IDYzNiA2MzYgNjM2IDE1MjEgNjg0IDQ1NCAxMDcwIDEwMDAgNjg1IDEwMDAKMTAwMCAyNjkgMjY5IDQ1OSA0NTkgNTQ1IDYzNiAxMDAwIDYzNiA5NzcgNTIxIDQ1NCA5ODEgMTAwMCA1MjUgNjE1CjM1MiAzOTQgNjM2IDYzNiA2MzYgNjM2IDQ1NCA2MzYgNjM2IDEwMDAgNTQ1IDY0NSA4MTggNDU0IDEwMDAgNjM2CjU0MiA4MTggNTQyIDU0MiA2MzYgNjQyIDYzNiAzNjQgNjM2IDU0MiA1NDUgNjQ1IDEwMDAgMTAwMCAxMDAwIDU0NQo2ODQgNjg0IDY4NCA2ODQgNjg0IDY4NCA5ODQgNjk4IDYzMiA2MzIgNjMyIDYzMiA0MjEgNDIxIDQyMSA0MjEKNzc1IDc0OCA3ODcgNzg3IDc4NyA3ODcgNzg3IDgxOCA3ODcgNzMyIDczMiA3MzIgNzMyIDYxNSA2MDUgNjIwCjYwMSA2MDEgNjAxIDYwMSA2MDEgNjAxIDk1NSA1MjEgNTk2IDU5NiA1OTYgNTk2IDI3NCAyNzQgMjc0IDI3NAo2MTIgNjMzIDYwNyA2MDcgNjA3IDYwNyA2MDcgODE4IDYwNyA2MzMgNjMzIDYzMyA2MzMgNTkyIDYyMyA1OTJdCi9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nCi9Gb250RGVzY3JpcHRvciA5IDAgUgo+PgplbmRvYmoKOSAwIG9iago8PAovVHlwZSAvRm9udERlc2NyaXB0b3IKL0ZvbnROYW1lIC9WZXJkYW5hCi9GbGFncyAzMgovRm9udEJCb3ggWy01MCAtMjA3IDE0NDcgMTAwMF0KL1N0ZW1WIDEzNAovSXRhbGljQW5nbGUgMAovQ2FwSGVpZ2h0IDEwMDUKL0FzY2VudCAxMDA1Ci9EZXNjZW50IC0yMTAKPj4KZW5kb2JqCjggMCBvYmoKPDwKL1R5cGUgL0ZvbnQKL1N1YnR5cGUgL1RydWVUeXBlCi9OYW1lIC9GMgovQmFzZUZvbnQgL1ZlcmRhbmEsSXRhbGljCi9GaXJzdENoYXIgMzIKL0xhc3RDaGFyIDI1NQovV2lkdGhzIFszNTIgMzk0IDQ1OSA4MTggNjM2IDEwNzYgNzI3IDI2OSA0NTQgNDU0IDYzNiA4MTggMzY0IDQ1NCAzNjQgNDU0CjYzNiA2MzYgNjM2IDYzNiA2MzYgNjM2IDYzNiA2MzYgNjM2IDYzNiA0NTQgNDU0IDgxOCA4MTggODE4IDU0NQoxMDAwIDY4MyA2ODYgNjk4IDc2NiA2MzIgNTc1IDc3NSA3NTEgNDIxIDQ1NSA2OTMgNTU3IDg0MyA3NDggNzg3CjYwMyA3ODcgNjk1IDY4NCA2MTYgNzMyIDY4MyA5OTAgNjg1IDYxNSA2ODUgNDU0IDQ1NCA0NTQgODE4IDYzNgo2MzYgNjAxIDYyMyA1MjEgNjIzIDU5NiAzNTIgNjIyIDYzMyAyNzQgMzQ0IDU4NyAyNzQgOTczIDYzMyA2MDcKNjIzIDYyMyA0MjcgNTIxIDM5NCA2MzMgNTkxIDgxOCA1OTIgNTkxIDUyNSA2MzUgNDU0IDYzNSA4MTggMTAwMAo2MzYgMTAwMCAyNjkgNjM2IDQ1OSA4MTggNjM2IDYzNiA2MzYgMTUxOSA2ODQgNDU0IDEwNzAgMTAwMCA2ODUgMTAwMAoxMDAwIDI2OSAyNjkgNDU5IDQ1OSA1NDUgNjM2IDEwMDAgNjM2IDk3NyA1MjEgNDU0IDk4MCAxMDAwIDUyNSA2MTUKMzUyIDM5NCA2MzYgNjM2IDYzNiA2MzYgNDU0IDYzNiA2MzYgMTAwMCA1NDUgNjQ1IDgxOCA0NTQgMTAwMCA2MzYKNTQyIDgxOCA1NDIgNTQyIDYzNiA2NDIgNjM2IDM2NCA2MzYgNTQyIDU0NSA2NDUgMTAwMCAxMDAwIDEwMDAgNTQ1CjY4MyA2ODMgNjgzIDY4MyA2ODMgNjgzIDk4OSA2OTggNjMyIDYzMiA2MzIgNjMyIDQyMSA0MjEgNDIxIDQyMQo3NjYgNzQ4IDc4NyA3ODcgNzg3IDc4NyA3ODcgODE4IDc4NyA3MzIgNzMyIDczMiA3MzIgNjE1IDYwNSA2MjAKNjAxIDYwMSA2MDEgNjAxIDYwMSA2MDEgOTU1IDUyMSA1OTYgNTk2IDU5NiA1OTYgMjc0IDI3NCAyNzQgMjc0CjYxMiA2MzMgNjA3IDYwNyA2MDcgNjA3IDYwNyA4MTggNjA3IDYzMyA2MzMgNjMzIDYzMyA1OTEgNjIzIDU5MV0KL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcKL0ZvbnREZXNjcmlwdG9yIDEwIDAgUgo+PgplbmRvYmoKMTAgMCBvYmoKPDwKL1R5cGUgL0ZvbnREZXNjcmlwdG9yCi9Gb250TmFtZSAvVmVyZGFuYSxJdGFsaWMKL0ZsYWdzIDk2Ci9Gb250QkJveCBbLTEzMSAtMjA3IDE0NjEgMTAwMF0KL1N0ZW1WIDEzNAovSXRhbGljQW5nbGUgLTEzCi9DYXBIZWlnaHQgMTAwNQovQXNjZW50IDEwMDUKL0Rlc2NlbnQgLTIxMAo+PgplbmRvYmoKMyAwIG9iago8PAovVHlwZSAvUGFnZXMKL0NvdW50IDEKL0tpZHMgWzYgMCBSXQo+PgplbmRvYmoKMiAwIG9iago8PAovVHlwZSAvQ2F0YWxvZwovUGFnZXMgMyAwIFIKL1ZpZXdlclByZWZlcmVuY2VzIDExIDAgUgo+PgplbmRvYmoKMTEgMCBvYmoKPDwKL1R5cGUgL1ZpZXdlclByZWZlcmVuY2VzCj4+CmVuZG9iagp4cmVmCjAgMTIKMDAwMDAwMDAwMCA2NTUzNSBmDQowMDAwMDAwMDE2IDAwMDAwIG4NCjAwMDAwMDMyMTkgMDAwMDAgbg0KMDAwMDAwMzE2MiAwMDAwMCBuDQowMDAwMDAwMjEwIDAwMDAwIG4NCjAwMDAwMDA0NjMgMDAwMDAgbg0KMDAwMDAwMDQ4MiAwMDAwMCBuDQowMDAwMDAwNjM5IDAwMDAwIG4NCjAwMDAwMDE4OTEgMDAwMDAgbg0KMDAwMDAwMTcxOSAwMDAwMCBuDQowMDAwMDAyOTc5IDAwMDAwIG4NCjAwMDAwMDMyOTQgMDAwMDAgbg0KdHJhaWxlcgo8PAovU2l6ZSAxMgovSW5mbyAxIDAgUgovUm9vdCAyIDAgUgovSUQgWzwwOEExNzkyOTc2ODM5MTY1RTJGMEUwOTQ1NjY2M0FFNj48MDhBMTc5Mjk3NjgzOTE2NUUyRjBFMDk0NTY2NjNBRTY+XQo+PgpzdGFydHhyZWYKMzM0MQolJUVPRgo=",
+                        "bestandsomvang": 3734,
+                        "beschrijving": "eerste contract",
+                        "ontvangstdatum": "2022-11-27",
+                        "verzenddatum": "2022-11-27"
+                    }
+                },
+                {
+                    "titel": "Contract 2",
+                    "beschrijving": "Contract 2 beschrijving",
+                    "registratiedatum": "2022-11-27T09:44:22.811Z",
+                    "aardRelatieWeergave": "Hoort bij, omgekeerd: kent",
+                    "informatieobject": {
+                        "bronorganisatie": "999994207",
+                        "creatiedatum": "2022-11-27",
+                        "titel": "Contract 2",
+                        "auteur": "Indiener",
+                        "taal": "NLD",
+                        "informatieobjecttype": null,
+                        "status": "definitief",
+                        "formaat": "application/pdf",
+                        "vertrouwelijkheidaanduiding": "beperkt_openbaar",
+                        "beginRegistratie": "2022-11-27T12:01:20.216Z",
+                        "bestandsnaam": "contract2.pdf",
+                        "inhoud": "JVBERi0xLjIKJcDIzNINCjEgMCBvYmoKPDwKL1RpdGxlIChGaWxtc2NyaXB0MS5kb2MpCi9BdXRob3IgKHN5dHNrZSkKL0NyZWF0b3IgKHBkZkZhY3RvcnkgUHJvIHd3dy5wZGZmYWN0b3J5LmNvbSkKL1Byb2R1Y2VyIChwZGZGYWN0b3J5IFBybyAyLjAyIFwoV2luZG93cyBYUCBEdXRjaFwpKQovQ3JlYXRpb25EYXRlIChEOjIwMDcxMDE4MTEwODU1KQo+PgplbmRvYmoKNCAwIG9iago8PAovRmlsdGVyIC9GbAovTGVuZ3RoIDUgMCBSCj4+CnN0cmVhbQ0KSIm9kMEOgjAMhu88RY94WG3rwuZVkSfYCxiCiSZgovj+wga4jBhv3tavf9e//8Fl24qBCcmCu2SG0IIpGEmDKyGHDbhbRqBYUFYoqreVAPsvho4QxlqRYvhVCaONsbIadcwVIY82asjLsGSpr30YGXzuC08gVUy2xvfzm5iM+LppZgWz9qSDZcYGcpwXTIr7aiRx0EcOHuc67YYF883iA/9kYXao9X+y6F5Ru23TaOIrfuUoAZzcG7A8fP5lbmRzdHJlYW0KZW5kb2JqCjUgMCBvYmoKMTg4CmVuZG9iago2IDAgb2JqCjw8Ci9UeXBlIC9QYWdlCi9QYXJlbnQgMyAwIFIKL01lZGlhQm94IFswIDAgNTk1IDg0MV0KL1Jlc291cmNlcwo8PAovUHJvY1NldCBbL1BERi9UZXh0XQovRm9udAo8PAovRjEgNyAwIFIKL0YyIDggMCBSCj4+Cj4+Ci9Db250ZW50cyA0IDAgUgo+PgplbmRvYmoKNyAwIG9iago8PAovVHlwZSAvRm9udAovU3VidHlwZSAvVHJ1ZVR5cGUKL05hbWUgL0YxCi9CYXNlRm9udCAvVmVyZGFuYQovRmlyc3RDaGFyIDMyCi9MYXN0Q2hhciAyNTUKL1dpZHRocyBbMzUyIDM5NCA0NTkgODE4IDYzNiAxMDc2IDcyNyAyNjkgNDU0IDQ1NCA2MzYgODE4IDM2NCA0NTQgMzY0IDQ1NAo2MzYgNjM2IDYzNiA2MzYgNjM2IDYzNiA2MzYgNjM2IDYzNiA2MzYgNDU0IDQ1NCA4MTggODE4IDgxOCA1NDUKMTAwMCA2ODQgNjg2IDY5OCA3NzEgNjMyIDU3NSA3NzUgNzUxIDQyMSA0NTUgNjkzIDU1NyA4NDMgNzQ4IDc4Nwo2MDMgNzg3IDY5NSA2ODQgNjE2IDczMiA2ODQgOTg5IDY4NSA2MTUgNjg1IDQ1NCA0NTQgNDU0IDgxOCA2MzYKNjM2IDYwMSA2MjMgNTIxIDYyMyA1OTYgMzUyIDYyMyA2MzMgMjc0IDM0NCA1OTIgMjc0IDk3MyA2MzMgNjA3CjYyMyA2MjMgNDI3IDUyMSAzOTQgNjMzIDU5MiA4MTggNTkyIDU5MiA1MjUgNjM1IDQ1NCA2MzUgODE4IDEwMDAKNjM2IDEwMDAgMjY5IDYzNiA0NTkgODE4IDYzNiA2MzYgNjM2IDE1MjEgNjg0IDQ1NCAxMDcwIDEwMDAgNjg1IDEwMDAKMTAwMCAyNjkgMjY5IDQ1OSA0NTkgNTQ1IDYzNiAxMDAwIDYzNiA5NzcgNTIxIDQ1NCA5ODEgMTAwMCA1MjUgNjE1CjM1MiAzOTQgNjM2IDYzNiA2MzYgNjM2IDQ1NCA2MzYgNjM2IDEwMDAgNTQ1IDY0NSA4MTggNDU0IDEwMDAgNjM2CjU0MiA4MTggNTQyIDU0MiA2MzYgNjQyIDYzNiAzNjQgNjM2IDU0MiA1NDUgNjQ1IDEwMDAgMTAwMCAxMDAwIDU0NQo2ODQgNjg0IDY4NCA2ODQgNjg0IDY4NCA5ODQgNjk4IDYzMiA2MzIgNjMyIDYzMiA0MjEgNDIxIDQyMSA0MjEKNzc1IDc0OCA3ODcgNzg3IDc4NyA3ODcgNzg3IDgxOCA3ODcgNzMyIDczMiA3MzIgNzMyIDYxNSA2MDUgNjIwCjYwMSA2MDEgNjAxIDYwMSA2MDEgNjAxIDk1NSA1MjEgNTk2IDU5NiA1OTYgNTk2IDI3NCAyNzQgMjc0IDI3NAo2MTIgNjMzIDYwNyA2MDcgNjA3IDYwNyA2MDcgODE4IDYwNyA2MzMgNjMzIDYzMyA2MzMgNTkyIDYyMyA1OTJdCi9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nCi9Gb250RGVzY3JpcHRvciA5IDAgUgo+PgplbmRvYmoKOSAwIG9iago8PAovVHlwZSAvRm9udERlc2NyaXB0b3IKL0ZvbnROYW1lIC9WZXJkYW5hCi9GbGFncyAzMgovRm9udEJCb3ggWy01MCAtMjA3IDE0NDcgMTAwMF0KL1N0ZW1WIDEzNAovSXRhbGljQW5nbGUgMAovQ2FwSGVpZ2h0IDEwMDUKL0FzY2VudCAxMDA1Ci9EZXNjZW50IC0yMTAKPj4KZW5kb2JqCjggMCBvYmoKPDwKL1R5cGUgL0ZvbnQKL1N1YnR5cGUgL1RydWVUeXBlCi9OYW1lIC9GMgovQmFzZUZvbnQgL1ZlcmRhbmEsSXRhbGljCi9GaXJzdENoYXIgMzIKL0xhc3RDaGFyIDI1NQovV2lkdGhzIFszNTIgMzk0IDQ1OSA4MTggNjM2IDEwNzYgNzI3IDI2OSA0NTQgNDU0IDYzNiA4MTggMzY0IDQ1NCAzNjQgNDU0CjYzNiA2MzYgNjM2IDYzNiA2MzYgNjM2IDYzNiA2MzYgNjM2IDYzNiA0NTQgNDU0IDgxOCA4MTggODE4IDU0NQoxMDAwIDY4MyA2ODYgNjk4IDc2NiA2MzIgNTc1IDc3NSA3NTEgNDIxIDQ1NSA2OTMgNTU3IDg0MyA3NDggNzg3CjYwMyA3ODcgNjk1IDY4NCA2MTYgNzMyIDY4MyA5OTAgNjg1IDYxNSA2ODUgNDU0IDQ1NCA0NTQgODE4IDYzNgo2MzYgNjAxIDYyMyA1MjEgNjIzIDU5NiAzNTIgNjIyIDYzMyAyNzQgMzQ0IDU4NyAyNzQgOTczIDYzMyA2MDcKNjIzIDYyMyA0MjcgNTIxIDM5NCA2MzMgNTkxIDgxOCA1OTIgNTkxIDUyNSA2MzUgNDU0IDYzNSA4MTggMTAwMAo2MzYgMTAwMCAyNjkgNjM2IDQ1OSA4MTggNjM2IDYzNiA2MzYgMTUxOSA2ODQgNDU0IDEwNzAgMTAwMCA2ODUgMTAwMAoxMDAwIDI2OSAyNjkgNDU5IDQ1OSA1NDUgNjM2IDEwMDAgNjM2IDk3NyA1MjEgNDU0IDk4MCAxMDAwIDUyNSA2MTUKMzUyIDM5NCA2MzYgNjM2IDYzNiA2MzYgNDU0IDYzNiA2MzYgMTAwMCA1NDUgNjQ1IDgxOCA0NTQgMTAwMCA2MzYKNTQyIDgxOCA1NDIgNTQyIDYzNiA2NDIgNjM2IDM2NCA2MzYgNTQyIDU0NSA2NDUgMTAwMCAxMDAwIDEwMDAgNTQ1CjY4MyA2ODMgNjgzIDY4MyA2ODMgNjgzIDk4OSA2OTggNjMyIDYzMiA2MzIgNjMyIDQyMSA0MjEgNDIxIDQyMQo3NjYgNzQ4IDc4NyA3ODcgNzg3IDc4NyA3ODcgODE4IDc4NyA3MzIgNzMyIDczMiA3MzIgNjE1IDYwNSA2MjAKNjAxIDYwMSA2MDEgNjAxIDYwMSA2MDEgOTU1IDUyMSA1OTYgNTk2IDU5NiA1OTYgMjc0IDI3NCAyNzQgMjc0CjYxMiA2MzMgNjA3IDYwNyA2MDcgNjA3IDYwNyA4MTggNjA3IDYzMyA2MzMgNjMzIDYzMyA1OTEgNjIzIDU5MV0KL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcKL0ZvbnREZXNjcmlwdG9yIDEwIDAgUgo+PgplbmRvYmoKMTAgMCBvYmoKPDwKL1R5cGUgL0ZvbnREZXNjcmlwdG9yCi9Gb250TmFtZSAvVmVyZGFuYSxJdGFsaWMKL0ZsYWdzIDk2Ci9Gb250QkJveCBbLTEzMSAtMjA3IDE0NjEgMTAwMF0KL1N0ZW1WIDEzNAovSXRhbGljQW5nbGUgLTEzCi9DYXBIZWlnaHQgMTAwNQovQXNjZW50IDEwMDUKL0Rlc2NlbnQgLTIxMAo+PgplbmRvYmoKMyAwIG9iago8PAovVHlwZSAvUGFnZXMKL0NvdW50IDEKL0tpZHMgWzYgMCBSXQo+PgplbmRvYmoKMiAwIG9iago8PAovVHlwZSAvQ2F0YWxvZwovUGFnZXMgMyAwIFIKL1ZpZXdlclByZWZlcmVuY2VzIDExIDAgUgo+PgplbmRvYmoKMTEgMCBvYmoKPDwKL1R5cGUgL1ZpZXdlclByZWZlcmVuY2VzCj4+CmVuZG9iagp4cmVmCjAgMTIKMDAwMDAwMDAwMCA2NTUzNSBmDQowMDAwMDAwMDE2IDAwMDAwIG4NCjAwMDAwMDMyMTkgMDAwMDAgbg0KMDAwMDAwMzE2MiAwMDAwMCBuDQowMDAwMDAwMjEwIDAwMDAwIG4NCjAwMDAwMDA0NjMgMDAwMDAgbg0KMDAwMDAwMDQ4MiAwMDAwMCBuDQowMDAwMDAwNjM5IDAwMDAwIG4NCjAwMDAwMDE4OTEgMDAwMDAgbg0KMDAwMDAwMTcxOSAwMDAwMCBuDQowMDAwMDAyOTc5IDAwMDAwIG4NCjAwMDAwMDMyOTQgMDAwMDAgbg0KdHJhaWxlcgo8PAovU2l6ZSAxMgovSW5mbyAxIDAgUgovUm9vdCAyIDAgUgovSUQgWzw0NUZBRkM5ODFGRUQxODRBQzU1RjU1QUVCQ0I5NzczQj48NDVGQUZDOTgxRkVEMTg0QUM1NUY1NUFFQkNCOTc3M0I+XQo+PgpzdGFydHhyZWYKMzM0MQolJUVPRgo=",
+                        "bestandsomvang": 3734,
+                        "beschrijving": "tweede contract",
+                        "ontvangstdatum": "2022-11-27",
+                        "verzenddatum": "2022-11-27"
+                    }
+                },
+                {
+                    "titel": "Contract 3",
+                    "beschrijving": "Contract 3 beschrijving",
+                    "registratiedatum": "2022-11-27T09:44:22.811Z",
+                    "aardRelatieWeergave": "Hoort bij, omgekeerd: kent",
+                    "informatieobject": {
+                        "bronorganisatie": "999994207",
+                        "creatiedatum": "2022-11-27",
+                        "titel": "Contract 3",
+                        "auteur": "Indiener",
+                        "taal": "NLD",
+                        "informatieobjecttype": null,
+                        "status": "definitief",
+                        "formaat": "application/pdf",
+                        "vertrouwelijkheidaanduiding": "beperkt_openbaar",
+                        "beginRegistratie": "2022-11-27T12:01:20.216Z",
+                        "bestandsnaam": "contract3.pdf",
+                        "inhoud": "JVBERi0xLjIKJcDIzNINCjEgMCBvYmoKPDwKL1RpdGxlIChGaWxtc2NyaXB0MS5kb2MpCi9BdXRob3IgKHN5dHNrZSkKL0NyZWF0b3IgKHBkZkZhY3RvcnkgUHJvIHd3dy5wZGZmYWN0b3J5LmNvbSkKL1Byb2R1Y2VyIChwZGZGYWN0b3J5IFBybyAyLjAyIFwoV2luZG93cyBYUCBEdXRjaFwpKQovQ3JlYXRpb25EYXRlIChEOjIwMDcxMDE4MTEwOTA3KQo+PgplbmRvYmoKNCAwIG9iago8PAovRmlsdGVyIC9GbAovTGVuZ3RoIDUgMCBSCj4+CnN0cmVhbQ0KSIm9kMEOgjAMhu88RY94WGnLAvOqyBPsBQzBRBMwUXx/YQNcRow3b+vXv+vf/2CTrGZgQjJgL0lJaKAsGEmDrSCFHdhbQqBYUDYoqLNagN0XY0cIQ61IMf6qhNGEWBmNOuSKkCcbDaSVX7LW18GPjD73hSMQK2Zb0/v5TUyluLptFwWzdqSHdcZ4clwWzIr7ZiRyMAQOHucm7voFy83iAv9kUeao9X+y6F9Bu+viaMIrfuWYe3Cyb7BFfP9lbmRzdHJlYW0KZW5kb2JqCjUgMCBvYmoKMTg4CmVuZG9iago2IDAgb2JqCjw8Ci9UeXBlIC9QYWdlCi9QYXJlbnQgMyAwIFIKL01lZGlhQm94IFswIDAgNTk1IDg0MV0KL1Jlc291cmNlcwo8PAovUHJvY1NldCBbL1BERi9UZXh0XQovRm9udAo8PAovRjEgNyAwIFIKL0YyIDggMCBSCj4+Cj4+Ci9Db250ZW50cyA0IDAgUgo+PgplbmRvYmoKNyAwIG9iago8PAovVHlwZSAvRm9udAovU3VidHlwZSAvVHJ1ZVR5cGUKL05hbWUgL0YxCi9CYXNlRm9udCAvVmVyZGFuYQovRmlyc3RDaGFyIDMyCi9MYXN0Q2hhciAyNTUKL1dpZHRocyBbMzUyIDM5NCA0NTkgODE4IDYzNiAxMDc2IDcyNyAyNjkgNDU0IDQ1NCA2MzYgODE4IDM2NCA0NTQgMzY0IDQ1NAo2MzYgNjM2IDYzNiA2MzYgNjM2IDYzNiA2MzYgNjM2IDYzNiA2MzYgNDU0IDQ1NCA4MTggODE4IDgxOCA1NDUKMTAwMCA2ODQgNjg2IDY5OCA3NzEgNjMyIDU3NSA3NzUgNzUxIDQyMSA0NTUgNjkzIDU1NyA4NDMgNzQ4IDc4Nwo2MDMgNzg3IDY5NSA2ODQgNjE2IDczMiA2ODQgOTg5IDY4NSA2MTUgNjg1IDQ1NCA0NTQgNDU0IDgxOCA2MzYKNjM2IDYwMSA2MjMgNTIxIDYyMyA1OTYgMzUyIDYyMyA2MzMgMjc0IDM0NCA1OTIgMjc0IDk3MyA2MzMgNjA3CjYyMyA2MjMgNDI3IDUyMSAzOTQgNjMzIDU5MiA4MTggNTkyIDU5MiA1MjUgNjM1IDQ1NCA2MzUgODE4IDEwMDAKNjM2IDEwMDAgMjY5IDYzNiA0NTkgODE4IDYzNiA2MzYgNjM2IDE1MjEgNjg0IDQ1NCAxMDcwIDEwMDAgNjg1IDEwMDAKMTAwMCAyNjkgMjY5IDQ1OSA0NTkgNTQ1IDYzNiAxMDAwIDYzNiA5NzcgNTIxIDQ1NCA5ODEgMTAwMCA1MjUgNjE1CjM1MiAzOTQgNjM2IDYzNiA2MzYgNjM2IDQ1NCA2MzYgNjM2IDEwMDAgNTQ1IDY0NSA4MTggNDU0IDEwMDAgNjM2CjU0MiA4MTggNTQyIDU0MiA2MzYgNjQyIDYzNiAzNjQgNjM2IDU0MiA1NDUgNjQ1IDEwMDAgMTAwMCAxMDAwIDU0NQo2ODQgNjg0IDY4NCA2ODQgNjg0IDY4NCA5ODQgNjk4IDYzMiA2MzIgNjMyIDYzMiA0MjEgNDIxIDQyMSA0MjEKNzc1IDc0OCA3ODcgNzg3IDc4NyA3ODcgNzg3IDgxOCA3ODcgNzMyIDczMiA3MzIgNzMyIDYxNSA2MDUgNjIwCjYwMSA2MDEgNjAxIDYwMSA2MDEgNjAxIDk1NSA1MjEgNTk2IDU5NiA1OTYgNTk2IDI3NCAyNzQgMjc0IDI3NAo2MTIgNjMzIDYwNyA2MDcgNjA3IDYwNyA2MDcgODE4IDYwNyA2MzMgNjMzIDYzMyA2MzMgNTkyIDYyMyA1OTJdCi9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nCi9Gb250RGVzY3JpcHRvciA5IDAgUgo+PgplbmRvYmoKOSAwIG9iago8PAovVHlwZSAvRm9udERlc2NyaXB0b3IKL0ZvbnROYW1lIC9WZXJkYW5hCi9GbGFncyAzMgovRm9udEJCb3ggWy01MCAtMjA3IDE0NDcgMTAwMF0KL1N0ZW1WIDEzNAovSXRhbGljQW5nbGUgMAovQ2FwSGVpZ2h0IDEwMDUKL0FzY2VudCAxMDA1Ci9EZXNjZW50IC0yMTAKPj4KZW5kb2JqCjggMCBvYmoKPDwKL1R5cGUgL0ZvbnQKL1N1YnR5cGUgL1RydWVUeXBlCi9OYW1lIC9GMgovQmFzZUZvbnQgL1ZlcmRhbmEsSXRhbGljCi9GaXJzdENoYXIgMzIKL0xhc3RDaGFyIDI1NQovV2lkdGhzIFszNTIgMzk0IDQ1OSA4MTggNjM2IDEwNzYgNzI3IDI2OSA0NTQgNDU0IDYzNiA4MTggMzY0IDQ1NCAzNjQgNDU0CjYzNiA2MzYgNjM2IDYzNiA2MzYgNjM2IDYzNiA2MzYgNjM2IDYzNiA0NTQgNDU0IDgxOCA4MTggODE4IDU0NQoxMDAwIDY4MyA2ODYgNjk4IDc2NiA2MzIgNTc1IDc3NSA3NTEgNDIxIDQ1NSA2OTMgNTU3IDg0MyA3NDggNzg3CjYwMyA3ODcgNjk1IDY4NCA2MTYgNzMyIDY4MyA5OTAgNjg1IDYxNSA2ODUgNDU0IDQ1NCA0NTQgODE4IDYzNgo2MzYgNjAxIDYyMyA1MjEgNjIzIDU5NiAzNTIgNjIyIDYzMyAyNzQgMzQ0IDU4NyAyNzQgOTczIDYzMyA2MDcKNjIzIDYyMyA0MjcgNTIxIDM5NCA2MzMgNTkxIDgxOCA1OTIgNTkxIDUyNSA2MzUgNDU0IDYzNSA4MTggMTAwMAo2MzYgMTAwMCAyNjkgNjM2IDQ1OSA4MTggNjM2IDYzNiA2MzYgMTUxOSA2ODQgNDU0IDEwNzAgMTAwMCA2ODUgMTAwMAoxMDAwIDI2OSAyNjkgNDU5IDQ1OSA1NDUgNjM2IDEwMDAgNjM2IDk3NyA1MjEgNDU0IDk4MCAxMDAwIDUyNSA2MTUKMzUyIDM5NCA2MzYgNjM2IDYzNiA2MzYgNDU0IDYzNiA2MzYgMTAwMCA1NDUgNjQ1IDgxOCA0NTQgMTAwMCA2MzYKNTQyIDgxOCA1NDIgNTQyIDYzNiA2NDIgNjM2IDM2NCA2MzYgNTQyIDU0NSA2NDUgMTAwMCAxMDAwIDEwMDAgNTQ1CjY4MyA2ODMgNjgzIDY4MyA2ODMgNjgzIDk4OSA2OTggNjMyIDYzMiA2MzIgNjMyIDQyMSA0MjEgNDIxIDQyMQo3NjYgNzQ4IDc4NyA3ODcgNzg3IDc4NyA3ODcgODE4IDc4NyA3MzIgNzMyIDczMiA3MzIgNjE1IDYwNSA2MjAKNjAxIDYwMSA2MDEgNjAxIDYwMSA2MDEgOTU1IDUyMSA1OTYgNTk2IDU5NiA1OTYgMjc0IDI3NCAyNzQgMjc0CjYxMiA2MzMgNjA3IDYwNyA2MDcgNjA3IDYwNyA4MTggNjA3IDYzMyA2MzMgNjMzIDYzMyA1OTEgNjIzIDU5MV0KL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcKL0ZvbnREZXNjcmlwdG9yIDEwIDAgUgo+PgplbmRvYmoKMTAgMCBvYmoKPDwKL1R5cGUgL0ZvbnREZXNjcmlwdG9yCi9Gb250TmFtZSAvVmVyZGFuYSxJdGFsaWMKL0ZsYWdzIDk2Ci9Gb250QkJveCBbLTEzMSAtMjA3IDE0NjEgMTAwMF0KL1N0ZW1WIDEzNAovSXRhbGljQW5nbGUgLTEzCi9DYXBIZWlnaHQgMTAwNQovQXNjZW50IDEwMDUKL0Rlc2NlbnQgLTIxMAo+PgplbmRvYmoKMyAwIG9iago8PAovVHlwZSAvUGFnZXMKL0NvdW50IDEKL0tpZHMgWzYgMCBSXQo+PgplbmRvYmoKMiAwIG9iago8PAovVHlwZSAvQ2F0YWxvZwovUGFnZXMgMyAwIFIKL1ZpZXdlclByZWZlcmVuY2VzIDExIDAgUgo+PgplbmRvYmoKMTEgMCBvYmoKPDwKL1R5cGUgL1ZpZXdlclByZWZlcmVuY2VzCj4+CmVuZG9iagp4cmVmCjAgMTIKMDAwMDAwMDAwMCA2NTUzNSBmDQowMDAwMDAwMDE2IDAwMDAwIG4NCjAwMDAwMDMyMTkgMDAwMDAgbg0KMDAwMDAwMzE2MiAwMDAwMCBuDQowMDAwMDAwMjEwIDAwMDAwIG4NCjAwMDAwMDA0NjMgMDAwMDAgbg0KMDAwMDAwMDQ4MiAwMDAwMCBuDQowMDAwMDAwNjM5IDAwMDAwIG4NCjAwMDAwMDE4OTEgMDAwMDAgbg0KMDAwMDAwMTcxOSAwMDAwMCBuDQowMDAwMDAyOTc5IDAwMDAwIG4NCjAwMDAwMDMyOTQgMDAwMDAgbg0KdHJhaWxlcgo8PAovU2l6ZSAxMgovSW5mbyAxIDAgUgovUm9vdCAyIDAgUgovSUQgWzw3OUFDNzQ1Q0VEQkQxRDI4NzBFOTY4RTc2QzY0MjVEQT48NzlBQzc0NUNFREJEMUQyODcwRTk2OEU3NkM2NDI1REE+XQo+PgpzdGFydHhyZWYKMzM0MQolJUVPRgo=",
+                        "bestandsomvang": 3734,
+                        "beschrijving": "derde contract",
+                        "ontvangstdatum": "2022-11-27",
+                        "verzenddatum": "2022-11-27"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ZAAKID-03",
+            "identificatie": "ZAAK-3",
+            "bronorganisatie": "999994207",
+            "omschrijving": "Aanvraag IOAZ voor onderneming die wil stoppen met bedrijf",
+            "toelichting": "gearchiveerde zaakAanvrager wil vanuit uitkeringssituatie eigen onderneming beginnen",
+            "zaaktype": "ZAAKTYPE-BBZ",
+            "registratiedatum": "2022-11-21",
+            "verantwoordelijkeOrganisatie": "999994207",
+            "startdatum": "2022-11-21",
+            "publicatiedatum": "2022-11-21",
+            "vertrouwelijkheidaanduiding": "vertrouwelijk",
+            "betalingsindicatie": "nvt",
+            "archiefnominatie": "blijvend_bewaren",
+            "archiefstatus": "nog_te_archiveren",
+            "archiefactiedatum": "2027-11-21",
+            "startdatumBewaartermijn": "2027-11-21",
+            "status": {
+                "statustoelichting": "In behandeling",
+                "datumStatusGezet": "2022-11-21T16:22:26+00:00"
+            },
+            "rollen": [
+                {
+                    "zaak": "ZAAKID-03",
+                    "roltype": "ROLTYPE-AANVRAGER_IOAZ",
+                    "roltoelichting": "Aanvrager van de zaak",
+                    "omschrijvingGeneriek": "initiator",
+                    "omschrijving": "initiator",
+                    "betrokkeneType": "vestiging",
+                    "betrokkeneIdentificatie": {
+                        "handelsnaam": [
+                            "Boekenwinkel leesplezier"
+                        ],
+                        "vestigingsNummer": "321654871237"
+                    }
+                },
+                {
+                    "zaak": "ZAAKID-03",
+                    "roltype": "ROLTYPE-BEHANDELAAR_IOAZ",
+                    "roltoelichting": "Behandelaar van de melding",
+                    "omschrijvingGeneriek": "Behandelaar",
+                    "omschrijving": "Behandelaar",
+                    "betrokkeneType": "medewerker",
+                    "betrokkeneIdentificatie": {
+                        "voorletters": "J.H.",
+                        "voorvoegselGeslachtsnaam": "van",
+                        "geslachtsnaam": "Bovenkarspel"
+                    }
+                }
+            ],
+            "zaakinformatieobjecten": [
+                {
+                    "titel": "Kopie kenteken 1",
+                    "beschrijving": "eerste kenteken kopie",
+                    "registratiedatum": "2022-11-21T09:44:22.811Z",
+                    "aardRelatieWeergave": "Hoort bij, omgekeerd: kent",
+                    "informatieobject": {
+                        "bronorganisatie": "999994207",
+                        "creatiedatum": "2022-11-27",
+                        "titel": "Kopie kenteken 1",
+                        "auteur": "Indiener",
+                        "taal": "NLD",
+                        "informatieobjecttype": null,
+                        "status": "definitief",
+                        "formaat": "application/pdf",
+                        "vertrouwelijkheidaanduiding": "beperkt_openbaar",
+                        "beginRegistratie": "2022-11-21T12:01:20.216Z",
+                        "bestandsnaam": "KopieKenteken1.pdf",
+                        "inhoud": "JVBERi0xLjIKJcDIzNINCjEgMCBvYmoKPDwKL1RpdGxlIChEb2N1bWVudDIpCi9BdXRob3IgKHN5dHNrZSkKL0NyZWF0b3IgKHBkZkZhY3RvcnkgUHJvIHd3dy5wZGZmYWN0b3J5LmNvbSkKL1Byb2R1Y2VyIChwZGZGYWN0b3J5IFBybyAyLjAyIFwoV2luZG93cyBYUFwpKQovQ3JlYXRpb25EYXRlIChEOjIwMDYwNDEwMTA0ODU4KQo+PgplbmRvYmoKNCAwIG9iago8PAovRmlsdGVyIC9GbAovTGVuZ3RoIDUgMCBSCj4+CnN0cmVhbQ0KSIl9UDsOwjAM3XsKj2VIsEOUpmMRsLDmBCCQ2kqABBLXx80HpRFly/vaztZV6wMBoUQL7lq1CA0Dy2AHNazADWxQQF5VZECQla3JZNHqKSwUSqMnXnDZhh1nqI/ewVgrj++PPjFNYC4JxwQU+hhmoCRj54FYeQvYv18/y7PwuDQ9lZ2WGtBqT7yLfftkUBgMQ9HwDBeVn5QO9dTsuwXvkvmIsgPFd504vuv+q6Fy7z6aN2hsZW5kc3RyZWFtCmVuZG9iago1IDAgb2JqCjE4MAplbmRvYmoKNiAwIG9iago8PAovVHlwZSAvUGFnZQovUGFyZW50IDMgMCBSCi9NZWRpYUJveCBbMCAwIDYxMiA3OTJdCi9SZXNvdXJjZXMKPDwKL1Byb2NTZXQgWy9QREYvVGV4dF0KL0ZvbnQKPDwKL0YxIDcgMCBSCi9GMiA4IDAgUgo+Pgo+PgovQ29udGVudHMgNCAwIFIKPj4KZW5kb2JqCjcgMCBvYmoKPDwKL1R5cGUgL0ZvbnQKL1N1YnR5cGUgL1RydWVUeXBlCi9OYW1lIC9GMQovQmFzZUZvbnQgL0FyaWFsCi9GaXJzdENoYXIgMzIKL0xhc3RDaGFyIDI1NQovV2lkdGhzIFsyNzggMjc4IDM1NSA1NTYgNTU2IDg4OSA2NjcgMTkxIDMzMyAzMzMgMzg5IDU4NCAyNzggMzMzIDI3OCAyNzgKNTU2IDU1NiA1NTYgNTU2IDU1NiA1NTYgNTU2IDU1NiA1NTYgNTU2IDI3OCAyNzggNTg0IDU4NCA1ODQgNTU2CjEwMTUgNjY3IDY2NyA3MjIgNzIyIDY2NyA2MTEgNzc4IDcyMiAyNzggNTAwIDY2NyA1NTYgODMzIDcyMiA3NzgKNjY3IDc3OCA3MjIgNjY3IDYxMSA3MjIgNjY3IDk0NCA2NjcgNjY3IDYxMSAyNzggMjc4IDI3OCA0NjkgNTU2CjMzMyA1NTYgNTU2IDUwMCA1NTYgNTU2IDI3OCA1NTYgNTU2IDIyMiAyMjIgNTAwIDIyMiA4MzMgNTU2IDU1Ngo1NTYgNTU2IDMzMyA1MDAgMjc4IDU1NiA1MDAgNzIyIDUwMCA1MDAgNTAwIDMzNCAyNjAgMzM0IDU4NCA3NTAKNTU2IDc1MCAyMjIgNTU2IDMzMyAxMDAwIDU1NiA1NTYgMzMzIDEwMDAgNjY3IDMzMyAxMDAwIDc1MCA2MTEgNzUwCjc1MCAyMjIgMjIyIDMzMyAzMzMgMzUwIDU1NiAxMDAwIDMzMyAxMDAwIDUwMCAzMzMgOTQ0IDc1MCA1MDAgNjY3CjI3OCAzMzMgNTU2IDU1NiA1NTYgNTU2IDI2MCA1NTYgMzMzIDczNyAzNzAgNTU2IDU4NCAzMzMgNzM3IDU1Mgo0MDAgNTQ5IDMzMyAzMzMgMzMzIDU3NiA1MzcgMjc4IDMzMyAzMzMgMzY1IDU1NiA4MzQgODM0IDgzNCA2MTEKNjY3IDY2NyA2NjcgNjY3IDY2NyA2NjcgMTAwMCA3MjIgNjY3IDY2NyA2NjcgNjY3IDI3OCAyNzggMjc4IDI3OAo3MjIgNzIyIDc3OCA3NzggNzc4IDc3OCA3NzggNTg0IDc3OCA3MjIgNzIyIDcyMiA3MjIgNjY3IDY2NyA2MTEKNTU2IDU1NiA1NTYgNTU2IDU1NiA1NTYgODg5IDUwMCA1NTYgNTU2IDU1NiA1NTYgMjc4IDI3OCAyNzggMjc4CjU1NiA1NTYgNTU2IDU1NiA1NTYgNTU2IDU1NiA1NDkgNjExIDU1NiA1NTYgNTU2IDU1NiA1MDAgNTU2IDUwMF0KL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcKL0ZvbnREZXNjcmlwdG9yIDkgMCBSCj4+CmVuZG9iago5IDAgb2JqCjw8Ci9UeXBlIC9Gb250RGVzY3JpcHRvcgovRm9udE5hbWUgL0FyaWFsCi9GbGFncyAzMgovRm9udEJCb3ggWy02NjUgLTMyNSAyMDAwIDEwMDZdCi9TdGVtViA5NQovSXRhbGljQW5nbGUgMAovQ2FwSGVpZ2h0IDkwNQovQXNjZW50IDkwNQovRGVzY2VudCAtMjEyCj4+CmVuZG9iago4IDAgb2JqCjw8Ci9UeXBlIC9Gb250Ci9TdWJ0eXBlIC9UcnVlVHlwZQovTmFtZSAvRjIKL0Jhc2VGb250IC9BcmlhbCxCb2xkSXRhbGljCi9GaXJzdENoYXIgMzIKL0xhc3RDaGFyIDI1NQovV2lkdGhzIFsyNzggMzMzIDQ3NCA1NTYgNTU2IDg4OSA3MjIgMjM4IDMzMyAzMzMgMzg5IDU4NCAyNzggMzMzIDI3OCAyNzgKNTU2IDU1NiA1NTYgNTU2IDU1NiA1NTYgNTU2IDU1NiA1NTYgNTU2IDMzMyAzMzMgNTg0IDU4NCA1ODQgNjExCjk3NSA3MjIgNzIyIDcyMiA3MjIgNjY3IDYxMSA3NzggNzIyIDI3OCA1NTYgNzIyIDYxMSA4MzMgNzIyIDc3OAo2NjcgNzc4IDcyMiA2NjcgNjExIDcyMiA2NjcgOTQ0IDY2NyA2NjcgNjExIDMzMyAyNzggMzMzIDU4NCA1NTYKMzMzIDU1NiA2MTEgNTU2IDYxMSA1NTYgMzMzIDYxMSA2MTEgMjc4IDI3OCA1NTYgMjc4IDg4OSA2MTEgNjExCjYxMSA2MTEgMzg5IDU1NiAzMzMgNjExIDU1NiA3NzggNTU2IDU1NiA1MDAgMzg5IDI4MCAzODkgNTg0IDc1MAo1NTYgNzUwIDI3OCA1NTYgNTAwIDEwMDAgNTU2IDU1NiAzMzMgMTAwMCA2NjcgMzMzIDEwMDAgNzUwIDYxMSA3NTAKNzUwIDI3OCAyNzggNTAwIDUwMCAzNTAgNTU2IDEwMDAgMzMzIDEwMDAgNTU2IDMzMyA5NDQgNzUwIDUwMCA2NjcKMjc4IDMzMyA1NTYgNTU2IDU1NiA1NTYgMjgwIDU1NiAzMzMgNzM3IDM3MCA1NTYgNTg0IDMzMyA3MzcgNTUyCjQwMCA1NDkgMzMzIDMzMyAzMzMgNTc2IDU1NiAyNzggMzMzIDMzMyAzNjUgNTU2IDgzNCA4MzQgODM0IDYxMQo3MjIgNzIyIDcyMiA3MjIgNzIyIDcyMiAxMDAwIDcyMiA2NjcgNjY3IDY2NyA2NjcgMjc4IDI3OCAyNzggMjc4CjcyMiA3MjIgNzc4IDc3OCA3NzggNzc4IDc3OCA1ODQgNzc4IDcyMiA3MjIgNzIyIDcyMiA2NjcgNjY3IDYxMQo1NTYgNTU2IDU1NiA1NTYgNTU2IDU1NiA4ODkgNTU2IDU1NiA1NTYgNTU2IDU1NiAyNzggMjc4IDI3OCAyNzgKNjExIDYxMSA2MTEgNjExIDYxMSA2MTEgNjExIDU0OSA2MTEgNjExIDYxMSA2MTEgNjExIDU1NiA2MTEgNTU2XQovRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZwovRm9udERlc2NyaXB0b3IgMTAgMCBSCj4+CmVuZG9iagoxMCAwIG9iago8PAovVHlwZSAvRm9udERlc2NyaXB0b3IKL0ZvbnROYW1lIC9BcmlhbCxCb2xkSXRhbGljCi9GbGFncyA5NgovRm9udEJCb3ggWy01NjAgLTM3NiAxMTU3IDEwMDBdCi9TdGVtViAxMTkKL0l0YWxpY0FuZ2xlIC0xMgovQ2FwSGVpZ2h0IDkwNQovQXNjZW50IDkwNQovRGVzY2VudCAtMjEyCj4+CmVuZG9iagozIDAgb2JqCjw8Ci9UeXBlIC9QYWdlcwovQ291bnQgMQovS2lkcyBbNiAwIFJdCj4+CmVuZG9iagoyIDAgb2JqCjw8Ci9UeXBlIC9DYXRhbG9nCi9QYWdlcyAzIDAgUgovVmlld2VyUHJlZmVyZW5jZXMgMTEgMCBSCj4+CmVuZG9iagoxMSAwIG9iago8PAovVHlwZSAvVmlld2VyUHJlZmVyZW5jZXMKPj4KZW5kb2JqCnhyZWYKMCAxMgowMDAwMDAwMDAwIDY1NTM1IGYNCjAwMDAwMDAwMTYgMDAwMDAgbg0KMDAwMDAwMzE3NiAwMDAwMCBuDQowMDAwMDAzMTE5IDAwMDAwIG4NCjAwMDAwMDAxOTggMDAwMDAgbg0KMDAwMDAwMDQ0MyAwMDAwMCBuDQowMDAwMDAwNDYyIDAwMDAwIG4NCjAwMDAwMDA2MTkgMDAwMDAgbg0KMDAwMDAwMTg1NiAwMDAwMCBuDQowMDAwMDAxNjg4IDAwMDAwIG4NCjAwMDAwMDI5MzYgMDAwMDAgbg0KMDAwMDAwMzI1MSAwMDAwMCBuDQp0cmFpbGVyCjw8Ci9TaXplIDEyCi9JbmZvIDEgMCBSCi9Sb290IDIgMCBSCi9JRCBbPDVEMjAxOUE5N0VGRTBCNkQ5RTkyMUJGOTIwMjlFRTlGPjw1RDIwMTlBOTdFRkUwQjZEOUU5MjFCRjkyMDI5RUU5Rj5dCj4+CnN0YXJ0eHJlZgozMjk4CiUlRU9GCg==",
+                        "bestandsomvang": 3691,
+                        "beschrijving": "eerste kenteken kopie",
+                        "ontvangstdatum": "2022-11-21",
+                        "verzenddatum": "2022-11-21"
+                    }
+                },
+                {
+                    "titel": "Kopie kenteken 2",
+                    "beschrijving": "tweede kenteken kopie",
+                    "registratiedatum": "2022-11-21T09:44:22.811Z",
+                    "aardRelatieWeergave": "Hoort bij, omgekeerd: kent",
+                    "informatieobject": {
+                        "bronorganisatie": "999994207",
+                        "creatiedatum": "2022-11-27",
+                        "titel": "Kopie kenteken 2",
+                        "auteur": "Indiener",
+                        "taal": "NLD",
+                        "informatieobjecttype": null,
+                        "status": "definitief",
+                        "formaat": "application/pdf",
+                        "vertrouwelijkheidaanduiding": "beperkt_openbaar",
+                        "beginRegistratie": "2022-11-21T12:01:20.216Z",
+                        "bestandsnaam": "KopieKenteken2.pdf",
+                        "inhoud": "JVBERi0xLjIKJcDIzNINCjEgMCBvYmoKPDwKL1RpdGxlIChEb2N1bWVudDIpCi9BdXRob3IgKHN5dHNrZSkKL0NyZWF0b3IgKHBkZkZhY3RvcnkgUHJvIHd3dy5wZGZmYWN0b3J5LmNvbSkKL1Byb2R1Y2VyIChwZGZGYWN0b3J5IFBybyAyLjAyIFwoV2luZG93cyBYUFwpKQovQ3JlYXRpb25EYXRlIChEOjIwMDYwNDEwMTA1MDMxKQo+PgplbmRvYmoKNCAwIG9iago8PAovRmlsdGVyIC9GbAovTGVuZ3RoIDUgMCBSCj4+CnN0cmVhbQ0KSIl9UL0OwiAQ3vsUN9YBPE5C6UrUxZUn0GjSNtEmmvj6XqEYSqwb3+/d4Xy1PSpQKNGCv1UtQsPAMthDDRvwPRsIVFBJGRDKytZksmj1FBaE0uiJF1y2Y8cF6lNwMNYU8GPsEtNE5prwnIBCH+IMlMrYZWCuvEcc3q+f5Vl4WJueys5rDWh1IN7Fvl0yEEZDXzQ840XlJ6VDA7X4bsG7ZD6i7EDxXWce79x/NVYe/AebJGhyZW5kc3RyZWFtCmVuZG9iago1IDAgb2JqCjE4MAplbmRvYmoKNiAwIG9iago8PAovVHlwZSAvUGFnZQovUGFyZW50IDMgMCBSCi9NZWRpYUJveCBbMCAwIDYxMiA3OTJdCi9SZXNvdXJjZXMKPDwKL1Byb2NTZXQgWy9QREYvVGV4dF0KL0ZvbnQKPDwKL0YxIDcgMCBSCi9GMiA4IDAgUgo+Pgo+PgovQ29udGVudHMgNCAwIFIKPj4KZW5kb2JqCjcgMCBvYmoKPDwKL1R5cGUgL0ZvbnQKL1N1YnR5cGUgL1RydWVUeXBlCi9OYW1lIC9GMQovQmFzZUZvbnQgL0FyaWFsCi9GaXJzdENoYXIgMzIKL0xhc3RDaGFyIDI1NQovV2lkdGhzIFsyNzggMjc4IDM1NSA1NTYgNTU2IDg4OSA2NjcgMTkxIDMzMyAzMzMgMzg5IDU4NCAyNzggMzMzIDI3OCAyNzgKNTU2IDU1NiA1NTYgNTU2IDU1NiA1NTYgNTU2IDU1NiA1NTYgNTU2IDI3OCAyNzggNTg0IDU4NCA1ODQgNTU2CjEwMTUgNjY3IDY2NyA3MjIgNzIyIDY2NyA2MTEgNzc4IDcyMiAyNzggNTAwIDY2NyA1NTYgODMzIDcyMiA3NzgKNjY3IDc3OCA3MjIgNjY3IDYxMSA3MjIgNjY3IDk0NCA2NjcgNjY3IDYxMSAyNzggMjc4IDI3OCA0NjkgNTU2CjMzMyA1NTYgNTU2IDUwMCA1NTYgNTU2IDI3OCA1NTYgNTU2IDIyMiAyMjIgNTAwIDIyMiA4MzMgNTU2IDU1Ngo1NTYgNTU2IDMzMyA1MDAgMjc4IDU1NiA1MDAgNzIyIDUwMCA1MDAgNTAwIDMzNCAyNjAgMzM0IDU4NCA3NTAKNTU2IDc1MCAyMjIgNTU2IDMzMyAxMDAwIDU1NiA1NTYgMzMzIDEwMDAgNjY3IDMzMyAxMDAwIDc1MCA2MTEgNzUwCjc1MCAyMjIgMjIyIDMzMyAzMzMgMzUwIDU1NiAxMDAwIDMzMyAxMDAwIDUwMCAzMzMgOTQ0IDc1MCA1MDAgNjY3CjI3OCAzMzMgNTU2IDU1NiA1NTYgNTU2IDI2MCA1NTYgMzMzIDczNyAzNzAgNTU2IDU4NCAzMzMgNzM3IDU1Mgo0MDAgNTQ5IDMzMyAzMzMgMzMzIDU3NiA1MzcgMjc4IDMzMyAzMzMgMzY1IDU1NiA4MzQgODM0IDgzNCA2MTEKNjY3IDY2NyA2NjcgNjY3IDY2NyA2NjcgMTAwMCA3MjIgNjY3IDY2NyA2NjcgNjY3IDI3OCAyNzggMjc4IDI3OAo3MjIgNzIyIDc3OCA3NzggNzc4IDc3OCA3NzggNTg0IDc3OCA3MjIgNzIyIDcyMiA3MjIgNjY3IDY2NyA2MTEKNTU2IDU1NiA1NTYgNTU2IDU1NiA1NTYgODg5IDUwMCA1NTYgNTU2IDU1NiA1NTYgMjc4IDI3OCAyNzggMjc4CjU1NiA1NTYgNTU2IDU1NiA1NTYgNTU2IDU1NiA1NDkgNjExIDU1NiA1NTYgNTU2IDU1NiA1MDAgNTU2IDUwMF0KL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcKL0ZvbnREZXNjcmlwdG9yIDkgMCBSCj4+CmVuZG9iago5IDAgb2JqCjw8Ci9UeXBlIC9Gb250RGVzY3JpcHRvcgovRm9udE5hbWUgL0FyaWFsCi9GbGFncyAzMgovRm9udEJCb3ggWy02NjUgLTMyNSAyMDAwIDEwMDZdCi9TdGVtViA5NQovSXRhbGljQW5nbGUgMAovQ2FwSGVpZ2h0IDkwNQovQXNjZW50IDkwNQovRGVzY2VudCAtMjEyCj4+CmVuZG9iago4IDAgb2JqCjw8Ci9UeXBlIC9Gb250Ci9TdWJ0eXBlIC9UcnVlVHlwZQovTmFtZSAvRjIKL0Jhc2VGb250IC9BcmlhbCxCb2xkSXRhbGljCi9GaXJzdENoYXIgMzIKL0xhc3RDaGFyIDI1NQovV2lkdGhzIFsyNzggMzMzIDQ3NCA1NTYgNTU2IDg4OSA3MjIgMjM4IDMzMyAzMzMgMzg5IDU4NCAyNzggMzMzIDI3OCAyNzgKNTU2IDU1NiA1NTYgNTU2IDU1NiA1NTYgNTU2IDU1NiA1NTYgNTU2IDMzMyAzMzMgNTg0IDU4NCA1ODQgNjExCjk3NSA3MjIgNzIyIDcyMiA3MjIgNjY3IDYxMSA3NzggNzIyIDI3OCA1NTYgNzIyIDYxMSA4MzMgNzIyIDc3OAo2NjcgNzc4IDcyMiA2NjcgNjExIDcyMiA2NjcgOTQ0IDY2NyA2NjcgNjExIDMzMyAyNzggMzMzIDU4NCA1NTYKMzMzIDU1NiA2MTEgNTU2IDYxMSA1NTYgMzMzIDYxMSA2MTEgMjc4IDI3OCA1NTYgMjc4IDg4OSA2MTEgNjExCjYxMSA2MTEgMzg5IDU1NiAzMzMgNjExIDU1NiA3NzggNTU2IDU1NiA1MDAgMzg5IDI4MCAzODkgNTg0IDc1MAo1NTYgNzUwIDI3OCA1NTYgNTAwIDEwMDAgNTU2IDU1NiAzMzMgMTAwMCA2NjcgMzMzIDEwMDAgNzUwIDYxMSA3NTAKNzUwIDI3OCAyNzggNTAwIDUwMCAzNTAgNTU2IDEwMDAgMzMzIDEwMDAgNTU2IDMzMyA5NDQgNzUwIDUwMCA2NjcKMjc4IDMzMyA1NTYgNTU2IDU1NiA1NTYgMjgwIDU1NiAzMzMgNzM3IDM3MCA1NTYgNTg0IDMzMyA3MzcgNTUyCjQwMCA1NDkgMzMzIDMzMyAzMzMgNTc2IDU1NiAyNzggMzMzIDMzMyAzNjUgNTU2IDgzNCA4MzQgODM0IDYxMQo3MjIgNzIyIDcyMiA3MjIgNzIyIDcyMiAxMDAwIDcyMiA2NjcgNjY3IDY2NyA2NjcgMjc4IDI3OCAyNzggMjc4CjcyMiA3MjIgNzc4IDc3OCA3NzggNzc4IDc3OCA1ODQgNzc4IDcyMiA3MjIgNzIyIDcyMiA2NjcgNjY3IDYxMQo1NTYgNTU2IDU1NiA1NTYgNTU2IDU1NiA4ODkgNTU2IDU1NiA1NTYgNTU2IDU1NiAyNzggMjc4IDI3OCAyNzgKNjExIDYxMSA2MTEgNjExIDYxMSA2MTEgNjExIDU0OSA2MTEgNjExIDYxMSA2MTEgNjExIDU1NiA2MTEgNTU2XQovRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZwovRm9udERlc2NyaXB0b3IgMTAgMCBSCj4+CmVuZG9iagoxMCAwIG9iago8PAovVHlwZSAvRm9udERlc2NyaXB0b3IKL0ZvbnROYW1lIC9BcmlhbCxCb2xkSXRhbGljCi9GbGFncyA5NgovRm9udEJCb3ggWy01NjAgLTM3NiAxMTU3IDEwMDBdCi9TdGVtViAxMTkKL0l0YWxpY0FuZ2xlIC0xMgovQ2FwSGVpZ2h0IDkwNQovQXNjZW50IDkwNQovRGVzY2VudCAtMjEyCj4+CmVuZG9iagozIDAgb2JqCjw8Ci9UeXBlIC9QYWdlcwovQ291bnQgMQovS2lkcyBbNiAwIFJdCj4+CmVuZG9iagoyIDAgb2JqCjw8Ci9UeXBlIC9DYXRhbG9nCi9QYWdlcyAzIDAgUgovVmlld2VyUHJlZmVyZW5jZXMgMTEgMCBSCj4+CmVuZG9iagoxMSAwIG9iago8PAovVHlwZSAvVmlld2VyUHJlZmVyZW5jZXMKPj4KZW5kb2JqCnhyZWYKMCAxMgowMDAwMDAwMDAwIDY1NTM1IGYNCjAwMDAwMDAwMTYgMDAwMDAgbg0KMDAwMDAwMzE3NiAwMDAwMCBuDQowMDAwMDAzMTE5IDAwMDAwIG4NCjAwMDAwMDAxOTggMDAwMDAgbg0KMDAwMDAwMDQ0MyAwMDAwMCBuDQowMDAwMDAwNDYyIDAwMDAwIG4NCjAwMDAwMDA2MTkgMDAwMDAgbg0KMDAwMDAwMTg1NiAwMDAwMCBuDQowMDAwMDAxNjg4IDAwMDAwIG4NCjAwMDAwMDI5MzYgMDAwMDAgbg0KMDAwMDAwMzI1MSAwMDAwMCBuDQp0cmFpbGVyCjw8Ci9TaXplIDEyCi9JbmZvIDEgMCBSCi9Sb290IDIgMCBSCi9JRCBbPDI5MEQwQ0FDQjkwOEY3MEM2RUYyRUY5Q0RGMjQyMzU1PjwyOTBEMENBQ0I5MDhGNzBDNkVGMkVGOUNERjI0MjM1NT5dCj4+CnN0YXJ0eHJlZgozMjk4CiUlRU9GCg==",
+                        "bestandsomvang": 3691,
+                        "beschrijving": "tweede kenteken kopie",
+                        "ontvangstdatum": "2022-11-21",
+                        "verzenddatum": "2022-11-21"
+                    }
+                },
+                {
+                    "titel": "Kopie kenteken 3",
+                    "beschrijving": "derde kenteken kopie",
+                    "registratiedatum": "2022-11-21T09:44:22.811Z",
+                    "aardRelatieWeergave": "Hoort bij, omgekeerd: kent",
+                    "informatieobject": {
+                        "bronorganisatie": "999994207",
+                        "creatiedatum": "2022-11-27",
+                        "titel": "Kopie kenteken 3",
+                        "auteur": "Indiener",
+                        "taal": "NLD",
+                        "informatieobjecttype": null,
+                        "status": "definitief",
+                        "formaat": "application/pdf",
+                        "vertrouwelijkheidaanduiding": "beperkt_openbaar",
+                        "beginRegistratie": "2022-11-21T12:01:20.216Z",
+                        "bestandsnaam": "KopieKenteken3.pdf",
+                        "inhoud": "JVBERi0xLjIKJcDIzNINCjEgMCBvYmoKPDwKL1RpdGxlIChEb2N1bWVudDIpCi9BdXRob3IgKHN5dHNrZSkKL0NyZWF0b3IgKHBkZkZhY3RvcnkgUHJvIHd3dy5wZGZmYWN0b3J5LmNvbSkKL1Byb2R1Y2VyIChwZGZGYWN0b3J5IFBybyAyLjAyIFwoV2luZG93cyBYUFwpKQovQ3JlYXRpb25EYXRlIChEOjIwMDYwNDEwMTA1MDQ4KQo+PgplbmRvYmoKNCAwIG9iago8PAovRmlsdGVyIC9GbAovTGVuZ3RoIDUgMCBSCj4+CnN0cmVhbQ0KSIl9UDsOwjAM3XsKj2VIcD5K05UCC2tOAAKprUSRQOL6uPmgNKJseV/b2blqexQgkKMFd6tahIaAJbCHGjbgBjJIEF6VwgATlrcmk1mr5zCTyI2eeUZlihwXqE/eQVhLj6dHn5gmMNeEYwIKfQwzkAtjl4FYeQ/Yv18/y7PwuDY9lZ3XGtBqT7yLfftkkBgMQ9HwDBeVn5QO9dTiuxntkvmUyg5k33Xi+K77r4bKg/sAnBFoeGVuZHN0cmVhbQplbmRvYmoKNSAwIG9iagoxODEKZW5kb2JqCjYgMCBvYmoKPDwKL1R5cGUgL1BhZ2UKL1BhcmVudCAzIDAgUgovTWVkaWFCb3ggWzAgMCA2MTIgNzkyXQovUmVzb3VyY2VzCjw8Ci9Qcm9jU2V0IFsvUERGL1RleHRdCi9Gb250Cjw8Ci9GMSA3IDAgUgovRjIgOCAwIFIKPj4KPj4KL0NvbnRlbnRzIDQgMCBSCj4+CmVuZG9iago3IDAgb2JqCjw8Ci9UeXBlIC9Gb250Ci9TdWJ0eXBlIC9UcnVlVHlwZQovTmFtZSAvRjEKL0Jhc2VGb250IC9BcmlhbAovRmlyc3RDaGFyIDMyCi9MYXN0Q2hhciAyNTUKL1dpZHRocyBbMjc4IDI3OCAzNTUgNTU2IDU1NiA4ODkgNjY3IDE5MSAzMzMgMzMzIDM4OSA1ODQgMjc4IDMzMyAyNzggMjc4CjU1NiA1NTYgNTU2IDU1NiA1NTYgNTU2IDU1NiA1NTYgNTU2IDU1NiAyNzggMjc4IDU4NCA1ODQgNTg0IDU1NgoxMDE1IDY2NyA2NjcgNzIyIDcyMiA2NjcgNjExIDc3OCA3MjIgMjc4IDUwMCA2NjcgNTU2IDgzMyA3MjIgNzc4CjY2NyA3NzggNzIyIDY2NyA2MTEgNzIyIDY2NyA5NDQgNjY3IDY2NyA2MTEgMjc4IDI3OCAyNzggNDY5IDU1NgozMzMgNTU2IDU1NiA1MDAgNTU2IDU1NiAyNzggNTU2IDU1NiAyMjIgMjIyIDUwMCAyMjIgODMzIDU1NiA1NTYKNTU2IDU1NiAzMzMgNTAwIDI3OCA1NTYgNTAwIDcyMiA1MDAgNTAwIDUwMCAzMzQgMjYwIDMzNCA1ODQgNzUwCjU1NiA3NTAgMjIyIDU1NiAzMzMgMTAwMCA1NTYgNTU2IDMzMyAxMDAwIDY2NyAzMzMgMTAwMCA3NTAgNjExIDc1MAo3NTAgMjIyIDIyMiAzMzMgMzMzIDM1MCA1NTYgMTAwMCAzMzMgMTAwMCA1MDAgMzMzIDk0NCA3NTAgNTAwIDY2NwoyNzggMzMzIDU1NiA1NTYgNTU2IDU1NiAyNjAgNTU2IDMzMyA3MzcgMzcwIDU1NiA1ODQgMzMzIDczNyA1NTIKNDAwIDU0OSAzMzMgMzMzIDMzMyA1NzYgNTM3IDI3OCAzMzMgMzMzIDM2NSA1NTYgODM0IDgzNCA4MzQgNjExCjY2NyA2NjcgNjY3IDY2NyA2NjcgNjY3IDEwMDAgNzIyIDY2NyA2NjcgNjY3IDY2NyAyNzggMjc4IDI3OCAyNzgKNzIyIDcyMiA3NzggNzc4IDc3OCA3NzggNzc4IDU4NCA3NzggNzIyIDcyMiA3MjIgNzIyIDY2NyA2NjcgNjExCjU1NiA1NTYgNTU2IDU1NiA1NTYgNTU2IDg4OSA1MDAgNTU2IDU1NiA1NTYgNTU2IDI3OCAyNzggMjc4IDI3OAo1NTYgNTU2IDU1NiA1NTYgNTU2IDU1NiA1NTYgNTQ5IDYxMSA1NTYgNTU2IDU1NiA1NTYgNTAwIDU1NiA1MDBdCi9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nCi9Gb250RGVzY3JpcHRvciA5IDAgUgo+PgplbmRvYmoKOSAwIG9iago8PAovVHlwZSAvRm9udERlc2NyaXB0b3IKL0ZvbnROYW1lIC9BcmlhbAovRmxhZ3MgMzIKL0ZvbnRCQm94IFstNjY1IC0zMjUgMjAwMCAxMDA2XQovU3RlbVYgOTUKL0l0YWxpY0FuZ2xlIDAKL0NhcEhlaWdodCA5MDUKL0FzY2VudCA5MDUKL0Rlc2NlbnQgLTIxMgo+PgplbmRvYmoKOCAwIG9iago8PAovVHlwZSAvRm9udAovU3VidHlwZSAvVHJ1ZVR5cGUKL05hbWUgL0YyCi9CYXNlRm9udCAvQXJpYWwsQm9sZEl0YWxpYwovRmlyc3RDaGFyIDMyCi9MYXN0Q2hhciAyNTUKL1dpZHRocyBbMjc4IDMzMyA0NzQgNTU2IDU1NiA4ODkgNzIyIDIzOCAzMzMgMzMzIDM4OSA1ODQgMjc4IDMzMyAyNzggMjc4CjU1NiA1NTYgNTU2IDU1NiA1NTYgNTU2IDU1NiA1NTYgNTU2IDU1NiAzMzMgMzMzIDU4NCA1ODQgNTg0IDYxMQo5NzUgNzIyIDcyMiA3MjIgNzIyIDY2NyA2MTEgNzc4IDcyMiAyNzggNTU2IDcyMiA2MTEgODMzIDcyMiA3NzgKNjY3IDc3OCA3MjIgNjY3IDYxMSA3MjIgNjY3IDk0NCA2NjcgNjY3IDYxMSAzMzMgMjc4IDMzMyA1ODQgNTU2CjMzMyA1NTYgNjExIDU1NiA2MTEgNTU2IDMzMyA2MTEgNjExIDI3OCAyNzggNTU2IDI3OCA4ODkgNjExIDYxMQo2MTEgNjExIDM4OSA1NTYgMzMzIDYxMSA1NTYgNzc4IDU1NiA1NTYgNTAwIDM4OSAyODAgMzg5IDU4NCA3NTAKNTU2IDc1MCAyNzggNTU2IDUwMCAxMDAwIDU1NiA1NTYgMzMzIDEwMDAgNjY3IDMzMyAxMDAwIDc1MCA2MTEgNzUwCjc1MCAyNzggMjc4IDUwMCA1MDAgMzUwIDU1NiAxMDAwIDMzMyAxMDAwIDU1NiAzMzMgOTQ0IDc1MCA1MDAgNjY3CjI3OCAzMzMgNTU2IDU1NiA1NTYgNTU2IDI4MCA1NTYgMzMzIDczNyAzNzAgNTU2IDU4NCAzMzMgNzM3IDU1Mgo0MDAgNTQ5IDMzMyAzMzMgMzMzIDU3NiA1NTYgMjc4IDMzMyAzMzMgMzY1IDU1NiA4MzQgODM0IDgzNCA2MTEKNzIyIDcyMiA3MjIgNzIyIDcyMiA3MjIgMTAwMCA3MjIgNjY3IDY2NyA2NjcgNjY3IDI3OCAyNzggMjc4IDI3OAo3MjIgNzIyIDc3OCA3NzggNzc4IDc3OCA3NzggNTg0IDc3OCA3MjIgNzIyIDcyMiA3MjIgNjY3IDY2NyA2MTEKNTU2IDU1NiA1NTYgNTU2IDU1NiA1NTYgODg5IDU1NiA1NTYgNTU2IDU1NiA1NTYgMjc4IDI3OCAyNzggMjc4CjYxMSA2MTEgNjExIDYxMSA2MTEgNjExIDYxMSA1NDkgNjExIDYxMSA2MTEgNjExIDYxMSA1NTYgNjExIDU1Nl0KL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcKL0ZvbnREZXNjcmlwdG9yIDEwIDAgUgo+PgplbmRvYmoKMTAgMCBvYmoKPDwKL1R5cGUgL0ZvbnREZXNjcmlwdG9yCi9Gb250TmFtZSAvQXJpYWwsQm9sZEl0YWxpYwovRmxhZ3MgOTYKL0ZvbnRCQm94IFstNTYwIC0zNzYgMTE1NyAxMDAwXQovU3RlbVYgMTE5Ci9JdGFsaWNBbmdsZSAtMTIKL0NhcEhlaWdodCA5MDUKL0FzY2VudCA5MDUKL0Rlc2NlbnQgLTIxMgo+PgplbmRvYmoKMyAwIG9iago8PAovVHlwZSAvUGFnZXMKL0NvdW50IDEKL0tpZHMgWzYgMCBSXQo+PgplbmRvYmoKMiAwIG9iago8PAovVHlwZSAvQ2F0YWxvZwovUGFnZXMgMyAwIFIKL1ZpZXdlclByZWZlcmVuY2VzIDExIDAgUgo+PgplbmRvYmoKMTEgMCBvYmoKPDwKL1R5cGUgL1ZpZXdlclByZWZlcmVuY2VzCj4+CmVuZG9iagp4cmVmCjAgMTIKMDAwMDAwMDAwMCA2NTUzNSBmDQowMDAwMDAwMDE2IDAwMDAwIG4NCjAwMDAwMDMxNzcgMDAwMDAgbg0KMDAwMDAwMzEyMCAwMDAwMCBuDQowMDAwMDAwMTk4IDAwMDAwIG4NCjAwMDAwMDA0NDQgMDAwMDAgbg0KMDAwMDAwMDQ2MyAwMDAwMCBuDQowMDAwMDAwNjIwIDAwMDAwIG4NCjAwMDAwMDE4NTcgMDAwMDAgbg0KMDAwMDAwMTY4OSAwMDAwMCBuDQowMDAwMDAyOTM3IDAwMDAwIG4NCjAwMDAwMDMyNTIgMDAwMDAgbg0KdHJhaWxlcgo8PAovU2l6ZSAxMgovSW5mbyAxIDAgUgovUm9vdCAyIDAgUgovSUQgWzwyRUM4OEM4ODk0NDc2NDZCMkNGNkM1RkZGMjU4Q0RCQj48MkVDODhDODg5NDQ3NjQ2QjJDRjZDNUZGRjI1OENEQkI+XQo+PgpzdGFydHhyZWYKMzI5OQolJUVPRgo=",
+                        "bestandsomvang": 3691,
+                        "beschrijving": "derde kenteken kopie",
+                        "ontvangstdatum": "2022-11-21",
+                        "verzenddatum": "2022-11-21"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ZAAKID-04",
+            "identificatie": "ZAAK-4",
+            "bronorganisatie": "999994207",
+            "omschrijving": "Aanvraag omgevingsvergunning voor bouwen Bibob-plichtig",
+            "toelichting": "Dit is een complexe bouwaanvraag met Bibob-toets. Daarom gaat de behandeltermijn verlengd worden met 6 wkn. Deadline wordt dan 11 oktober. De reden voor de vertraging is deels: het verzoek om aanvullende info vanuit de Bibob. En daarnaast het feit dat er met veel buitenlandse financiers wordt gewerkt, dit vraagt meer onderzoek",
+            "zaaktype": "ZAAKTYPE-OMGBOUWEN",
+            "registratiedatum": "2022-11-14",
+            "verantwoordelijkeOrganisatie": "999994207",
+            "startdatum": "2022-11-14",
+            "publicatiedatum": "2022-11-14",
+            "vertrouwelijkheidaanduiding": "openbaar",
+            "betalingsindicatie": "nvt",
+            "archiefnominatie": "vernietigen",
+            "archiefstatus": "nog_te_archiveren",
+            "archiefactiedatum": "2032-11-14",
+            "startdatumBewaartermijn": "2032-11-14",
+            "status": {
+                "datumStatusGezet": "2022-11-14T16:22:26.620Z",
+                "statustoelichting": "In behandeling"
+            },
+            "rollen": [
+                {
+                    "zaak": "ZAAKID-04",
+                    "roltype": "ROLTYPE-AANVRAGER_BOUW",
+                    "roltoelichting": "Aanvrager van de zaak",
+                    "omschrijvingGeneriek": "initiator",
+                    "omschrijving": "initiator",
+                    "betrokkeneType": "natuurlijk_persoon",
+                    "betrokkeneIdentificatie": {
+                        "geslachtsnaam": "Żywiałowska",
+                        "inpBsn": "999990172",
+                        "voornamen": "Róza Mstyslava"
+                    }
+                },
+                {
+                    "zaak": "ZAAKID-04",
+                    "roltype": "ROLTYPE-BEHANDELAAR_BOUW",
+                    "roltoelichting": "Behandelaar van de zaak",
+                    "omschrijvingGeneriek": "Behandelaar",
+                    "omschrijving": "Behandelaar",
+                    "betrokkeneType": "medewerker",
+                    "betrokkeneIdentificatie": {
+                        "voorletters": "J.H.",
+                        "voorvoegselGeslachtsnaam": "van",
+                        "geslachtsnaam": "Bovenkarspel"
+                    }
+                }
+            ]
+        }
+    ]
+}
