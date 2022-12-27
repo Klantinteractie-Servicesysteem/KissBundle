@@ -3,14 +3,14 @@
         {
             "domein": "VRG",
             "rsin": "999994207",
-            "id": "ZAAKCATOLGUSID",
+            "id": "6b6f17a8-a813-4f9b-b191-b271e78db5f6",
             "contactpersoonBeheerNaam": "Sytske van Hasselt",
             "contactpersoonBeheerEmailadres": "sytsk@icatt.nl"
         }
     ],
     "https://vng.opencatalogi.nl/schemas/ztc.zaakType.schema.json": [
         {
-            "id": "ZAAKTYPE-MOR",
+            "id": "5b880f19-3bfa-4a74-ae98-fc486642e731",
             "omschrijving": "Melding openbare ruimte",
             "omschrijvingGeneriek": "Melding openbare ruimte",
             "vertrouwelijkheidaanduiding": "openbaar",
@@ -32,17 +32,17 @@
                 "naam": "string",
                 "link": "http://example.com"
             },
-            "catalogus": "ZAAKCATOLGUSID",
+            "catalogus": "6b6f17a8-a813-4f9b-b191-b271e78db5f6",
             "roltypen": [
                 {
-                    "id": "ROLTYPE-AANVRAGER_MOR",
-                    "zaaktype": "ZAAKTYPE-MOR",
+                    "id": "b76d0354-5a77-41ba-b84f-b1eeda3b9f78",
+                    "zaaktype": "5b880f19-3bfa-4a74-ae98-fc486642e731",
                     "omschrijving": "indiener",
                     "omschrijvingGeneriek": "initiator"
                 },
                 {
-                    "id": "ROLTYPE-BEHANDELAAR_MOR",
-                    "zaaktype": "ZAAKTYPE-MOR",
+                    "id": "80c74793-a752-4e00-a996-925fb99eed21",
+                    "zaaktype": "5b880f19-3bfa-4a74-ae98-fc486642e731",
                     "omschrijving": "behandelaar",
                     "omschrijvingGeneriek": "behandelaar"
                 }
@@ -62,7 +62,7 @@
             "concept": true
         },
         {
-            "id": "ZAAKTYPE-BBZ",
+            "id": "126ad23c-2d06-4b51-8fe2-0d259ee313bc",
             "omschrijving": "Besluit bijstandverlening voor zelfstandigen",
             "omschrijvingGeneriek": "Bbz aanvragen",
             "vertrouwelijkheidaanduiding": "openbaar",
@@ -84,17 +84,17 @@
                 "naam": "string",
                 "link": "http://example.com"
             },
-            "catalogus": "http://verwijzing.naar/ZAAKCATOLGUSID",
+            "catalogus": "6b6f17a8-a813-4f9b-b191-b271e78db5f6",
             "roltypen": [
                 {
-                    "id": "ROLTYPE-AANVRAGER_BBZ",
-                    "zaaktype": "ZAAKTYPE-BBZ",
+                    "id": "8a857604-15e6-4698-ab9c-96e1b3ab5de6",
+                    "zaaktype": "126ad23c-2d06-4b51-8fe2-0d259ee313bc",
                     "omschrijving": "indiener",
                     "omschrijvingGeneriek": "initiator"
                 },
                 {
-                    "id": "ROLTYPE-BEHANDELAAR_BBZ",
-                    "zaaktype": "ZAAKTYPE-BBZ",
+                    "id": "06cf1c5d-1aa3-47ec-af44-2477d5642d26",
+                    "zaaktype": "126ad23c-2d06-4b51-8fe2-0d259ee313bc",
                     "omschrijving": "behandelaar",
                     "omschrijvingGeneriek": "behandelaar"
                 }
@@ -114,7 +114,7 @@
             "concept": true
         },
         {
-            "id": "ZAAKTYPE-IOAZ",
+            "id": "8dac4f23-5327-497f-bbfc-091ca44e5f9b",
             "omschrijving": "Aanvraag IOAZ",
             "omschrijvingGeneriek": " IOAZ-uitkering oudere gewezen zelfstandigen",
             "vertrouwelijkheidaanduiding": "openbaar",
@@ -136,17 +136,17 @@
                 "naam": "string",
                 "link": "http://example.com"
             },
-            "catalogus": "http://verwijzing.naar/ZAAKCATOLGUSID",
+            "catalogus": "6b6f17a8-a813-4f9b-b191-b271e78db5f6",
             "roltypen": [
                 {
-                    "id": "ROLTYPE-AANVRAGER_IOAZ",
-                    "zaaktype": "ZAAKTYPE-IOAZ",
+                    "id": "a1531c29-e7ac-4b64-bc18-3c0dc675ab61",
+                    "zaaktype": "8dac4f23-5327-497f-bbfc-091ca44e5f9b",
                     "omschrijving": "indiener",
                     "omschrijvingGeneriek": "initiator"
                 },
                 {
-                    "id": "ROLTYPE-BEHANDELAAR_IOAZ",
-                    "zaaktype": "ZAAKTYPE-IOAZ",
+                    "id": "ffe65441-4c4f-407b-ada5-f7d8c2d6cc88",
+                    "zaaktype": "8dac4f23-5327-497f-bbfc-091ca44e5f9b",
                     "omschrijving": "behandelaar",
                     "omschrijvingGeneriek": "behandelaar"
                 }
@@ -167,7 +167,7 @@
             "concept": true
         },
         {
-            "id": "ZAAKTYPE-OMGBOUWEN",
+            "id": "eb5f542f-b356-4e2d-bcb6-279320b34ac6",
             "omschrijving": "Aanvraag omgevingsvergunning voor bouwen",
             "omschrijvingGeneriek": "Aanvraag omgevingsvergunning voor bouwen",
             "vertrouwelijkheidaanduiding": "openbaar",
@@ -189,17 +189,17 @@
                 "naam": "string",
                 "link": "http://example.com"
             },
-            "catalogus": "http://verwijzing.naar/ZAAKCATOLGUSID",
+            "catalogus": "6b6f17a8-a813-4f9b-b191-b271e78db5f6",
             "roltypen": [
                 {
-                    "id": "ROLTYPE-AANVRAGER_BOUW",
-                    "zaaktype": "ZAAKTYPE-OMGBOUWEN",
+                    "id": "ed245dee-3184-4371-8bf0-b337d2575cb1",
+                    "zaaktype": "eb5f542f-b356-4e2d-bcb6-279320b34ac6",
                     "omschrijving": "indiener",
                     "omschrijvingGeneriek": "initiator"
                 },
                 {
-                    "id": "ROLTYPE-BEHANDELAAR_BOUW",
-                    "zaaktype": "ZAAKTYPE-OMGBOUWEN",
+                    "id": "85B52629-DAA7-4056-9F0C-3839ED8EDCBE",
+                    "zaaktype": "eb5f542f-b356-4e2d-bcb6-279320b34ac6",
                     "omschrijving": "behandelaar",
                     "omschrijvingGeneriek": "behandelaar"
                 }
@@ -214,12 +214,12 @@
     ],
     "https://vng.opencatalogi.nl/schemas/zrc.zaak.schema.json": [
         {
-            "id": "ZAAKID-01",
+            "id": "3bb9bccc-0619-4c66-905e-fc5f606b16b0",
             "identificatie": "ZAAK-1",
             "bronorganisatie": "999994207",
             "omschrijving": "Melding openbare ruimte",
             "toelichting": "Losse stoeptegel op het plein",
-            "zaaktype": "ZAAKTYPE-MOR",
+            "zaaktype": "5b880f19-3bfa-4a74-ae98-fc486642e731",
             "registratiedatum": "2022-12-16",
             "verantwoordelijkeOrganisatie": "999994207",
             "startdatum": "2022-12-16",
@@ -236,8 +236,7 @@
             },
             "rollen": [
                 {
-                    "zaak": "ZAAKID-01",
-                    "roltype": "ROLTYPE-AANVRAGER_MOR",
+                    "roltype": "b76d0354-5a77-41ba-b84f-b1eeda3b9f78",
                     "indicatieMachtiging": "machtiginggever",
                     "roltoelichting": "Indiener van de melding",
                     "omschrijvingGeneriek": "initiator",
@@ -250,8 +249,7 @@
                     }
                 },
                 {
-                    "zaak": "ZAAKID-01",
-                    "roltype": "ROLTYPE-BEHANDELAAR_MOR",
+                    "roltype": "80c74793-a752-4e00-a996-925fb99eed21",
                     "roltoelichting": "Behandelaar van de melding",
                     "omschrijvingGeneriek": "Behandelaar",
                     "omschrijving": "Behandelaar",
@@ -265,12 +263,11 @@
             ]
         },
         {
-            "id": "ZAAKID-02",
             "identificatie": "ZAAK-2",
             "bronorganisatie": "999994207",
             "omschrijving": "Aanvraag Bbz voor startende ondernemer",
             "toelichting": "Aanvrager wil vanuit uitkeringssituatie eigen onderneming beginnen",
-            "zaaktype": "ZAAKTYPE-BBZ",
+            "zaaktype": "126ad23c-2d06-4b51-8fe2-0d259ee313bc",
             "registratiedatum": "2022-11-27",
             "verantwoordelijkeOrganisatie": "999994207",
             "startdatum": "2022-11-28",
@@ -287,8 +284,7 @@
             },
             "rollen": [
                 {
-                    "zaak": "ZAAKID-02",
-                    "roltype": "ROLTYPE-AANVRAGER_BBZ",
+                    "roltype": "8a857604-15e6-4698-ab9c-96e1b3ab5de6",
                     "roltoelichting": "Aanvrager van de zaak",
                     "omschrijvingGeneriek": "initiator",
                     "omschrijving": "initiator",
@@ -300,8 +296,7 @@
                     }
                 },
                 {
-                    "zaak": "ZAAKID-02",
-                    "roltype": "ROLTYPE-BEHANDELAAR_BBZ",
+                    "roltype": "06cf1c5d-1aa3-47ec-af44-2477d5642d26",
                     "roltoelichting": "Behandelaar van de melding",
                     "omschrijvingGeneriek": "Behandelaar",
                     "omschrijving": "Behandelaar",
@@ -389,12 +384,11 @@
             ]
         },
         {
-            "id": "ZAAKID-03",
             "identificatie": "ZAAK-3",
             "bronorganisatie": "999994207",
             "omschrijving": "Aanvraag IOAZ voor onderneming die wil stoppen met bedrijf",
             "toelichting": "gearchiveerde zaakAanvrager wil vanuit uitkeringssituatie eigen onderneming beginnen",
-            "zaaktype": "ZAAKTYPE-BBZ",
+            "zaaktype": "126ad23c-2d06-4b51-8fe2-0d259ee313bc",
             "registratiedatum": "2022-11-21",
             "verantwoordelijkeOrganisatie": "999994207",
             "startdatum": "2022-11-21",
@@ -411,8 +405,7 @@
             },
             "rollen": [
                 {
-                    "zaak": "ZAAKID-03",
-                    "roltype": "ROLTYPE-AANVRAGER_IOAZ",
+                    "roltype": "a1531c29-e7ac-4b64-bc18-3c0dc675ab61",
                     "roltoelichting": "Aanvrager van de zaak",
                     "omschrijvingGeneriek": "initiator",
                     "omschrijving": "initiator",
@@ -425,8 +418,7 @@
                     }
                 },
                 {
-                    "zaak": "ZAAKID-03",
-                    "roltype": "ROLTYPE-BEHANDELAAR_IOAZ",
+                    "roltype": "ffe65441-4c4f-407b-ada5-f7d8c2d6cc88",
                     "roltoelichting": "Behandelaar van de melding",
                     "omschrijvingGeneriek": "Behandelaar",
                     "omschrijving": "Behandelaar",
@@ -514,12 +506,11 @@
             ]
         },
         {
-            "id": "ZAAKID-04",
             "identificatie": "ZAAK-4",
             "bronorganisatie": "999994207",
             "omschrijving": "Aanvraag omgevingsvergunning voor bouwen Bibob-plichtig",
             "toelichting": "Dit is een complexe bouwaanvraag met Bibob-toets. Daarom gaat de behandeltermijn verlengd worden met 6 wkn. Deadline wordt dan 11 oktober. De reden voor de vertraging is deels: het verzoek om aanvullende info vanuit de Bibob. En daarnaast het feit dat er met veel buitenlandse financiers wordt gewerkt, dit vraagt meer onderzoek",
-            "zaaktype": "ZAAKTYPE-OMGBOUWEN",
+            "zaaktype": "eb5f542f-b356-4e2d-bcb6-279320b34ac6",
             "registratiedatum": "2022-11-14",
             "verantwoordelijkeOrganisatie": "999994207",
             "startdatum": "2022-11-14",
@@ -536,8 +527,7 @@
             },
             "rollen": [
                 {
-                    "zaak": "ZAAKID-04",
-                    "roltype": "ROLTYPE-AANVRAGER_BOUW",
+                    "roltype": "ed245dee-3184-4371-8bf0-b337d2575cb1",
                     "roltoelichting": "Aanvrager van de zaak",
                     "omschrijvingGeneriek": "initiator",
                     "omschrijving": "initiator",
@@ -549,8 +539,7 @@
                     }
                 },
                 {
-                    "zaak": "ZAAKID-04",
-                    "roltype": "ROLTYPE-BEHANDELAAR_BOUW",
+                    "roltype": "85B52629-DAA7-4056-9F0C-3839ED8EDCBE",
                     "roltoelichting": "Behandelaar van de zaak",
                     "omschrijvingGeneriek": "Behandelaar",
                     "omschrijving": "Behandelaar",
