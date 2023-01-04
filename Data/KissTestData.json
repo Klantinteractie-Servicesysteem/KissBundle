@@ -78,7 +78,7 @@
 			"name": "Werk en inkomen"
 		}
 	],
-	"https://kissdevelopment.commonground.nu/kiss.link.json": [
+	"https://kissdevelopment.commonground.nu/kiss.link.schema.json": [
 		{
 			"category": "Applicaties",
 			"title": "Zaaksysteem: e-Suite",
@@ -124,7 +124,7 @@
                 "aanduidingNaamgebruik": "eigen"
             },
             "geboorte": {
-                "datum": {
+                "datumOnvolledig": {
                     "dag": 1,
                     "datum": "1985-12-01",
                     "jaar": 1985,
@@ -139,7 +139,7 @@
                         "geslachtsnaam": "Beamont"
                     },
                     "geboorte": {
-                        "datum": {
+                        "datumOnvolledig": {
                             "dag": 12,
                             "datum": "1956-12-01",
                             "jaar": 1956,
@@ -166,7 +166,7 @@
                         "geslachtsnaam": "Moulin"
                     },
                     "geboorte": {
-                        "datum": {
+                        "datumOnvolledig": {
                             "dag": 3,
                             "datum": "1955-04-03",
                             "jaar": 1955,
@@ -211,7 +211,7 @@
                     },
                     "geslachtsaanduiding": "man",
                     "geboorte": {
-                        "datum": {
+                        "datumOnvolledig": {
                             "dag": 1,
                             "datum": "1976-08-01",
                             "jaar": 1976,
@@ -225,7 +225,7 @@
                         }
                     },
                     "aangaanHuwelijkPartnerschap": {
-                        "datum": {
+                        "datumOnvolledig": {
                             "dag": 1,
                             "datum": "2008-12-01",
                             "jaar": 2008,
@@ -248,37 +248,35 @@
                 "woonplaats": "Rotterdam",
                 "functieAdres": "woonadres",
                 "nummeraanduidingIdentificatie": "0599010000208579",
+                "datumInschrijvingInGemeente": {
+                  "dag": 2,
+                  "datum": "2013-11-02",
+                  "jaar": 2013,
+                  "maand": 11
+                },
+                "datumAanvangAdreshouding": {
+                  "dag": 8,
+                  "datum": "2015-08-08",
+                  "jaar": 2015,
+                  "maand": 8
+                },
+                "datumIngangGeldigheid": {
+                  "dag": 8,
+                  "datum": "2015-08-08",
+                  "jaar": 2015,
+                  "maand": 8
+                },
                 "datumVestigingInNederland": {
-                    "datum": {
-                        "dag": 2,
-                        "datum": "2013-11-02",
-                        "jaar": 2013,
-                        "maand": 11
-                    },
-                    "land": {
-                        "code": "5002"
-                    },
-                    "gemeenteVanInschrijving": {
-                        "code": "0599"
-                    },
-                    "datumInschrijvingInGemeente": {
-                        "dag": 2,
-                        "datum": "2013-11-02",
-                        "jaar": 2013,
-                        "maand": 11
-                    },
-                    "datumAanvangAdreshouding": {
-                        "dag": 8,
-                        "datum": "2015-08-08",
-                        "jaar": 2015,
-                        "maand": 8
-                    },
-                    "datumIngangGeldigheid": {
-                        "dag": 8,
-                        "datum": "2015-08-08",
-                        "jaar": 2015,
-                        "maand": 8
-                    }
+                  "dag": 2,
+                  "datum": "2013-11-02",
+                  "jaar": 2013,
+                  "maand": 11
+                },
+                "land": {
+                  "code": "5002"
+                },
+                "gemeenteVanInschrijving": {
+                  "code": "0599"
                 }
             }
         },
@@ -295,7 +293,7 @@
                 "aanduidingNaamgebruik": "eigen"
             },
             "geboorte": {
-                "datum": {
+                "datumOnvolledig": {
                     "dag": 17,
                     "datum": "1965-09-17",
                     "jaar": 1965,
@@ -310,7 +308,7 @@
                         "geslachtsnaam": "Beamont"
                     },
                     "geboorte": {
-                        "datum": {
+                        "datumOnvolledig": {
                             "dag": 12,
                             "datum": "1956-12-01",
                             "jaar": 1956,
@@ -337,7 +335,7 @@
                         "geslachtsnaam": "Moulin"
                     },
                     "geboorte": {
-                        "datum": {
+                        "datumOnvolledig": {
                             "dag": 3,
                             "datum": "1955-04-03",
                             "jaar": 1955,
@@ -381,37 +379,35 @@
                 "woonplaats": "Rotterdam",
                 "functieAdres": "woonadres",
                 "nummeraanduidingIdentificatie": "0599010000208579",
+                "land": {
+                  "code": "5002"
+                },
+                "gemeenteVanInschrijving": {
+                  "code": "0599"
+                },
+                "datumInschrijvingInGemeente": {
+                  "dag": 2,
+                  "datum": "2013-11-02",
+                  "jaar": 2013,
+                  "maand": 11
+                },
+                "datumAanvangAdreshouding": {
+                  "dag": 8,
+                  "datum": "2015-08-08",
+                  "jaar": 2015,
+                  "maand": 8
+                },
+                "datumIngangGeldigheid": {
+                  "dag": 8,
+                  "datum": "2015-08-08",
+                  "jaar": 2015,
+                  "maand": 8
+                },
                 "datumVestigingInNederland": {
-                    "datum": {
-                        "dag": 2,
-                        "datum": "2013-11-02",
-                        "jaar": 2013,
-                        "maand": 11
-                    },
-                    "land": {
-                        "code": "5002"
-                    },
-                    "gemeenteVanInschrijving": {
-                        "code": "0599"
-                    },
-                    "datumInschrijvingInGemeente": {
-                        "dag": 2,
-                        "datum": "2013-11-02",
-                        "jaar": 2013,
-                        "maand": 11
-                    },
-                    "datumAanvangAdreshouding": {
-                        "dag": 8,
-                        "datum": "2015-08-08",
-                        "jaar": 2015,
-                        "maand": 8
-                    },
-                    "datumIngangGeldigheid": {
-                        "dag": 8,
-                        "datum": "2015-08-08",
-                        "jaar": 2015,
-                        "maand": 8
-                    }
+                  "dag": 2,
+                  "datum": "2013-11-02",
+                  "jaar": 2013,
+                  "maand": 11
                 }
             }
         },
@@ -429,7 +425,7 @@
                 "aanduidingNaamgebruik": "eigen"
             },
             "geboorte": {
-                "datum": {
+                "datumOnvolledig": {
                     "dag": 17,
                     "datum": "1959-04-17",
                     "jaar": 1959,
@@ -444,7 +440,7 @@
                         "geslachtsnaam": "Beamont"
                     },
                     "geboorte": {
-                        "datum": {
+                        "datumOnvolledig": {
                             "dag": 12,
                             "datum": "1956-12-01",
                             "jaar": 1956,
@@ -471,7 +467,7 @@
                         "geslachtsnaam": "Moulin"
                     },
                     "geboorte": {
-                        "datum": {
+                        "datumOnvolledig": {
                             "dag": 3,
                             "datum": "1955-04-03",
                             "jaar": 1955,
@@ -516,36 +512,34 @@
                 "functieAdres": "woonadres",
                 "nummeraanduidingIdentificatie": "0599010000208579",
                 "datumVestigingInNederland": {
-                    "datum": {
-                        "dag": 2,
-                        "datum": "2013-11-02",
-                        "jaar": 2013,
-                        "maand": 11
-                    },
-                    "land": {
-                        "code": "5002"
-                    },
-                    "gemeenteVanInschrijving": {
-                        "code": "0599"
-                    },
-                    "datumInschrijvingInGemeente": {
-                        "dag": 2,
-                        "datum": "2013-11-02",
-                        "jaar": 2013,
-                        "maand": 11
-                    },
-                    "datumAanvangAdreshouding": {
-                        "dag": 8,
-                        "datum": "2015-08-08",
-                        "jaar": 2015,
-                        "maand": 8
-                    },
-                    "datumIngangGeldigheid": {
-                        "dag": 8,
-                        "datum": "2015-08-08",
-                        "jaar": 2015,
-                        "maand": 8
-                    }
+                  "dag": 2,
+                  "datum": "2013-11-02",
+                  "jaar": 2013,
+                  "maand": 11
+                },
+                "land": {
+                  "code": "5002"
+                },
+                "gemeenteVanInschrijving": {
+                  "code": "0599"
+                },
+                "datumInschrijvingInGemeente": {
+                  "dag": 2,
+                  "datum": "2013-11-02",
+                  "jaar": 2013,
+                  "maand": 11
+                },
+                "datumAanvangAdreshouding": {
+                  "dag": 8,
+                  "datum": "2015-08-08",
+                  "jaar": 2015,
+                  "maand": 8
+                },
+                "datumIngangGeldigheid": {
+                  "dag": 8,
+                  "datum": "2015-08-08",
+                  "jaar": 2015,
+                  "maand": 8
                 }
             }
         },
@@ -563,7 +557,7 @@
                 "aanduidingNaamgebruik": "eigen"
             },
             "geboorte": {
-                "datum": {
+                "datumOnvolledig": {
                     "dag": 18,
                     "datum": "1997-01-18",
                     "jaar": 1997,
@@ -578,7 +572,7 @@
                         "geslachtsnaam": "Beamont"
                     },
                     "geboorte": {
-                        "datum": {
+                        "datumOnvolledig": {
                             "dag": 12,
                             "datum": "1956-12-01",
                             "jaar": 1956,
@@ -605,7 +599,7 @@
                         "geslachtsnaam": "Moulin"
                     },
                     "geboorte": {
-                        "datum": {
+                        "datumOnvolledig": {
                             "dag": 3,
                             "datum": "1955-04-03",
                             "jaar": 1955,
@@ -650,37 +644,35 @@
                 "woonplaats": "Rotterdam",
                 "functieAdres": "woonadres",
                 "nummeraanduidingIdentificatie": "0599010000208579",
+                "land": {
+                  "code": "5002"
+                },
+                "gemeenteVanInschrijving": {
+                  "code": "0599"
+                },
+                "datumInschrijvingInGemeente": {
+                  "dag": 2,
+                  "datum": "2013-11-02",
+                  "jaar": 2013,
+                  "maand": 11
+                },
+                "datumAanvangAdreshouding": {
+                  "dag": 8,
+                  "datum": "2015-08-08",
+                  "jaar": 2015,
+                  "maand": 8
+                },
+                "datumIngangGeldigheid": {
+                  "dag": 8,
+                  "datum": "2015-08-08",
+                  "jaar": 2015,
+                  "maand": 8
+                },
                 "datumVestigingInNederland": {
-                    "datum": {
-                        "dag": 2,
-                        "datum": "2013-11-02",
-                        "jaar": 2013,
-                        "maand": 11
-                    },
-                    "land": {
-                        "code": "5002"
-                    },
-                    "gemeenteVanInschrijving": {
-                        "code": "0599"
-                    },
-                    "datumInschrijvingInGemeente": {
-                        "dag": 2,
-                        "datum": "2013-11-02",
-                        "jaar": 2013,
-                        "maand": 11
-                    },
-                    "datumAanvangAdreshouding": {
-                        "dag": 8,
-                        "datum": "2015-08-08",
-                        "jaar": 2015,
-                        "maand": 8
-                    },
-                    "datumIngangGeldigheid": {
-                        "dag": 8,
-                        "datum": "2015-08-08",
-                        "jaar": 2015,
-                        "maand": 8
-                    }
+                  "dag": 2,
+                  "datum": "2013-11-02",
+                  "jaar": 2013,
+                  "maand": 11
                 }
             }
         }
