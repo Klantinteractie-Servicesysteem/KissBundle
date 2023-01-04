@@ -4,10 +4,12 @@
 namespace Kiss\KissBundle\Service;
 
 use App\Entity\Action;
+use App\Entity\CollectionEntity;
 use App\Entity\DashboardCard;
 use App\Entity\Cronjob;
 use App\Entity\Endpoint;
 use CommonGateway\CoreBundle\Installer\InstallerInterface;
+use Doctrine\ORM\Mapping\Entity;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
@@ -17,6 +19,27 @@ class InstallationService implements InstallerInterface
     private EntityManagerInterface $entityManager;
     private ContainerInterface $container;
     private SymfonyStyle $io;
+
+    public const OBJECTS_THAT_SHOULD_HAVE_CARDS = [
+        'https://kissdevelopment.commonground.nu/kiss.openpubSkill.schema.json',
+        'https://kissdevelopment.commonground.nu/kiss.openpubType.schema.json'
+    ];
+    //
+
+    public const SCHEMAS_THAT_SHOULD_HAVE_ENDPOINTS = [
+        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.openpubSkill.schema.json',                 'path' => ['/openpub_skill'],                    'methods' => []],
+        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.openpubType.schema.json',                 'path' => ['/openpub_type'],                      'methods' => []],
+        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.afdelingsnaam.schema.json',                 'path' => ['/afdelingsnamen'],                    'methods' => []],
+        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.link.schema.json',                 'path' => ['/links'],                    'methods' => []],
+        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.medewerker.schema.json',                 'path' => ['/medewerkers'],                    'methods' => []],
+        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.medewerkerAvailabilities.schema.json',                 'path' => ['/mederwerkerAvailabilities'],                    'methods' => []],
+        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.review.schema.json',                 'path' => ['/reviews'],                    'methods' => []],
+        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.sdgProduct.schema.json',                 'path' => ['/kennisartikelen'],                    'methods' => []],
+    ];
+
+    public const ACTION_HANDLERS = [
+        'Kiss\KissBundle\ActionHandler\HandelsRegisterSearchHandler'
+    ];
 
     public function __construct(EntityManagerInterface $entityManager, ContainerInterface $container)
     {
@@ -47,18 +70,6 @@ class InstallationService implements InstallerInterface
 
     public function uninstall(){
         // Do some cleanup
-    }
-
-    /**
-     * The actionHandlers in Kiss
-     *
-     * @return array
-     */
-    public function actionHandlers(): array
-    {
-        return [
-            'Kiss\KissBundle\ActionHandler\HandelsRegisterSearchHandler'
-        ];
     }
 
     /**
@@ -99,16 +110,15 @@ class InstallationService implements InstallerInterface
      *
      * @return void
      */
-    public function addActions(): void
+    public function createActions(): void
     {
-        $actionHandlers = $this->actionHandlers();
+        $actionHandlers = $this::ACTION_HANDLERS;
         (isset($this->io)?$this->io->writeln(['','<info>Looking for actions</info>']):'');
 
         foreach ($actionHandlers as $handler) {
             $actionHandler = $this->container->get($handler);
 
             if ($this->entityManager->getRepository('App:Action')->findOneBy(['class'=> get_class($actionHandler)])) {
-
                 (isset($this->io)?$this->io->writeln(['Action found for '.$handler]):'');
                 continue;
             }
@@ -124,81 +134,101 @@ class InstallationService implements InstallerInterface
             $action->setConfiguration($defaultConfig);
 
             $this->entityManager->persist($action);
-
             (isset($this->io)?$this->io->writeln(['Action created for '.$handler]):'');
+        }
+    }
+
+    private function createEndpoints($objectsThatShouldHaveEndpoints): array
+    {
+        $endpointRepository = $this->entityManager->getRepository('App:Endpoint');
+        $endpoints = [];
+        foreach($objectsThatShouldHaveEndpoints as $objectThatShouldHaveEndpoint) {
+            $entity = $this->entityManager->getRepository('App:Entity')->findOneBy(['reference' => $objectThatShouldHaveEndpoint['reference']]);
+            if (!$endpointRepository->findOneBy(['name' => $entity->getName()])) {
+                $endpoint = new Endpoint($entity, $objectThatShouldHaveEndpoint['path'], $objectThatShouldHaveEndpoint['methods']);
+
+                $this->entityManager->persist($endpoint);
+                $this->entityManager->flush();
+                $endpoints[] = $endpoint;
+                var_dump($endpoint->getName());
+                var_dump($endpoint->getId()->toString());
+            }
+        }
+        (isset($this->io) ? $this->io->writeln(count($endpoints).' Endpoints Created'): '');
+
+        return $endpoints;
+    }
+
+    private function addSchemasToCollection(CollectionEntity $collection, string $schemaPrefix): CollectionEntity
+    {
+        $entities = $this->entityManager->getRepository('App:Entity')->findByReferencePrefix($schemaPrefix);
+        foreach($entities as $entity) {
+            $entity->addCollection($collection);
+        }
+        return $collection;
+    }
+
+    private function createCollections(): array
+    {
+        $collectionConfigs = [
+            ['name' => 'Kiss',  'prefix' => 'kiss', 'schemaPrefix' => 'https://kissdevelopment.commonground.nu/kiss'],
+        ];
+        $collections = [];
+        foreach($collectionConfigs as $collectionConfig) {
+            $collectionsFromEntityManager = $this->entityManager->getRepository('App:CollectionEntity')->findBy(['name' => $collectionConfig['name']]);
+            if(count($collectionsFromEntityManager) == 0){
+                $collection = new CollectionEntity($collectionConfig['name'], $collectionConfig['prefix'], 'KissBundle');
+            } else {
+                $collection = $collectionsFromEntityManager[0];
+            }
+            $collection = $this->addSchemasToCollection($collection, $collectionConfig['schemaPrefix']);
+            $this->entityManager->persist($collection);
+            $this->entityManager->flush();
+            $collections[$collectionConfig['name']] = $collection;
+        }
+        (isset($this->io) ? $this->io->writeln(count($collections).' Collections Created'): '');
+        return $collections;
+    }
+
+    public function createDashboardCards($objectsThatShouldHaveCards)
+    {
+        foreach ($objectsThatShouldHaveCards as $object) {
+            (isset($this->io) ? $this->io->writeln('Looking for a dashboard card for: ' . $object) : '');
+            $entity = $this->entityManager->getRepository('App:Entity')->findOneBy(['reference' => $object]);
+            if (
+                !$dashboardCard = $this->entityManager->getRepository('App:DashboardCard')->findOneBy(['entityId' => $entity->getId()])
+            ) {
+                $dashboardCard = new DashboardCard();
+                $dashboardCard->setType('schema');
+                $dashboardCard->setEntity('App:Entity');
+                $dashboardCard->setObject('App:Entity');
+                $dashboardCard->setName($entity->getName());
+                $dashboardCard->setDescription($entity->getDescription());
+                $dashboardCard->setEntityId($entity->getId());
+                $dashboardCard->setOrdering(1);
+                $this->entityManager->persist($dashboardCard);
+                (isset($this->io) ? $this->io->writeln('Dashboard card created') : '');
+                continue;
+            }
+            (isset($this->io) ? $this->io->writeln('Dashboard card found') : '');
         }
     }
 
     public function checkDataConsistency(){
 
         // Lets create some genneric dashboard cards
-        $objectsThatShouldHaveCards = [
-            'https://kissdevelopment.commonground.nu/kiss.openpubSkill.schema.json',
-            'https://kissdevelopment.commonground.nu/kiss.openpubType.schema.json'
-        ];
+        $this->createDashboardCards($this::OBJECTS_THAT_SHOULD_HAVE_CARDS);
 
-        foreach($objectsThatShouldHaveCards as $object){
-            (isset($this->io)?$this->io->writeln('Looking for a dashboard card for: '.$object):'');
-            $entity = $this->entityManager->getRepository('App:Entity')->findOneBy(['reference'=>$object]);
-            if(
-                !$dashboardCard = $this->entityManager->getRepository('App:DashboardCard')->findOneBy(['entityId'=>$entity->getId()])
-            ){
-                $dashboardCard = new DashboardCard(
-                    $entity->getName(),
-                    $entity->getDescription(),
-                    'schema',
-                    'App:Entity',
-                    'App:Entity',
-                    $entity->getId(),
-                    1
-                );
-                $this->entityManager->persist($dashboardCard);
+        $this->createCollections();
 
-                (isset($this->io) ?$this->io->writeln('Dashboard card created: ' . $dashboardCard->getName()):'');
-                continue;
-            }
-            (isset($this->io)?$this->io->writeln('Dashboard card found'):'');
-        }
-
-        (isset($this->io)?$this->io->writeln(''):'');
         // Let create some endpoints
-        $objectsThatShouldHaveEndpoints = [
-            'https://kissdevelopment.commonground.nu/kiss.openpubSkill.schema.json',
-            'https://kissdevelopment.commonground.nu/kiss.openpubType.schema.json',
-            'https://kissdevelopment.commonground.nu/afdelingsnaam.schema.json',
-            'https://kissdevelopment.commonground.nu/link.schema.json',
-            'https://kissdevelopment.commonground.nu/medewerker.schema.json',
-            'https://kissdevelopment.commonground.nu/medewerkerAvailabilities.schema.json',
-            'https://kissdevelopment.commonground.nu/medewerkerAvailability.schema.json',
-            'https://kissdevelopment.commonground.nu/review.schema.json',
-            'https://kissdevelopment.commonground.nu/sdgLocatie.schema.json',
-            'https://kissdevelopment.commonground.nu/sdgProduct.schema.json',
-            'https://kissdevelopment.commonground.nu/sdgVertaling.schema.json'
-        ];
+        $this->createEndpoints($this::SCHEMAS_THAT_SHOULD_HAVE_ENDPOINTS);
 
-        foreach($objectsThatShouldHaveEndpoints as $object){
-            (isset($this->io)?$this->io->writeln('Looking for a endpoint for: '.$object):'');
-            $entity = $this->entityManager->getRepository('App:Entity')->findOneBy(['reference'=>$object]);
-
-            if (!$entity = $this->entityManager->getRepository('App:Entity')->findOneBy(['reference'=>$object])) {
-                continue;
-            }
-
-            if(
-                count($entity->getEndpoints()) == 0
-            ){
-                $endpoint = New Endpoint($entity);
-                $this->entityManager->persist($endpoint);
-                (isset($this->io)?$this->io->writeln('Endpoint created'):'');
-                continue;
-            }
-            (isset($this->io)?$this->io->writeln('Endpoint found'):'');
-        }
 
         // Lets see if there is a generic search endpoint
 
         // aanmaken van actions met een cronjob
-        $this->addActions();
+        $this->createActions();
 
         (isset($this->io)?$this->io->writeln(['','<info>Looking for cronjobs</info>']):'');
         // We only need 1 cronjob so lets set that
