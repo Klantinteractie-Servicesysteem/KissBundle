@@ -150,8 +150,6 @@ class InstallationService implements InstallerInterface
                 $this->entityManager->persist($endpoint);
                 $this->entityManager->flush();
                 $endpoints[] = $endpoint;
-                var_dump($endpoint->getName());
-                var_dump($endpoint->getId()->toString());
             }
         }
         (isset($this->io) ? $this->io->writeln(count($endpoints).' Endpoints Created'): '');
