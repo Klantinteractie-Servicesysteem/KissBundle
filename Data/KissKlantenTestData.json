@@ -1,0 +1,276 @@
+{
+    "https://klantenBundle.commonground.nu/klant.klant.schema.json": [
+        {
+            "_id": "4c90e5fa-b1ea-4106-8e3d-9804826f9678",
+            "bronorganisatie": "999994207",
+            "klantnummer": "00000101",
+            "bedrijfsnaam": null,
+            "functie": null,
+            "achternaam": "Moulin",
+            "voornaam": "Suzanne",
+            "voorvoegselAchternaam": null,
+            "telefoonnummers": [
+                {
+                    "naam": "telefoonnummer 1",
+                    "telefoonnummer": "0101122334"
+                },
+                {
+                    "naam": "telefoonnummer 2",
+                    "telefoonnummer": "0612341234"
+                }
+            ],
+            "emails": [],
+            "adressen": [],
+            "subjectType": "natuurlijk_persoon",
+            "subjectIdentificatie": {
+                "inpBsn": "999993653"
+            }
+        },
+        {
+            "_id": "afaa1da1-c2ed-417a-9ca0-2c9d234af45b",
+            "bronorganisatie": "999994207",
+            "klantnummer": "00000102",
+            "bedrijfsnaam": null,
+            "functie": null,
+            "voornaam": "Johannes Maria Alphonse",
+            "voorvoegselAchternaam": "den",
+            "achternaam": "Dooper",
+            "telefoonnummers": [],
+            "emails": [],
+            "adressen": [],
+            "subjectType": "natuurlijk_persoon",
+            "subjectIdentificatie": {
+                "inpBsn": "123456782"
+            }
+        },
+        {
+            "_id": "d6b21bd1-7c18-4dc8-bc3e-44b7402df1f3",
+            "bronorganisatie": "999994207",
+            "klantnummer": "00000103",
+            "bedrijfsnaam": null,
+            "functie": null,
+            "voornaam": "Jochem ",
+            "voorvoegselAchternaam": null,
+            "achternaam": "Uytdenhaage",
+            "telefoonnummers": [],
+            "emails": [
+                {
+                    "email": "jochem@syps.nl",
+                    "naam": null
+                }
+            ],
+            "adressen": [],
+            "subjectType": "natuurlijk_persoon"
+        },
+        {
+            "_id": "d40a65c6-7009-469e-a106-9a6adf88ca3e",
+            "bronorganisatie": "999994207",
+            "klantnummer": "00000104",
+            "bedrijfsnaam": "Bakkerij  het gulden broodje",
+            "functie": null,
+            "voornaam": null,
+            "voorvoegselAchternaam": null,
+            "achternaam": null,
+            "telefoonnummers": [
+                {
+                    "naam": null,
+                    "telefoonnummer": "0657572233"
+                }
+            ],
+            "emails": [
+                {
+                    "email": "info@guldenbroodjes.nl",
+                    "naam": null
+                }
+            ],
+            "adressen": [],
+            "subjectType": "vestiging",
+            "subjectIdentificatie": {
+                "vestigingsNummer": "321654871235"
+            }
+        },
+        {
+            "_id": "9f41f2e7-5937-4345-b3d8-a1d12561c372",
+            "bronorganisatie": "999994207",
+            "klantnummer": "00000105",
+            "bedrijfsnaam": null,
+            "functie": null,
+            "voornaam": "Róza Mstyslava",
+            "voorvoegselAchternaam": null,
+            "achternaam": "Żywiałowska",
+            "telefoonnummers": [],
+            "emails": [
+                {
+                    "_id": "347780ee-1f70-4175-9a83-c0f3ba8254a7",
+                    "email": "icatttest+roza@gmail.com",
+                    "naam": "e-mailadres 1"
+                }
+            ],
+            "adressen": [],
+            "subjectType": "natuurlijk_persoon",
+            "subjectIdentificatie": {
+                "inpBsn": "999990172"
+            }
+        },
+        {
+            "_id": "5f9f74da-0afb-49ff-84b7-573601295fc3",
+            "bronorganisatie": "999994207",
+            "klantnummer": "00000106",
+            "bedrijfsnaam": null,
+            "functie": null,
+            "voornaam": "Joske",
+            "voorvoegselAchternaam": "de",
+            "achternaam": "Haas",
+            "telefoonnummers": [
+                {
+                    "naam": "telefoonnummer 1",
+                    "telefoonnummer": "0656785678"
+                }
+            ],
+            "emails": [],
+            "adressen": [],
+            "subjectType": "natuurlijk_persoon"
+        },
+        {
+            "_id": "5972d717-17d8-4712-8c79-16bf3a5a3b44",
+            "bronorganisatie": "999994207",
+            "klantnummer": "00000223",
+            "bedrijfsnaam": null,
+            "functie": null,
+            "voornaam": "Sam",
+            "voorvoegselAchternaam": null,
+            "achternaam": "Teemuts",
+            "telefoonnummers": [
+                {
+                    "naam": null,
+                    "telefoonnummer": "020 6383068"
+                }
+            ],
+            "emails": [
+                {
+                    "email": "icatttest+samtee@gmail.com",
+                    "naam": "e-mailadres 1"
+                }
+            ],
+            "adressen": [],
+            "subjectType": "natuurlijk_persoon"
+        }
+    ],
+    "https://klantenBundle.commonground.nu/klant.klantContactmoment.schema.json": [
+        {
+            "contactmoment": {
+                "_id": "8f0fa8ea-aec1-4d87-9805-e9799442f187",
+                "bronorganisatie": "999994207",
+                "registratiedatum": "2022-08-04T10:47:00+00:00",
+                "startdatum": "2022-08-04T10:42:00+00:00",
+                "einddatum": "2022-08-04T10:47:00+00:00",
+                "initiatiefnemer": "klant",
+                "kanaal": "Chat",
+                "afwijkendOnderwerp": "klant wil status MOR-melding weten",
+                "resultaat": "Zelfstandig afgehandeld",
+                "tekst": "Klant doet navraag naar status MOR-melding van een week geleden. Gemeld dat die nog openstaat. Zie notitie bij Zaak."
+            },
+            "klant": "4c90e5fa-b1ea-4106-8e3d-9804826f9678",
+            "rol": "gesprekspartner"
+        },
+        {
+            "contactmoment": {
+                "bronorganisatie": "999994207",
+                "startdatum": "2022-08-04T10:42:00+00:00",
+                "registratiedatum": "2022-08-04T10:47:00+00:00",
+                "einddatum": "2022-08-04T10:47:00+00:00",
+                "initiatiefnemer": "klant",
+                "kanaal": "telefoon",
+                "onderwerpLinks": [
+                    "http://pdc.data.ergens.nl/sdg/api/v1/producten/9b3f1321-cb10-4752-809d-b5928b02547a",
+                    "https://www.deventer.nl/bijzonderebijstand",
+                    "/api/medewerkers/d1f0e9b4-4e1d-401c-b82a-1ebfb6259465"
+                ],
+                "primaireVraag": "http://pdc.data.ergens.nl/sdg/api/v1/producten/9b3f1321-cb10-4752-809d-b5928b02547a",
+                "primaireVraagWeergave": "Maecenas ullamcorper, dui et placerat feugia",
+                "resultaat": "Zelfstandig afgehandeld",
+                "tekst": "Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem.\n\nNulla sit amet est."
+            },
+            "klant": "5f9f74da-0afb-49ff-84b7-573601295fc3",
+            "rol": "gesprekspartner"
+        },
+        {
+            "contactmoment": {
+                "bronorganisatie": "999994207",
+                "startdatum": "2022-08-04T10:42:00+00:00",
+                "registratiedatum": "2022-08-04T10:47:00+00:00",
+                "einddatum": "2022-08-04T10:47:00+00:00",
+                "initiatiefnemer": "klant",
+                "kanaal": "telefoon",
+                "onderwerpLinks": [
+                    "http://pdc.data.ergens.nl/sdg/api/v1/producten/e6f43ba9-8f61-45e5-bbee-88c49cc57064",
+                    "http://pdc.data.ergens.nl/sdg/api/v1/producten/0ba31c89-81e7-4cb8-a21a-8961a0bf2433",
+                    "https://www.deventer.nl/paspoort",
+                    "/api/medewerkers/5344fe98-72d3-4153-9fcf-218580ad4fee"
+                ],
+                "primaireVraag": "http://pdc.data.ergens.nl/sdg/api/v1/producten/0ba31c89-81e7-4cb8-a21a-8961a0bf2433",
+                "primaireVraagWeergave": "Paspoort - Bijzonderheden",
+                "afwijkendOnderwerp": "sticker of o-document paspoort",
+                "resultaat": "Zelfstandig afgehandeld",
+                "tekst": "Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem.\n\nNulla sit amet est."
+            },
+            "klant": "5f9f74da-0afb-49ff-84b7-573601295fc3",
+            "rol": "gesprekspartner"
+        },
+        {
+            "contactmoment": {
+                "_id": "7dbf76dd-193b-4e51-a258-c02ef4ee44e3",
+                "afwijkendOnderwerp": "sticker of o-document paspoort",
+                "bronorganisatie": "999994207",
+                "einddatum": "2022-08-04T10:47:00+00:00",
+                "gespreksId": null,
+                "initiatiefnemer": "klant",
+                "kanaal": "telefoon",
+                "klantcontactmomenten": [],
+                "medewerker": null,
+                "medewerkerIdentificatie": {
+                    "identificatie": "KCM-MEDEWERKER01",
+                    "achternaam": "Avsarolgu",
+                    "voorletters": "A.",
+                    "voorvoegselAchternaam": null
+                },
+                "objectcontactmomenten": [],
+                "onderwerpLinks": [
+                    "http://pdc.data.ergens.nl/sdg/api/v1/producten/a8099dce-154c-4cb7-bd66-708cdaf99bf0",
+                    "http://pdc.data.ergens.nl/sdg/api/v1/producten/6b373290-0e08-4680-acce-1eeeab69ca88",
+                    "https://www.deventer.nl/paspoort",
+                    "/api/medewerkers/f2684d7a-722b-11ed-a1eb-0242ac120002"
+                ],
+                "primaireVraag": "http://pdc.data.ergens.nl/sdg/api/v1/producten/6b373290-0e08-4680-acce-1eeeab69ca88",
+                "primaireVraagWeergave": "Paspoort - Bijzonderheden",
+                "registratiedatum": "2022-08-04T10:47:00+00:00",
+                "resultaat": "Zelfstandig afgehandeld",
+                "startdatum": "2022-08-04T10:42:00+00:00",
+                "tekst": "Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem.\n\nNulla sit amet est.",
+                "todo": null,
+                "url": "/api/klant/contactmomenten/7dbf76dd-193b-4e51-a258-c02ef4ee44e3",
+                "volgendContactmoment": null,
+                "voorkeurskanaal": null,
+                "voorkeurstaal": null,
+                "vorigContactmoment": null
+            },
+            "klant":"5f9f74da-0afb-49ff-84b7-573601295fc3",
+            "rol":"gesprekspartner"
+        }
+    ],
+    "https://klantenBundle.commonground.nu/klant.objectContactmoment.schema.json": [
+        {
+            "_id": "d2e74a0b-08f1-43f8-9a79-cd010a79f228",
+            "contactmoment": "8f0fa8ea-aec1-4d87-9805-e9799442f187",
+            "object": "3bb9bccc-0619-4c66-905e-fc5f606b16b0",
+            "objectType": "zaak"
+        }
+    ],
+    "https://klantenBundle.commonground.nu/klant.contactmoment.schema.json": [
+        {
+            "bronorganisatie": "999994207",
+            "objectcontactmomenten": ["d2e74a0b-08f1-43f8-9a79-cd010a79f228"],
+            "klantcontactmomenten": ["8f0fa8ea-aec1-4d87-9805-e9799442f187"]
+        }
+    ]
+}
