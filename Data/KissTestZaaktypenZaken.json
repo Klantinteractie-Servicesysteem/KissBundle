@@ -3,14 +3,14 @@
         {
             "domein": "VRG",
             "rsin": "999994207",
-            "id": "6b6f17a8-a813-4f9b-b191-b271e78db5f6",
+            "_id": "6b6f17a8-a813-4f9b-b191-b271e78db5f6",
             "contactpersoonBeheerNaam": "Sytske van Hasselt",
             "contactpersoonBeheerEmailadres": "sytsk@icatt.nl"
         }
     ],
     "https://vng.opencatalogi.nl/schemas/ztc.zaakType.schema.json": [
         {
-            "id": "5b880f19-3bfa-4a74-ae98-fc486642e731",
+            "_id": "5b880f19-3bfa-4a74-ae98-fc486642e731",
             "omschrijving": "Melding openbare ruimte",
             "omschrijvingGeneriek": "Melding openbare ruimte",
             "vertrouwelijkheidaanduiding": "openbaar",
@@ -35,34 +35,40 @@
             "catalogus": "6b6f17a8-a813-4f9b-b191-b271e78db5f6",
             "roltypen": [
                 {
-                    "id": "b76d0354-5a77-41ba-b84f-b1eeda3b9f78",
+                    "_id": "b76d0354-5a77-41ba-b84f-b1eeda3b9f78",
                     "zaaktype": "5b880f19-3bfa-4a74-ae98-fc486642e731",
                     "omschrijving": "indiener",
                     "omschrijvingGeneriek": "initiator"
                 },
                 {
-                    "id": "80c74793-a752-4e00-a996-925fb99eed21",
+                    "_id": "80c74793-a752-4e00-a996-925fb99eed21",
                     "zaaktype": "5b880f19-3bfa-4a74-ae98-fc486642e731",
                     "omschrijving": "behandelaar",
                     "omschrijvingGeneriek": "behandelaar"
                 }
             ],
-            "besluittypen": [
-                "http://example.com"
-            ],
-            "gerelateerdeZaaktypen": [
-                {
-                    "zaaktype": "http://example.com",
-                    "aardRelatie": "vervolg",
-                    "toelichting": "string"
-                }
-            ],
+            "besluittypen": {
+                "catalogus": "6b6f17a8-a813-4f9b-b191-b271e78db5f6",
+                "zaaktypes": [
+                    "5b880f19-3bfa-4a74-ae98-fc486642e731"
+                ],
+                "publicatieIndicatie": true,
+                "informatieobjecttypen": [
+                    {
+                        "catalogus": "6b6f17a8-a813-4f9b-b191-b271e78db5f6",
+                        "omschrijving": "Melding openbare ruimte",
+                        "vertrouwelijkheidaanduiding": "openbaar",
+                        "beginGeldigheid": "2019-08-24"
+                    }
+                ],
+                "beginGeldigheid": "2019-08-24"
+            },
             "beginGeldigheid": "2019-08-24",
             "versiedatum": "2019-08-24",
             "concept": true
         },
         {
-            "id": "126ad23c-2d06-4b51-8fe2-0d259ee313bc",
+            "_id": "126ad23c-2d06-4b51-8fe2-0d259ee313bc",
             "omschrijving": "Besluit bijstandverlening voor zelfstandigen",
             "omschrijvingGeneriek": "Bbz aanvragen",
             "vertrouwelijkheidaanduiding": "openbaar",
@@ -87,26 +93,16 @@
             "catalogus": "6b6f17a8-a813-4f9b-b191-b271e78db5f6",
             "roltypen": [
                 {
-                    "id": "8a857604-15e6-4698-ab9c-96e1b3ab5de6",
+                    "_id": "8a857604-15e6-4698-ab9c-96e1b3ab5de6",
                     "zaaktype": "126ad23c-2d06-4b51-8fe2-0d259ee313bc",
                     "omschrijving": "indiener",
                     "omschrijvingGeneriek": "initiator"
                 },
                 {
-                    "id": "06cf1c5d-1aa3-47ec-af44-2477d5642d26",
+                    "_id": "06cf1c5d-1aa3-47ec-af44-2477d5642d26",
                     "zaaktype": "126ad23c-2d06-4b51-8fe2-0d259ee313bc",
                     "omschrijving": "behandelaar",
                     "omschrijvingGeneriek": "behandelaar"
-                }
-            ],
-            "besluittypen": [
-                "http://example.com"
-            ],
-            "gerelateerdeZaaktypen": [
-                {
-                    "zaaktype": "http://example.com",
-                    "aardRelatie": "vervolg",
-                    "toelichting": "string"
                 }
             ],
             "beginGeldigheid": "2019-08-24",
@@ -114,7 +110,7 @@
             "concept": true
         },
         {
-            "id": "8dac4f23-5327-497f-bbfc-091ca44e5f9b",
+            "_id": "8dac4f23-5327-497f-bbfc-091ca44e5f9b",
             "omschrijving": "Aanvraag IOAZ",
             "omschrijvingGeneriek": " IOAZ-uitkering oudere gewezen zelfstandigen",
             "vertrouwelijkheidaanduiding": "openbaar",
@@ -139,26 +135,16 @@
             "catalogus": "6b6f17a8-a813-4f9b-b191-b271e78db5f6",
             "roltypen": [
                 {
-                    "id": "a1531c29-e7ac-4b64-bc18-3c0dc675ab61",
+                    "_id": "a1531c29-e7ac-4b64-bc18-3c0dc675ab61",
                     "zaaktype": "8dac4f23-5327-497f-bbfc-091ca44e5f9b",
                     "omschrijving": "indiener",
                     "omschrijvingGeneriek": "initiator"
                 },
                 {
-                    "id": "ffe65441-4c4f-407b-ada5-f7d8c2d6cc88",
+                    "_id": "ffe65441-4c4f-407b-ada5-f7d8c2d6cc88",
                     "zaaktype": "8dac4f23-5327-497f-bbfc-091ca44e5f9b",
                     "omschrijving": "behandelaar",
                     "omschrijvingGeneriek": "behandelaar"
-                }
-            ],
-            "besluittypen": [
-                "http://example.com"
-            ],
-            "gerelateerdeZaaktypen": [
-                {
-                    "zaaktype": "http://example.com",
-                    "aardRelatie": "vervolg",
-                    "toelichting": "string"
                 }
             ],
             "beginGeldigheid": "2019-08-24",
@@ -167,7 +153,7 @@
             "concept": true
         },
         {
-            "id": "eb5f542f-b356-4e2d-bcb6-279320b34ac6",
+            "_id": "eb5f542f-b356-4e2d-bcb6-279320b34ac6",
             "omschrijving": "Aanvraag omgevingsvergunning voor bouwen",
             "omschrijvingGeneriek": "Aanvraag omgevingsvergunning voor bouwen",
             "vertrouwelijkheidaanduiding": "openbaar",
@@ -192,20 +178,17 @@
             "catalogus": "6b6f17a8-a813-4f9b-b191-b271e78db5f6",
             "roltypen": [
                 {
-                    "id": "ed245dee-3184-4371-8bf0-b337d2575cb1",
+                    "_id": "ed245dee-3184-4371-8bf0-b337d2575cb1",
                     "zaaktype": "eb5f542f-b356-4e2d-bcb6-279320b34ac6",
                     "omschrijving": "indiener",
                     "omschrijvingGeneriek": "initiator"
                 },
                 {
-                    "id": "85B52629-DAA7-4056-9F0C-3839ED8EDCBE",
+                    "_id": "85B52629-DAA7-4056-9F0C-3839ED8EDCBE",
                     "zaaktype": "eb5f542f-b356-4e2d-bcb6-279320b34ac6",
                     "omschrijving": "behandelaar",
                     "omschrijvingGeneriek": "behandelaar"
                 }
-            ],
-            "besluittypen": [
-                "http://example.com"
             ],
             "beginGeldigheid": "2019-08-24",
             "versiedatum": "2019-08-24",
@@ -214,7 +197,7 @@
     ],
     "https://vng.opencatalogi.nl/schemas/zrc.zaak.schema.json": [
         {
-            "id": "3bb9bccc-0619-4c66-905e-fc5f606b16b0",
+            "_id": "3bb9bccc-0619-4c66-905e-fc5f606b16b0",
             "identificatie": "ZAAK-1",
             "bronorganisatie": "999994207",
             "omschrijving": "Melding openbare ruimte",
