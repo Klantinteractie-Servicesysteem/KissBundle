@@ -1,5 +1,5 @@
 {
-    "$id": "https://kissdevelopment.commonground.nu/kiss.link.json",
+    "$id": "https://kissdevelopment.commonground.nu/kiss.link.schema.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "version": "0.1",
     "title": "Link",
