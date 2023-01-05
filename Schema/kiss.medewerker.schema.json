@@ -11,7 +11,7 @@
         "format": "email"
       },
       "contact": {
-        "$ref": "https://klantenBundle.commonground.nu/klant.schema.json",
+        "$ref": "https://klantenBundle.commonground.nu/klant.klant.schema.json",
         "nullable": true
       },
       "department": {
