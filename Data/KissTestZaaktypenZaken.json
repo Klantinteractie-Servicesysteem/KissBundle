@@ -47,7 +47,7 @@
                     "omschrijvingGeneriek": "behandelaar"
                 }
             ],
-            "besluittypen": {
+            "besluittypen": [{
                 "catalogus": "6b6f17a8-a813-4f9b-b191-b271e78db5f6",
                 "zaaktypes": [
                     "5b880f19-3bfa-4a74-ae98-fc486642e731"
@@ -62,7 +62,7 @@
                     }
                 ],
                 "beginGeldigheid": "2019-08-24"
-            },
+            }],
             "beginGeldigheid": "2019-08-24",
             "versiedatum": "2019-08-24",
             "concept": true
