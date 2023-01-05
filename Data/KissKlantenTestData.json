@@ -158,6 +158,7 @@
     ],
     "https://klantenBundle.commonground.nu/klant.klantContactmoment.schema.json": [
         {
+            "_id": "3d8bfba8-9a85-4304-9be7-a883010ed6bd",
             "contactmoment": {
                 "_id": "8f0fa8ea-aec1-4d87-9805-e9799442f187",
                 "bronorganisatie": "999994207",
@@ -261,7 +262,7 @@
     "https://klantenBundle.commonground.nu/klant.objectContactmoment.schema.json": [
         {
             "_id": "d2e74a0b-08f1-43f8-9a79-cd010a79f228",
-            "contactmoment": "8f0fa8ea-aec1-4d87-9805-e9799442f187",
+            "contactmoment": "3d8bfba8-9a85-4304-9be7-a883010ed6bd",
             "object": "3bb9bccc-0619-4c66-905e-fc5f606b16b0",
             "objectType": "zaak"
         }
