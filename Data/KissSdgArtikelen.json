@@ -1,0 +1,88 @@
+{
+    "https://kissdevelopment.commonground.nu/kiss.sdgProduct.schema.json": [
+        {
+        "url": "http://pdc.data.ergens.nl/sdg/api/v1/producten/e9388ded-31c8-4561-96c5-42e7352825dd",
+        "uuid": "e9388ded-31c8-4561-96c5-42e7352825dd",
+        "upnLabel": "omgevingsvergunning bouw",
+        "upnUri": "http://standaarden.overheid.nl/owms/terms/",
+        "versie": 0,
+        "publicatieDatum": "2021-03-19T00:17:07",
+        "productAanwezig": true,
+        "productValtOnder": {},
+        "verantwoordelijkeOrganisatie": {
+            "url": "",
+            "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
+            "owmsPrefLabel": "Deventer",
+            "owmsEndDate": null
+        },
+        "bevoegdeOrganisatie": {
+            "naam": "Deventer",
+            "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
+            "owmsPrefLabel": "Deventer",
+            "owmsEndDate": null
+        },
+        "catalogus": "",
+        "locaties": [],
+        "doelgroep": "eu-burger, eu-bedrijf",
+        "vertalingen": [
+            {
+                "taal": "nl",
+                "productTitelDecentraal": "Monument verbouwen of slopen",
+                "specifiekeTekst": "<p>Bezit (of koopt) u een beschermd monument?&nbsp;Dan zijn er regels als u het zou willen verbouwen, herstellen of aanpassen. Het doel van de monumentenstatus is de waarden te behouden. Daarom heeft u een&nbsp;omgevingsvergunning nodig als u een monument wilt wijzigen of (gedeeltelijk) slopen. Het plegen van onderhoud is vaak vergunningvrij.</p>\n <p>U heeft ook een vergunning nodig als u een gebouw binnen een beschermd stads- of dorpsgezicht wilt slopen. Of als in het bestemmingsplan staat dat u een omgevingsvergunning moet aanvragen.</p>\n <p>Wilt u mobiel gaan breken (sloopafval ter plaatse bewerken), stel dan de gemeente van tevoren op de hoogte van de werkzaamheden.</p>",
+                "procedureBeschrijving": "<p>Als u wilt weten of u een vergunning aan moet vragen, kunt u op het Omgevingsloket Online (OLO) een vergunningcheck doen. Moet u een vergunning aanvragen? Dit doet u ook via het OLO.</p>\n <p>Onder andere de volgende gegevens zijn nodig bij de aanvraag:</p>\n <ul>\n <li>foto&rsquo;s</li>\n <li>een situatieschets</li>\n <li>een korte beschrijving van het te slopen gebouw</li>\n <li>een tekening van het gebouw met de maten (vaak een oude bouwtekening, hoeft niet door een architect)</li>\n </ul>\n <h2>Beschermd stads- en dorpsgezicht</h2>\n <p>Het gebied van de binnenstad inclusief het Rijsterborgherpark en de Worp (het plantsoen) behoren tot een beschermd stadsgezicht van Deventer. Of uw sloopproject binnen de grenzen van het stadsgezicht valt, kunt u navragen bij de gemeente.</p>\n <h2>Mobiel puinbreken</h2>\n <p>Wilt u mobiel gaan breken, dan kunt u online&nbsp;<a href=\"https://dloket.deventer.nl/startform?id=VEO_MPB\" title=\"Naar Kennisgeving mobiel puinbreken\">mobiel breken melden</a>. De melding wordt gedaan door de uitvoerder van de werkzaamheden.</p>\n <h2>Onderhoud: vaak vergunningvrij</h2>\n <p>Voor gewoon onderhoud hoeft u geen vergunning aan te vragen. Gewoon onderhoud is alles waarbij het uiterlijk van het interieur of van de buitenkant van het pand niet verandert. Voorbeelden zijn:</p>\n <ul>\n <li>bijhouden van het schilderwerk in dezelfde kleur</li>\n <li>kleine reparaties met de oorspronkelijke materialen</li>\n </ul>\n <p>Ook als u in het monument aanpassingen doet, kan dit vaak zonder vergunning. Denk aan het verwijderen van een niet-historische keuken of plafond. Heeft uw monument onderdelen die geen monumentale waarde hebben? Bijvoorbeeld een recente schuur? Dan zijn de bouwactiviteiten aan deze onderdelen ook vaak vergunningvrij.</p>\n <p>Meer informatie over vergunningvrije werkzaamheden vindt u in de&nbsp;<a href=\"https://www.cultureelerfgoed.nl/domeinen/monumenten/publicaties/publicaties/2018/01/01/vergunningvrij\" title=\"Bekijk de brochure\">brochure</a>&nbsp;op de website van de Rijksdienst voor het Cultureel Erfgoed.</p>\n <p>U vraagt de omgevingsvergunning aan bij het&nbsp;<a href=\"http://www.omgevingsloket.nl/\" title=\"Naar Omgevingsloket Online\">Omgevingsloket Online (OLO)</a>. U ziet daar of de gemeente, provincie of het rijk over de vergunning voor uw monument gaat.</p>\n <h2>Andere vergunningen</h2>\n <p>In veel gevallen heeft u naast de omgevingsvergunning voor het monument ook een omgevingsvergunning voor het bouwen of verbouwen van uw pand nodig. Wilt u weten welke vergunningen u nodig heeft? Doet u dan de vergunningencheck op het Omgevingsloket Online.</p>\n <p>De aanvraag lijkt op de aanvraag voor een omgevingsvergunning voor het bouwen. Kijk daarvoor bij&nbsp;<a href=\"https://www.deventer.nl/loketten/digitaal-loket/bouw-en-verbouw-vergunning\" title=\"Naar Bouw en verbouw, vergunning\">Bouw en verbouw, vergunning</a>. Stuur dezelfde stukken mee. Daarnaast kan om de volgende informatie gevraagd worden:</p>\n <ul>\n <li>een bouwrapport of een cultuurhistorisch rapport</li>\n <li>een bouwbestek</li>\n </ul>\n <p>U moet tekeningen meeleveren. Dit zijn tekeningen van hoe het er nu uit ziet en van wat u van plan bent. Dat is nodig voor de toetsing.</p>",
+                "kostenEnBetaalmethoden": "<p>Aan een omgevingsvergunning zijn kosten verbonden. Een overzicht van alle kosten vindt u in de tarieventabel van de&nbsp;<a href=\"https://www.deventer.nl/legesverordening\" title=\"Naar de legesverordening\">Legesverordening</a>&nbsp;van de gemeente Deventer.</p>",
+                "uitersteTermijn": "<p>Bij een omgevingsvergunning voor een monument zijn er 2 procedures: een eenvoudige (de reguliere) en een uitgebreide.</p>\n <p>De uitgebreide procedure geldt alleen voor beschermde Rijksmonumenten. Deze procedure wordt gevolgd bij:</p>\n <ul>\n <li>(gedeeltelijke) sloop</li>\n <li>ingrijpende wijzigingen</li>\n <li>reconstructie van een beschermd monument</li>\n <li>wijziging bij herbestemming</li>\n <li>uitvoering van een natuurtoets door de gemeente</li>\n </ul>\n <p>De tijdsduur voor de uitgebreide procedure bedraagt 26 weken.</p>\n <p>Voor alle andere wijzigingen wordt de reguliere procedure gevolgd. Dit geldt ook voor wijzigingen aan gemeentelijke en provinciale monumenten. De tijdsduur voor de beslissing is 8 weken.</p>\n <p>De termijnen kunnen met 6 weken worden verlengd.</p>",
+                "conditions": "<p>U moet in de volgende gevallen een omgevingsvergunning aanvragen:</p>\n<ul>\n<li>Het gaat om de sloop van een bouwwerk binnen een beschermd stads- of dorpsgezicht.</li>\n<li>Het gaat om het restaureren, grondig verbouwen of slopen van een monument.</li>\n<li>In het bestemmingsplan van de gemeente staat dat u een omgevingsvergunning moet aanvragen.</li>\n</ul>\n<h2>Sloopafval</h2>\n<ul>\n<li>Het sloopafval scheidt u zoveel mogelijk in verontreinigde en niet-verontreinigde delen;</li>\n<li>Het verontreinigde afval biedt u aan als chemisch afval;</li>\n<li>Het niet-verontreinigde scheidt u in herbruikbare en niet-herbruikbare materialen;</li>\n<li>De niet-herbruikbare delen voert u af;</li>\n<li>De herbruikbare delen (met name beton- en metselwerkpuin) worden door een recyclingbedrijf tot puingranulaat verwerkt.</li>\n</ul>",
+                "bezwaarEnBeroep": "<h2>2 procedures</h2>\n<p>Bij de omgevingsvergunning zijn 2 procedures: een gewone (de reguliere) en een uitgebreide procedure.</p>\n<p>Bij de gewone procedure maakt u eerst bezwaar bij de instantie die uw aanvraag heeft afgewezen (bekijk&nbsp;<a href=\"http://www.deventer.nl/bezwaar\" title=\"Naar Bezwaar\">bezwaar bij gemeente Deventer</a>). Doe dit binnen 6 weken. Bent u het daarna niet eens met de uitspraak op het bezwaarschrift? Teken dan beroep aan bij de rechtbank. Eventueel kunt u ook nog in hoger beroep bij de Afdeling Bestuursrechtspraak van de Raad van State.</p>\n<p>Bij de uitgebreide procedure geeft u eerst uw mening over het ontwerpbesluit (zienswijze). Doe dit binnen 6 weken. Daarna kunt u in beroep gaan bij de rechtbank. Ook dan kunt u eventueel nog in hoger beroep gaan bij de Afdeling Bestuursrechtspraak van de Raad van State.</p>\n<p>Is er niet gereageerd binnen de beroepstermijn van 6 weken? Dan is de vergunning definitief.</p>",
+                "notice": "<h2>Monument: buiten- en binnenkant</h2>\n<p>Bij een monument gaat het niet alleen om de gevel of de buitenkant van het gebouw. Het gehele gebouw is aangewezen als monument, inclusief de binnenkant.</p>\n<h2>Er zijn 4 verschillende soorten monumenten:</h2>\n<ul>\n<li>Rijksmonument</li>\n<li>Gemeentelijk monument</li>\n<li>Rijksbeschermd stads- of dorpsgezicht</li>\n<li>Gemeentelijk beschermd stadsgezicht</li>\n</ul>\n<p>Een gemeentelijk monument of een Rijksmonument is een onroerend goed dat van (lokaal of algemeen) belang is door zijn schoonheid of betekenis voor de wetenschap of door zijn cultuurhistorische waarde. U hebt een vergunning nodig als u een monument wil slopen, veranderen of herstellen. Ook het gebruiken of laten gebruiken, waardoor het monument wordt ontsierd of in gevaar wordt gebracht mag niet zonder vergunning. Reguliere onderhoudswerkzaamheden zijn vergunningvrij.</p>\n<p>Bij beschermde stads- of dorpsgezichten gaat het om groepen van onroerende zaken, waarin zich &eacute;&eacute;n of meer monumenten bevinden. Hierbij hoeft het niet alleen te gaan over mooie panden. Ook bruggen kunnen hier bijvoorbeeld deel van uitmaken. Heeft uw plan gevolgen voor het aanzicht van een beschermd stads- of dorpsgezicht? Dan heeft u een omgevingsvergunning nodig.</p>\n<h2>Meer informatie</h2>\n<ul>\n<li>Meer informatie over<a href=\"https://www.raadvanstate.nl/\" title=\"Naar de website van de Raad van State\">&nbsp;in hoger beroep gaan bij de Raad van State</a>.</li>\n<li><a href=\"http://www.synbiosys.alterra.nl/natura2000/routeplanner.aspx?subj=routeplanner\" title=\"Naar de routeplanner beschermde natuur\">Routeplanner beschermde natuur binnen de omgevingsvergunning</a></li>\n</ul>",
+                "decentraleProcedureLink": "",
+                "vereisten": "",
+                "bewijs": "",
+                "contact": "",
+                "verwijzingLinks": [ ],
+                "synonyms": [
+                    {
+                        "synonym": "provinciale en gemeentelijke monumenten"
+                    },
+                    {
+                        "synonym": "panden"
+                    },
+                    {
+                        "synonym": "gebouwen"
+                    },
+                    {
+                        "synonym": "verwijderen asbest"
+                    },
+                    {
+                        "synonym": "sloopvergunning"
+                    },
+                    {
+                        "synonym": "toestemming tot het slopen van bouwwerk of woning"
+                    },
+                    {
+                        "synonym": "monumentenvergunning"
+                    },
+                    {
+                        "synonym": "vastgoed"
+                    },
+                    {
+                        "synonym": "beschermd stadsgezicht"
+                    },
+                    {
+                        "synonym": "beschermd dorpsgezicht"
+                    },
+                    {
+                        "synonym": "sloopomgevingsvergunning"
+                    }
+                ],
+                "wtdBijGeenReactie": "",
+                "datumWijziging": "2021-03-19T00:17:07",
+                "deskMemo": "<h2>Zaakgerichte vragen</h2>\n<p>Team Ondernemen en Vergunningen - Adviseurs monumenten</p>\n<h2>Algemene vragen</h2>\n<p>Publiekscontacten Vergunningen</p>",
+                "productAanwezigToelichting": "",
+                "productValtOnderToelichting": ""
+            }
+        ],
+        "gerelateerdeProducten": [ ]
+        }
+    ]
+}
