@@ -2,7 +2,7 @@
     "https://kissdevelopment.commonground.nu/kiss.sdgProduct.schema.json": [
         {
             "upnLabel": "omgevingsvergunning bouw",
-            "upnUri": "http://standaarden.overheid.nl/owms/terms/",
+            "upnUri": "http://standaarden.overheid.nl/owms/terms/omgevingsvergunning_bouw",
             "versie": 0,
             "publicatieDatum": "2021-03-19T00:17:07",
             "productAanwezig": true,
@@ -120,7 +120,7 @@
         },
         {
             "upnLabel": "asbestverwijdering",
-            "upnUri": "http://standaarden.overheid.nl/owms/terms/",
+            "upnUri": "http://standaarden.overheid.nl/owms/terms/asbestverwijdering",
             "versie": 0,
             "publicatieDatum": "2021-03-15T17:00:50",
             "productAanwezig": true,
@@ -299,7 +299,7 @@
         },
         {
             "upnLabel": "omgevingsvergunning sloop",
-            "upnUri": "http://standaarden.overheid.nl/owms/terms/",
+            "upnUri": "http://standaarden.overheid.nl/owms/terms/omgevingsvergunning_sloop",
             "versie": 0,
             "publicatieDatum": "2021-03-24T17:23:02",
             "productAanwezig": true,
