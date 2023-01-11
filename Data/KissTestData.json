@@ -676,27 +676,5 @@
                 }
             }
         }
-    ],
-    "https://vng.opencatalogi.nl/schemas/referentielijsten_resultaattypeomschrijvinggeneriek.schema.json": [
-        {
-			"definitie": "Contactverzoek gemaakt",
-			"omschrijving": "Contactverzoek"
-        },
-        {
-			"definitie": "Zelfstandig afgehandeld",
-			"omschrijving": "zelfstandig"
-        },
-        {
-			"definitie": "Afgehandeld, klant belt nog terug",
-			"omschrijving": "isAfgehandeld"
-        },
-        {
-			"definitie": "Doorverbonden met de afdeling",
-			"omschrijving": "Afdeling"
-        },
-        {
-			"definitie": "Doorverbonden met de juiste collega",
-			"omschrijving": "Collega"
-        }
-    ]    
+    ] 
 }
