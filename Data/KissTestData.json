@@ -1,12 +1,4 @@
 {
-    "https://kissdevelopment.commonground.nu/kiss.openpubType.schema.json": [
-        {
-            "name": "Nieuws"
-        },
-        {
-            "name": "Werkinstructie"
-        }
-    ],
     "https://kissdevelopment.commonground.nu/kiss.openpubSkill.schema.json": [
         {
             "name": "Afval"
