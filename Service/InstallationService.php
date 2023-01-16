@@ -144,7 +144,7 @@ class InstallationService implements InstallerInterface
         $endpoints = [];
         foreach($objectsThatShouldHaveEndpoints as $objectThatShouldHaveEndpoint) {
             $entity = $this->entityManager->getRepository('App:Entity')->findOneBy(['reference' => $objectThatShouldHaveEndpoint['reference']]);
-            if (!$endpointRepository->findOneBy(['name' => $entity->getName()])) {
+            if ($entity instanceof Entity && !$endpointRepository->findOneBy(['name' => $entity->getName()])) {
                 $endpoint = new Endpoint($entity, $objectThatShouldHaveEndpoint['path'], $objectThatShouldHaveEndpoint['methods']);
 
                 $this->entityManager->persist($endpoint);
