@@ -9,6 +9,7 @@ use App\Entity\DashboardCard;
 use App\Entity\Cronjob;
 use App\Entity\Endpoint;
 use App\Entity\Entity;
+use App\Entity\Gateway as Source;
 use CommonGateway\CoreBundle\Installer\InstallerInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Doctrine\ORM\EntityManagerInterface;
@@ -35,6 +36,17 @@ class InstallationService implements InstallerInterface
         ['reference' => 'https://kissdevelopment.commonground.nu/kiss.medewerkerAvailabilities.schema.json',                 'path' => '/mederwerkerAvailabilities',                    'methods' => []],
         ['reference' => 'https://kissdevelopment.commonground.nu/kiss.review.schema.json',                 'path' => '/reviews',                    'methods' => []],
         ['reference' => 'https://kissdevelopment.commonground.nu/kiss.sdgProduct.schema.json',                 'path' => '/sdg/kennisartikelen',                    'methods' => []],
+    ];
+    
+    public const SOURCES = [
+        ['name' => 'EnterpriseSearch API Search', 'location' => 'https://enterprise-search-ent-http.elasticsearch:3002', 'auth' => 'apikey', 'apikey' => '!secret-ChangeMe!'],
+        ['name' => 'EnterpriseSearch API Private', 'location' => 'https://enterprise-search-ent-http.elasticsearch:3002', 'auth' => 'apikey', 'apikey' => '!secret-ChangeMe!'],
+        ['name' => 'openPub API', 'location' => 'https://openweb.dev.kiss-demo.nl/wp-json/wp/v2', 'auth' => 'none']
+    ];
+    
+    public const PROXY_ENDPOINTS = [
+        ['name' => 'Elasticsearch proxy endpoint', 'proxy' => 'EnterpriseSearch API Search', 'path' => '/elastic', 'methods' => ['POST']],
+        ['name' => 'Elasticsearch proxy endpoint', 'proxy' => 'EnterpriseSearch API Search', 'path' => '/elastic', 'methods' => ['GET']]
     ];
 
     public const ACTION_HANDLERS = [
@@ -156,6 +168,26 @@ class InstallationService implements InstallerInterface
 
         return $endpoints;
     }
+    
+    private function createSources($sourcesThatShouldExist): array
+    {
+        $sourceRepository = $this->entityManager->getRepository('App:Gateway');
+        $sources = [];
+    
+        foreach($sourcesThatShouldExist as $sourceThatShouldExist) {
+            if (!$sourceRepository->findOneBy(['name' => $sourceThatShouldExist['name']])) {
+                $source = new Source();
+            
+                $this->entityManager->persist($source);
+                $this->entityManager->flush();
+                $sources[] = $source;
+            }
+        }
+    
+        (isset($this->io) ? $this->io->writeln(count($sources).' Sources Created'): '');
+    
+        return $sources;
+    }
 
     private function addSchemasToCollection(CollectionEntity $collection, string $schemaPrefix): CollectionEntity
     {
@@ -221,7 +253,10 @@ class InstallationService implements InstallerInterface
 
         // Let create some endpoints
         $this->createEndpoints($this::SCHEMAS_THAT_SHOULD_HAVE_ENDPOINTS);
-
+        
+        // Create Sources & proxy endpoints
+        $this->createSources($this::SOURCES);
+        $this->createProxyEndpoints($this::PROXY_ENDPOINTS);
 
         // Lets see if there is a generic search endpoint
 
