@@ -17,7 +17,7 @@
     "minimum-stability" : "dev",
     "require": {
         "php": ">=7.4",
-		"commongateway/corebundle": ">=0.0.1",
+		"commongateway/corebundle": "dev-version-kiss",
 		"common-gateway/brp-bundle": ">=0.0.8",
 		"common-gateway/zgw-bundle": ">=0.1.14",
 		"common-gateway/klanten-bundle": ">=0.0.11"
