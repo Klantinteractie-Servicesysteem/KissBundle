@@ -44,7 +44,7 @@ class InstallationService implements InstallerInterface
         ['name' => 'EnterpriseSearch API Private', 'location' => 'https://enterprise-search-ent-http.elasticsearch:3002',
             'headers' => ['accept' => 'application/json'], 'auth' => 'apikey', 'apikey' => '!secret-ChangeMe!', 'configuration' => ['verify' => false]],
         ['name' => 'OpenPub API', 'location' => 'https://openweb.dev.kiss-demo.nl/wp-json/wp/v2',
-            'headers' => ['accept' => 'application/json'], 'auth' => 'none']
+            'headers' => ['accept' => 'application/json'], 'auth' => 'none', 'configuration' => ['verify' => false]]
     ];
     
     public const PROXY_ENDPOINTS = [
