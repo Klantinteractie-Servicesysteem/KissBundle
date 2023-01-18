@@ -39,14 +39,17 @@ class InstallationService implements InstallerInterface
     ];
     
     public const SOURCES = [
-        ['name' => 'EnterpriseSearch API Search', 'location' => 'https://enterprise-search-ent-http.elasticsearch:3002', 'auth' => 'apikey', 'apikey' => '!secret-ChangeMe!'],
-        ['name' => 'EnterpriseSearch API Private', 'location' => 'https://enterprise-search-ent-http.elasticsearch:3002', 'auth' => 'apikey', 'apikey' => '!secret-ChangeMe!'],
-        ['name' => 'openPub API', 'location' => 'https://openweb.dev.kiss-demo.nl/wp-json/wp/v2', 'auth' => 'none']
+        ['name' => 'EnterpriseSearch API Search', 'location' => 'https://enterprise-search-ent-http.elasticsearch:3002',
+            'headers' => ['accept' => 'application/json'], 'auth' => 'apikey', 'apikey' => '!secret-ChangeMe!', 'configuration' => ['verify' => false]],
+        ['name' => 'EnterpriseSearch API Private', 'location' => 'https://enterprise-search-ent-http.elasticsearch:3002',
+            'headers' => ['accept' => 'application/json'], 'auth' => 'apikey', 'apikey' => '!secret-ChangeMe!', 'configuration' => ['verify' => false]],
+        ['name' => 'OpenPub API', 'location' => 'https://openweb.dev.kiss-demo.nl/wp-json/wp/v2',
+            'headers' => ['accept' => 'application/json'], 'auth' => 'none']
     ];
     
     public const PROXY_ENDPOINTS = [
         ['name' => 'Elasticsearch proxy endpoint', 'proxy' => 'EnterpriseSearch API Search', 'path' => '/elastic', 'methods' => ['POST']],
-        ['name' => 'Elasticsearch proxy endpoint', 'proxy' => 'EnterpriseSearch API Search', 'path' => '/elastic', 'methods' => ['GET']]
+        ['name' => 'OpenPub WP proxy endpoint', 'proxy' => 'OpenPub API', 'path' => '/openpub', 'methods' => ['GET']]
     ];
 
     public const ACTION_HANDLERS = [
@@ -176,7 +179,8 @@ class InstallationService implements InstallerInterface
     
         foreach($sourcesThatShouldExist as $sourceThatShouldExist) {
             if (!$sourceRepository->findOneBy(['name' => $sourceThatShouldExist['name']])) {
-                $source = new Source();
+                $source = new Source($sourceThatShouldExist);
+                $source->setApikey(array_key_exists('apikey', $sourceThatShouldExist) ? $sourceThatShouldExist['apikey'] : '');
             
                 $this->entityManager->persist($source);
                 $this->entityManager->flush();
@@ -187,6 +191,25 @@ class InstallationService implements InstallerInterface
         (isset($this->io) ? $this->io->writeln(count($sources).' Sources Created'): '');
     
         return $sources;
+    }
+    
+    private function createProxyEndpoints($proxyEndpoints): array
+    {
+        $endpointRepository = $this->entityManager->getRepository('App:Endpoint');
+        $endpoints = [];
+        foreach($proxyEndpoints as $proxyEndpoint) {
+            $source = $this->entityManager->getRepository('App:Gateway')->findOneBy(['name' => $proxyEndpoint['proxy']]);
+            if ($source instanceof Source && !$endpointRepository->findOneBy(['name' => $proxyEndpoint['name'], 'proxy' => $source])) {
+                $endpoint = new Endpoint(null, $proxyEndpoint['path'], $proxyEndpoint['methods'], $source);
+            
+                $this->entityManager->persist($endpoint);
+                $this->entityManager->flush();
+                $endpoints[] = $endpoint;
+            }
+        }
+        (isset($this->io) ? $this->io->writeln(count($endpoints).' Proxy Endpoints Created'): '');
+    
+        return $endpoints;
     }
 
     private function addSchemasToCollection(CollectionEntity $collection, string $schemaPrefix): CollectionEntity
