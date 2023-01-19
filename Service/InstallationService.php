@@ -35,6 +35,7 @@ class InstallationService implements InstallerInterface
         ['reference' => 'https://kissdevelopment.commonground.nu/kiss.medewerkerAvailabilities.schema.json',                 'path' => '/mederwerkerAvailabilities',                    'methods' => []],
         ['reference' => 'https://kissdevelopment.commonground.nu/kiss.review.schema.json',                 'path' => '/reviews',                    'methods' => []],
         ['reference' => 'https://kissdevelopment.commonground.nu/kiss.sdgProduct.schema.json',                 'path' => '/sdg/kennisartikelen',                    'methods' => []],
+        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.pubPublicatie.schema.json',                 'path' => '/kiss_openpub_pub',                    'methods' => []],
         ['reference' => 'https://kissdevelopment.commonground.nu/kiss.resultaatypeomschrijvinggeneriek.schema.json',                 'path' => '/ref/resultaattypeomschrijvingen',                    'methods' => []],
     ];
 
