@@ -157,7 +157,17 @@
     ],
     "https://klantenBundle.commonground.nu/klant.klantContactmoment.schema.json": [
         {
-            "_id": "3d8bfba8-9a85-4304-9be7-a883010ed6bd",
+            "contactmoment": {
+                "bronorganisatie": "999994207",
+                "registratiedatum": "2022-08-04T10:47:00+00:00",
+                "startdatum": "2022-08-04T10:42:00+00:00",
+                "einddatum": "2022-08-04T10:47:00+00:00",
+                "initiatiefnemer": "klant",
+                "kanaal": "Chat",
+                "afwijkendOnderwerp": "klant wil status MOR-melding weten",
+                "resultaat": "Zelfstandig afgehandeld",
+                "tekst": "Klant doet navraag naar status MOR-melding van een week geleden. Gemeld dat die nog openstaat. Zie notitie bij Zaak."
+            },
             "klant": "4c90e5fa-b1ea-4106-8e3d-9804826f9678",
             "rol": "gesprekspartner"
         },
@@ -206,7 +216,25 @@
             "rol": "gesprekspartner"
         },
         {
-            "_id": "ad07f7b3-3d10-45f0-a921-28357c2679e3",
+            "contactmoment": {
+                "afwijkendOnderwerp": "sticker of o-document paspoort",
+                "bronorganisatie": "999994207",
+                "einddatum": "2022-08-04T10:47:00+00:00",
+                "initiatiefnemer": "klant",
+                "kanaal": "telefoon",
+                "onderwerpLinks": [
+                    "http://pdc.data.ergens.nl/sdg/api/v1/producten/d74c095a-722b-11ed-a1eb-0242ac120002",
+                    "http://pdc.data.ergens.nl/sdg/api/v1/producten/e42af05a-722b-11ed-a1eb-0242ac120002",
+                    "https://www.deventer.nl/paspoort",
+                    "/api/medewerkers/f2684d7a-722b-11ed-a1eb-0242ac120002"
+                ],
+                "primaireVraag": "http://pdc.data.ergens.nl/sdg/api/v1/producten/5d96f61e-5a87-4d59-8676-70402b215a4e",
+                "primaireVraagWeergave": "Paspoort - Bijzonderheden",
+                "registratiedatum": "2022-08-04T10:47:00+00:00",
+                "resultaat": "Zelfstandig afgehandeld",
+                "startdatum": "2022-08-04T10:42:00+00:00",
+                "tekst": "Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem.\n\nNulla sit amet est."
+            },
             "klant":"5f9f74da-0afb-49ff-84b7-573601295fc3",
             "rol":"gesprekspartner"
         }
