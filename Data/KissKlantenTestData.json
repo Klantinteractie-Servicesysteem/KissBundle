@@ -101,7 +101,6 @@
             "telefoonnummers": [],
             "emails": [
                 {
-                    "_id": "347780ee-1f70-4175-9a83-c0f3ba8254a7",
                     "email": "icatttest+roza@gmail.com",
                     "naam": "e-mailadres 1"
                 }
@@ -159,18 +158,6 @@
     "https://klantenBundle.commonground.nu/klant.klantContactmoment.schema.json": [
         {
             "_id": "3d8bfba8-9a85-4304-9be7-a883010ed6bd",
-            "contactmoment": {
-                "_id": "8f0fa8ea-aec1-4d87-9805-e9799442f187",
-                "bronorganisatie": "999994207",
-                "registratiedatum": "2022-08-04T10:47:00+00:00",
-                "startdatum": "2022-08-04T10:42:00+00:00",
-                "einddatum": "2022-08-04T10:47:00+00:00",
-                "initiatiefnemer": "klant",
-                "kanaal": "Chat",
-                "afwijkendOnderwerp": "klant wil status MOR-melding weten",
-                "resultaat": "Zelfstandig afgehandeld",
-                "tekst": "Klant doet navraag naar status MOR-melding van een week geleden. Gemeld dat die nog openstaat. Zie notitie bij Zaak."
-            },
             "klant": "4c90e5fa-b1ea-4106-8e3d-9804826f9678",
             "rol": "gesprekspartner"
         },
@@ -219,42 +206,7 @@
             "rol": "gesprekspartner"
         },
         {
-            "contactmoment": {
-                "_id": "7dbf76dd-193b-4e51-a258-c02ef4ee44e3",
-                "afwijkendOnderwerp": "sticker of o-document paspoort",
-                "bronorganisatie": "999994207",
-                "einddatum": "2022-08-04T10:47:00+00:00",
-                "gespreksId": null,
-                "initiatiefnemer": "klant",
-                "kanaal": "telefoon",
-                "klantcontactmomenten": [],
-                "medewerker": null,
-                "medewerkerIdentificatie": {
-                    "identificatie": "KCM-MEDEWERKER01",
-                    "achternaam": "Avsarolgu",
-                    "voorletters": "A.",
-                    "voorvoegselAchternaam": null
-                },
-                "objectcontactmomenten": [],
-                "onderwerpLinks": [
-                    "http://pdc.data.ergens.nl/sdg/api/v1/producten/a8099dce-154c-4cb7-bd66-708cdaf99bf0",
-                    "http://pdc.data.ergens.nl/sdg/api/v1/producten/6b373290-0e08-4680-acce-1eeeab69ca88",
-                    "https://www.deventer.nl/paspoort",
-                    "/api/medewerkers/f2684d7a-722b-11ed-a1eb-0242ac120002"
-                ],
-                "primaireVraag": "http://pdc.data.ergens.nl/sdg/api/v1/producten/6b373290-0e08-4680-acce-1eeeab69ca88",
-                "primaireVraagWeergave": "Paspoort - Bijzonderheden",
-                "registratiedatum": "2022-08-04T10:47:00+00:00",
-                "resultaat": "Zelfstandig afgehandeld",
-                "startdatum": "2022-08-04T10:42:00+00:00",
-                "tekst": "Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem.\n\nNulla sit amet est.",
-                "todo": null,
-                "url": "/api/klant/contactmomenten/7dbf76dd-193b-4e51-a258-c02ef4ee44e3",
-                "volgendContactmoment": null,
-                "voorkeurskanaal": null,
-                "voorkeurstaal": null,
-                "vorigContactmoment": null
-            },
+            "_id": "ad07f7b3-3d10-45f0-a921-28357c2679e3",
             "klant":"5f9f74da-0afb-49ff-84b7-573601295fc3",
             "rol":"gesprekspartner"
         }
@@ -262,16 +214,60 @@
     "https://klantenBundle.commonground.nu/klant.objectContactmoment.schema.json": [
         {
             "_id": "d2e74a0b-08f1-43f8-9a79-cd010a79f228",
-            "contactmoment": "3d8bfba8-9a85-4304-9be7-a883010ed6bd",
             "object": "3bb9bccc-0619-4c66-905e-fc5f606b16b0",
             "objectType": "zaak"
         }
     ],
     "https://klantenBundle.commonground.nu/klant.contactmoment.schema.json": [
         {
+            "_id": "8f0fa8ea-aec1-4d87-9805-e9799442f187",
             "bronorganisatie": "999994207",
             "objectcontactmomenten": ["d2e74a0b-08f1-43f8-9a79-cd010a79f228"],
-            "klantcontactmomenten": ["8f0fa8ea-aec1-4d87-9805-e9799442f187"]
+            "klantcontactmomenten": ["3d8bfba8-9a85-4304-9be7-a883010ed6bd"],
+            "registratiedatum": "2022-08-04T10:47:00+00:00",
+            "startdatum": "2022-08-04T10:42:00+00:00",
+            "einddatum": "2022-08-04T10:47:00+00:00",
+            "initiatiefnemer": "klant",
+            "kanaal": "Chat",
+            "afwijkendOnderwerp": "klant wil status MOR-melding weten",
+            "resultaat": "Zelfstandig afgehandeld",
+            "tekst": "Klant doet navraag naar status MOR-melding van een week geleden. Gemeld dat die nog openstaat. Zie notitie bij Zaak."
+        },
+        {
+            "_id": "7dbf76dd-193b-4e51-a258-c02ef4ee44e3",
+            "afwijkendOnderwerp": "sticker of o-document paspoort",
+            "bronorganisatie": "999994207",
+            "einddatum": "2022-08-04T10:47:00+00:00",
+            "gespreksId": null,
+            "initiatiefnemer": "klant",
+            "kanaal": "telefoon",
+            "klantcontactmomenten": ["ad07f7b3-3d10-45f0-a921-28357c2679e3"],
+            "medewerker": null,
+            "medewerkerIdentificatie": {
+                "identificatie": "KCM-MEDEWERKER01",
+                "achternaam": "Avsarolgu",
+                "voorletters": "A.",
+                "voorvoegselAchternaam": null
+            },
+            "objectcontactmomenten": [],
+            "onderwerpLinks": [
+                "http://pdc.data.ergens.nl/sdg/api/v1/producten/a8099dce-154c-4cb7-bd66-708cdaf99bf0",
+                "http://pdc.data.ergens.nl/sdg/api/v1/producten/6b373290-0e08-4680-acce-1eeeab69ca88",
+                "https://www.deventer.nl/paspoort",
+                "/api/medewerkers/f2684d7a-722b-11ed-a1eb-0242ac120002"
+            ],
+            "primaireVraag": "http://pdc.data.ergens.nl/sdg/api/v1/producten/6b373290-0e08-4680-acce-1eeeab69ca88",
+            "primaireVraagWeergave": "Paspoort - Bijzonderheden",
+            "registratiedatum": "2022-08-04T10:47:00+00:00",
+            "resultaat": "Zelfstandig afgehandeld",
+            "startdatum": "2022-08-04T10:42:00+00:00",
+            "tekst": "Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem.\n\nNulla sit amet est.",
+            "todo": null,
+            "url": "/api/klant/contactmomenten/7dbf76dd-193b-4e51-a258-c02ef4ee44e3",
+            "volgendContactmoment": null,
+            "voorkeurskanaal": null,
+            "voorkeurstaal": null,
+            "vorigContactmoment": null
         }
     ]
 }

@@ -8,6 +8,48 @@
             "contactpersoonBeheerEmailadres": "sytsk@icatt.nl"
         }
     ],
+    "https://vng.opencatalogi.nl/schemas/ztc.rolType.schema.json": [
+        {
+            "_id": "b76d0354-5a77-41ba-b84f-b1eeda3b9f78",
+            "omschrijving": "indiener",
+            "omschrijvingGeneriek": "initiator"
+        },
+        {
+            "_id": "80c74793-a752-4e00-a996-925fb99eed21",
+            "omschrijving": "behandelaar",
+            "omschrijvingGeneriek": "behandelaar"
+        },
+        {
+            "_id": "8a857604-15e6-4698-ab9c-96e1b3ab5de6",
+            "omschrijving": "indiener",
+            "omschrijvingGeneriek": "initiator"
+        },
+        {
+            "_id": "06cf1c5d-1aa3-47ec-af44-2477d5642d26",
+            "omschrijving": "behandelaar",
+            "omschrijvingGeneriek": "behandelaar"
+        },
+        {
+            "_id": "a1531c29-e7ac-4b64-bc18-3c0dc675ab61",
+            "omschrijving": "indiener",
+            "omschrijvingGeneriek": "initiator"
+        },
+        {
+            "_id": "ffe65441-4c4f-407b-ada5-f7d8c2d6cc88",
+            "omschrijving": "behandelaar",
+            "omschrijvingGeneriek": "behandelaar"
+        },
+        {
+            "_id": "ed245dee-3184-4371-8bf0-b337d2575cb1",
+            "omschrijving": "indiener",
+            "omschrijvingGeneriek": "initiator"
+        },
+        {
+            "_id": "85B52629-DAA7-4056-9F0C-3839ED8EDCBE",
+            "omschrijving": "behandelaar",
+            "omschrijvingGeneriek": "behandelaar"
+        }
+    ],
     "https://vng.opencatalogi.nl/schemas/ztc.zaakType.schema.json": [
         {
             "_id": "5b880f19-3bfa-4a74-ae98-fc486642e731",
@@ -34,18 +76,8 @@
             },
             "catalogus": "6b6f17a8-a813-4f9b-b191-b271e78db5f6",
             "roltypen": [
-                {
-                    "_id": "b76d0354-5a77-41ba-b84f-b1eeda3b9f78",
-                    "zaaktype": "5b880f19-3bfa-4a74-ae98-fc486642e731",
-                    "omschrijving": "indiener",
-                    "omschrijvingGeneriek": "initiator"
-                },
-                {
-                    "_id": "80c74793-a752-4e00-a996-925fb99eed21",
-                    "zaaktype": "5b880f19-3bfa-4a74-ae98-fc486642e731",
-                    "omschrijving": "behandelaar",
-                    "omschrijvingGeneriek": "behandelaar"
-                }
+                "b76d0354-5a77-41ba-b84f-b1eeda3b9f78",
+                "80c74793-a752-4e00-a996-925fb99eed21"
             ],
             "besluittypen": [{
                 "catalogus": "6b6f17a8-a813-4f9b-b191-b271e78db5f6",
@@ -92,18 +124,8 @@
             },
             "catalogus": "6b6f17a8-a813-4f9b-b191-b271e78db5f6",
             "roltypen": [
-                {
-                    "_id": "8a857604-15e6-4698-ab9c-96e1b3ab5de6",
-                    "zaaktype": "126ad23c-2d06-4b51-8fe2-0d259ee313bc",
-                    "omschrijving": "indiener",
-                    "omschrijvingGeneriek": "initiator"
-                },
-                {
-                    "_id": "06cf1c5d-1aa3-47ec-af44-2477d5642d26",
-                    "zaaktype": "126ad23c-2d06-4b51-8fe2-0d259ee313bc",
-                    "omschrijving": "behandelaar",
-                    "omschrijvingGeneriek": "behandelaar"
-                }
+                "8a857604-15e6-4698-ab9c-96e1b3ab5de6",
+                "06cf1c5d-1aa3-47ec-af44-2477d5642d26"
             ],
             "beginGeldigheid": "2019-08-24",
             "versiedatum": "2019-08-24",
@@ -134,18 +156,8 @@
             },
             "catalogus": "6b6f17a8-a813-4f9b-b191-b271e78db5f6",
             "roltypen": [
-                {
-                    "_id": "a1531c29-e7ac-4b64-bc18-3c0dc675ab61",
-                    "zaaktype": "8dac4f23-5327-497f-bbfc-091ca44e5f9b",
-                    "omschrijving": "indiener",
-                    "omschrijvingGeneriek": "initiator"
-                },
-                {
-                    "_id": "ffe65441-4c4f-407b-ada5-f7d8c2d6cc88",
-                    "zaaktype": "8dac4f23-5327-497f-bbfc-091ca44e5f9b",
-                    "omschrijving": "behandelaar",
-                    "omschrijvingGeneriek": "behandelaar"
-                }
+                "a1531c29-e7ac-4b64-bc18-3c0dc675ab61",
+                "ffe65441-4c4f-407b-ada5-f7d8c2d6cc88"
             ],
             "beginGeldigheid": "2019-08-24",
             "eindeGeldigheid": "2019-08-24",
@@ -177,18 +189,8 @@
             },
             "catalogus": "6b6f17a8-a813-4f9b-b191-b271e78db5f6",
             "roltypen": [
-                {
-                    "_id": "ed245dee-3184-4371-8bf0-b337d2575cb1",
-                    "zaaktype": "eb5f542f-b356-4e2d-bcb6-279320b34ac6",
-                    "omschrijving": "indiener",
-                    "omschrijvingGeneriek": "initiator"
-                },
-                {
-                    "_id": "85B52629-DAA7-4056-9F0C-3839ED8EDCBE",
-                    "zaaktype": "eb5f542f-b356-4e2d-bcb6-279320b34ac6",
-                    "omschrijving": "behandelaar",
-                    "omschrijvingGeneriek": "behandelaar"
-                }
+                "ed245dee-3184-4371-8bf0-b337d2575cb1",
+                "85B52629-DAA7-4056-9F0C-3839ED8EDCBE"
             ],
             "beginGeldigheid": "2019-08-24",
             "versiedatum": "2019-08-24",
