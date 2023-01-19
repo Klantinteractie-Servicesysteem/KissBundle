@@ -556,5 +556,27 @@
                 }
             }
         }
-    ] 
+    ],
+    "https://kissdevelopment.commonground.nu/kiss.resultaatypeomschrijvinggeneriek.schema.json": [
+        {
+			"omschrijving": "Contactverzoek",
+            "definitie": "Contactverzoek gemaakt"
+        },
+        {
+			"omschrijving": "zelfstandig",
+            "definitie": "Zelfstandig afgehandeld"
+        },
+        {
+			"omschrijving": "isAfgehandeld",
+            "definitie": "Afgehandeld, klant belt nog terug"
+        },
+        {
+			"omschrijving": "Afdeling",
+            "definitie": "Doorverbonden met de afdeling"
+        },
+        {
+			"omschrijving": "Collega",
+            "definitie": "Doorverbonden met de juiste collega"
+        }
+    ]
 }
