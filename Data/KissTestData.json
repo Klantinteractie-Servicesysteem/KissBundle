@@ -677,26 +677,26 @@
             }
         }
     ],
-    "https://vng.opencatalogi.nl/schemas/referentielijsten_resultaattypeomschrijvinggeneriek.schema.json": [
+    "https://kissdevelopment.commonground.nu/kiss.resultaatypeomschrijvinggeneriek.schema.json": [
         {
-			"definitie": "Contactverzoek gemaakt",
-			"omschrijving": "Contactverzoek"
+			"omschrijving": "Contactverzoek",
+            "definitie": "Contactverzoek gemaakt"
         },
         {
-			"definitie": "Zelfstandig afgehandeld",
-			"omschrijving": "zelfstandig"
+			"omschrijving": "zelfstandig",
+            "definitie": "Zelfstandig afgehandeld"
         },
         {
-			"definitie": "Afgehandeld, klant belt nog terug",
-			"omschrijving": "isAfgehandeld"
+			"omschrijving": "isAfgehandeld",
+            "definitie": "Afgehandeld, klant belt nog terug"
         },
         {
-			"definitie": "Doorverbonden met de afdeling",
-			"omschrijving": "Afdeling"
+			"omschrijving": "Afdeling",
+            "definitie": "Doorverbonden met de afdeling"
         },
         {
-			"definitie": "Doorverbonden met de juiste collega",
-			"omschrijving": "Collega"
+			"omschrijving": "Collega",
+            "definitie": "Doorverbonden met de juiste collega"
         }
     ]
 }
