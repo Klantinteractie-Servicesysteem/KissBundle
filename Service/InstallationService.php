@@ -294,7 +294,7 @@ class InstallationService implements InstallerInterface
         {
             $cronjob = new Cronjob();
             $cronjob->setName('Kiss');
-            $cronjob->setDescription("This cronjob fires all the kiss actions every 5 minutes");
+            $cronjob->setDescription("This cronjob fires all the kiss actions every minute");
             $cronjob->setThrows(['kiss.default.listens']);
             $cronjob->setCrontab('*/1 * * * *');
 
