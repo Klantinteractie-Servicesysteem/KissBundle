@@ -147,7 +147,7 @@ class InstallationService implements InstallerInterface
             $defaultConfig = $this->addActionConfiguration($actionHandler);
 
             $action = new Action($actionHandler);
-            $action->setListens(['kiss.default.listens']);
+            $action->setListens(['commongateway.response.pre']);
             $action->setConfiguration($defaultConfig);
 
             $this->entityManager->persist($action);
