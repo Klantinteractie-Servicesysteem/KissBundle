@@ -6,14 +6,6 @@
             "versie": 0,
             "publicatieDatum": "2021-03-19T00:17:07",
             "productAanwezig": true,
-            "verantwoordelijkeOrganisatie": {
-                "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
-                "owmsPrefLabel": "Deventer"
-            },
-            "bevoegdeOrganisatie": {
-                "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
-                "owmsPrefLabel": "Deventer"
-            },
             "catalogus": "http://pdc.data.ergens.nl/sdg/api/v1/catalogi/aad3cbc7-4063-464c-8dea-f92f51d8f664",
             "doelgroep": "eu-burger, eu-bedrijf",
             "vertalingen": [
@@ -66,14 +58,7 @@
                     "deskMemo": "<h2>Zaakgerichte vragen</h2>\n<p>Team Ondernemen en Vergunningen - Adviseurs monumenten</p>\n<h2>Algemene vragen</h2>\n<p>Publiekscontacten Vergunningen</p>",
                     "datumWijziging": "2021-03-19T00:17:07"
                 }
-            ]
-        },
-        {
-            "upnLabel": "individuele inkomenstoeslag",
-            "upnUri": "http://standaarden.overheid.nl/owms/terms/indInkToesl",
-            "versie": 0,
-            "publicatieDatum": "2022-06-28",
-            "productAanwezig": true,
+            ],
             "verantwoordelijkeOrganisatie": {
                 "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
                 "owmsPrefLabel": "Deventer"
@@ -81,7 +66,14 @@
             "bevoegdeOrganisatie": {
                 "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
                 "owmsPrefLabel": "Deventer"
-            },
+            }
+        },
+        {
+            "upnLabel": "individuele inkomenstoeslag",
+            "upnUri": "http://standaarden.overheid.nl/owms/terms/indInkToesl",
+            "versie": 0,
+            "publicatieDatum": "2022-06-28",
+            "productAanwezig": true,
             "catalogus": "http://pdc.data.ergens.nl/sdg/api/v1/catalogi/aad3cbc7-4063-464c-8dea-f92f51d8f664",
             "doelgroep": "eu-burger",
             "vertalingen": [
@@ -116,14 +108,7 @@
                     "datumWijziging": "2022-06-28T10:15:50",
                     "deskMemo": "<p>Wanneer iemand IIT wil aanvragen controleer je wanneer de laatste verstrekte aanvraag is gedaan, om te kijken of er al opnieuw een aanvraag gedaan mag worden.<br />Dit kun je doen door in de eSuite de persoon op te zoeken en te kijken onder zaken.<br />Is de laatst verstrekte aanvraag in mei 2022 gedaan, dan mag in mei 2023 er weer een nieuwe aanvraag gedaan worden en mag het formulier dus weer verstuurd worden.<br />Er dient minimaal 1 jaar tussen een verstrekte aanvraag te zitten en dat er weer een nieuwe aanvraag gedaan mag worden.<br /><span style=\"font-size: 0.8rem;\">Staat er geweigerd zet het telefoontje dan door naar Minima (IO).</span></p>\n<p>Er liggen 2 formulieren:</p>\n<p>PW-uitkering (bijstandsuitkering) en Overig inkomen (alle andere situaties). Wanneer iemand een aanvraag doet verstuur je &eacute;&eacute;n van beide formulieren, zoek uit of er een bijstandsuitkering is. Wij hoeven niet na te gaan of iemand al recht heeft op IIT.</p>\n<p>Vragen dan doorverbinden naar collega's Minima (Inkomensondersteuning). Bij doorverbinden geef geboortedatum door.</p>"
                 }
-            ]
-        },
-        {
-            "upnLabel": "asbestverwijdering",
-            "upnUri": "http://standaarden.overheid.nl/owms/terms/asbestverwijdering",
-            "versie": 0,
-            "publicatieDatum": "2021-03-15T17:00:50",
-            "productAanwezig": true,
+            ],
             "verantwoordelijkeOrganisatie": {
                 "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
                 "owmsPrefLabel": "Deventer"
@@ -131,7 +116,14 @@
             "bevoegdeOrganisatie": {
                 "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
                 "owmsPrefLabel": "Deventer"
-            },
+            }
+        },
+        {
+            "upnLabel": "asbestverwijdering",
+            "upnUri": "http://standaarden.overheid.nl/owms/terms/asbestverwijdering",
+            "versie": 0,
+            "publicatieDatum": "2021-03-15T17:00:50",
+            "productAanwezig": true,
             "catalogus": "http://pdc.data.ergens.nl/sdg/api/v1/catalogi/aad3cbc7-4063-464c-8dea-f92f51d8f664",
             "doelgroep": "eu-burger, eu-bedrijf",
             "vertalingen": [
@@ -166,14 +158,7 @@
                     "productAanwezigToelichting": "",
                     "productValtOnderToelichting": ""
                 }
-            ]
-        },
-        {
-            "upnLabel": "omgevingsvergunning kap",
-            "upnUri": "http://standaarden.overheid.nl/owms/terms/omgevingsvergunning_kap",
-            "versie": 0,
-            "publicatieDatum": "2022-04-25T15:08:11",
-            "productAanwezig": true,
+            ],
             "verantwoordelijkeOrganisatie": {
                 "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
                 "owmsPrefLabel": "Deventer"
@@ -181,7 +166,14 @@
             "bevoegdeOrganisatie": {
                 "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
                 "owmsPrefLabel": "Deventer"
-            },
+            }
+        },
+        {
+            "upnLabel": "omgevingsvergunning kap",
+            "upnUri": "http://standaarden.overheid.nl/owms/terms/omgevingsvergunning_kap",
+            "versie": 0,
+            "publicatieDatum": "2022-04-25T15:08:11",
+            "productAanwezig": true,
             "catalogus": "http://pdc.data.ergens.nl/sdg/api/v1/catalogi/aad3cbc7-4063-464c-8dea-f92f51d8f664",
             "doelgroep": "eu-burger, eu-bedrijf",
             "vertalingen": [
@@ -244,14 +236,7 @@
                     "deskMemo": "<h2>Termijn</h2>\n<p>10 werkdagen</p>\n<h2>Kaplijst (=vellijst)</h2>\n<p>kaart : <a href=\"https://openbareruimte.deventer.nl/dagelijks-onderhoud/bomen\">https://openbareruimte.deventer.nl/dagelijks-onderhoud/bomen</a></p>\n<h2>Mag ik gekapt hout meenemen?</h2>\n<p>Het gekapte hout is eigendom van Het Groen Bedrijf. Wie dit hout wil kopen, kan contact met het Groenbedrijf opnemen: 0570 - 856 400.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>\n<h2>Bezwaar</h2>\n<p>Bent u het niet eens met de beslissing, dan kunt u bezwaar maken. In het besluit staat hoe u dat doet. Ook belanghebbenden kunnen bezwaar maken. Dit kan tot 6 weken na het besluit op de aanvraag.</p>\n<h2>Contactpersonen</h2>\n<h2>Zaakgerichte vragen</h2>\n<p>Afdeling Ondernemen en Vergunningen - Vergunningverleners</p>\n<h2>Algemene vragen</h2>\n<p>Publiekscontacten Vergunningen</p>\n<p>Adviseur kapvergunningen VTH: Pjotr de Boer</p>",
                     "datumWijziging": "2022-04-25T15:10:09"
                 }
-            ]
-        },
-        {
-            "upnLabel": "briefadres",
-            "upnUri": "http://standaarden.overheid.nl/owms/terms/briefadres",
-            "versie": 0,
-            "publicatieDatum": "2021-06-24",
-            "productAanwezig": true,
+            ],
             "verantwoordelijkeOrganisatie": {
                 "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
                 "owmsPrefLabel": "Deventer"
@@ -259,7 +244,14 @@
             "bevoegdeOrganisatie": {
                 "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
                 "owmsPrefLabel": "Deventer"
-            },
+            }
+        },
+        {
+            "upnLabel": "briefadres",
+            "upnUri": "http://standaarden.overheid.nl/owms/terms/briefadres",
+            "versie": 0,
+            "publicatieDatum": "2021-06-24",
+            "productAanwezig": true,
             "catalogus": "http://pdc.data.ergens.nl/sdg/api/v1/catalogi/aad3cbc7-4063-464c-8dea-f92f51d8f664",
             "doelgroep": "eu-burger",
             "vertalingen": [
@@ -295,14 +287,7 @@
                     "deskMemo": "&lt;p&gt;Voor een briefadres zijn strikte regels.&amp;nbsp;Het wordt alleen in uitzonderingsgevallen toegekend.&lt;br /&gt;Geef daarom over dit product niet veel informatie. Verbind zoveel mogelijk door naar PC Gegevensbeheer.&lt;/p&gt;&#13;&lt;h2&gt;Contactpersonen&lt;/h2&gt;&#13;&lt;p&gt;Publiekscontacten Burgertaken Gegevensbeheer&lt;/p&gt;&#13;&lt;p&gt;I.v.m. de strenge voorwaarden doorverbinden naar: Publiekscontacten Gegevensbeheer&lt;/p&gt;",
                     "datumWijziging": "2021-06-24T14:47:37"
                 }
-            ]
-        },
-        {
-            "upnLabel": "omgevingsvergunning sloop",
-            "upnUri": "http://standaarden.overheid.nl/owms/terms/omgevingsvergunning_sloop",
-            "versie": 0,
-            "publicatieDatum": "2021-03-24T17:23:02",
-            "productAanwezig": true,
+            ],
             "verantwoordelijkeOrganisatie": {
                 "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
                 "owmsPrefLabel": "Deventer"
@@ -310,7 +295,14 @@
             "bevoegdeOrganisatie": {
                 "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
                 "owmsPrefLabel": "Deventer"
-            },
+            }
+        },
+        {
+            "upnLabel": "omgevingsvergunning sloop",
+            "upnUri": "http://standaarden.overheid.nl/owms/terms/omgevingsvergunning_sloop",
+            "versie": 0,
+            "publicatieDatum": "2021-03-24T17:23:02",
+            "productAanwezig": true,
             "catalogus": "http://pdc.data.ergens.nl/sdg/api/v1/catalogi/aad3cbc7-4063-464c-8dea-f92f51d8f664",
             "doelgroep": "eu-burger, eu-bedrijf",
             "vertalingen": [
@@ -347,14 +339,7 @@
                     "deskMemo": "<h2>Termijn</h2>\n<p>10 werkdagen</p>\n<h2>Contactpersonen</h2>\n<p>Publiekscontacten vergunnningen tst. 3933</p>",
                     "datumWijziging": "2021-03-24T17:24:16"
                 }
-            ]
-        },
-        {
-            "upnLabel": "brp-wijzigingsverzoek",
-            "upnUri": "http://standaarden.overheid.nl/owms/terms/brpWijzVzk",
-            "versie": 1,
-            "publicatieDatum": "2022-10-18T12:55:30",
-            "productAanwezig": true,
+            ],
             "verantwoordelijkeOrganisatie": {
                 "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
                 "owmsPrefLabel": "Deventer"
@@ -362,7 +347,14 @@
             "bevoegdeOrganisatie": {
                 "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
                 "owmsPrefLabel": "Deventer"
-            },
+            }
+        },
+        {
+            "upnLabel": "brp-wijzigingsverzoek",
+            "upnUri": "http://standaarden.overheid.nl/owms/terms/brpWijzVzk",
+            "versie": 1,
+            "publicatieDatum": "2022-10-18T12:55:30",
+            "productAanwezig": true,
             "catalogus": "http://pdc.data.ergens.nl/sdg/api/v1/catalogi/aad3cbc7-4063-464c-8dea-f92f51d8f664",        
             "doelgroep": "eu-burger",
             "vertalingen": [
@@ -416,14 +408,7 @@
                     ],
                     "deskMemo": "<p>Afdeling Publiekscontacten Gegevensbeheer (doorverbinden).</p>"
                 }
-            ]
-        },
-        {
-            "upnLabel": "omgevingsvergunning brandveilig gebruik",
-            "upnUri": "http://standaarden.overheid.nl/owms/terms/omgVgBrvGebr",
-            "versie": 0,
-            "publicatieDatum": "2021-07-30T09:24:50",
-            "productAanwezig": true,
+            ],
             "verantwoordelijkeOrganisatie": {
                 "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
                 "owmsPrefLabel": "Deventer"
@@ -431,7 +416,14 @@
             "bevoegdeOrganisatie": {
                 "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
                 "owmsPrefLabel": "Deventer"
-            },
+            }
+        },
+        {
+            "upnLabel": "omgevingsvergunning brandveilig gebruik",
+            "upnUri": "http://standaarden.overheid.nl/owms/terms/omgVgBrvGebr",
+            "versie": 0,
+            "publicatieDatum": "2021-07-30T09:24:50",
+            "productAanwezig": true,
             "catalogus": "http://pdc.data.ergens.nl/sdg/api/v1/catalogi/aad3cbc7-4063-464c-8dea-f92f51d8f664",
             "doelgroep": "eu-bedrijf ",
             "vertalingen": [
@@ -512,14 +504,7 @@
                     "deskMemo": "<h2>Contactpersonen</h2>\n<h2>Gebruiksmelding</h2>\n<p>Team Toezicht, Ben Visscher</p>\n<h2>Vergunningen zaakgerichte vragen</h2>\n<p>Team OV, wabo-casemanagers</p>\n<h2>Vergunningen algemene vragen</h2>\n<p>PC Vergunningen</p>\n<p>&nbsp;</p>",
                     "datumWijziging": "2021-07-30T09:24:50"
                 }
-            ]
-        },
-        {
-            "upnLabel": "omgevingsvergunning milieu",
-            "upnUri": "http://standaarden.overheid.nl/owms/terms/omgevingsvergunning_milieu",
-            "versie": 0,
-            "publicatieDatum": "2022-07-22T11:18:04",
-            "productAanwezig": true,
+            ],
             "verantwoordelijkeOrganisatie": {
                 "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
                 "owmsPrefLabel": "Deventer"
@@ -527,7 +512,14 @@
             "bevoegdeOrganisatie": {
                 "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
                 "owmsPrefLabel": "Deventer"
-            },
+            }
+        },
+        {
+            "upnLabel": "omgevingsvergunning milieu",
+            "upnUri": "http://standaarden.overheid.nl/owms/terms/omgevingsvergunning_milieu",
+            "versie": 0,
+            "publicatieDatum": "2022-07-22T11:18:04",
+            "productAanwezig": true,
             "catalogus": "http://pdc.data.ergens.nl/sdg/api/v1/catalogi/aad3cbc7-4063-464c-8dea-f92f51d8f664",
             "doelgroep": "eu-bedrijf",
             "vertalingen": [
@@ -616,7 +608,15 @@
                     "deskMemo": "<h2>Milieumelding</h2>\n<p>Per 1 januari 2008 zijn 12 algemene maatregelen van bestuur (AMvB's) vervangen door 1 nieuwe algemene maatregel van bestuur: het Besluit algemene regels voor inrichtingen milieubeheer, beter bekend als het Activiteitenbesluit.</p>\n<h2>Wat betekent het Activiteitenbesluit voor mijn bedrijf?</h2>\n<p>Door het invullen van het digitale meldingsformulier Activiteitenbesluit Milieubeheer komt u precies te weten aan welke voorschriften uw bedrijf moet voldoen. Tevens geeft dit digitale formulier uw inzicht of u voor uw bedrijfsactiviteiten een omgevingsvergunning moet aanvragen, of dat u kunt volstaan met een melding bij de gemeente. Voor de meeste bedrijven geldt de laatste optie.</p>\n<p>Verzoek kopie milieuvergunning: graag het verzoek mailen naar vergunningmilieu@deventer.nl</p>\n<h2>Contactpersonen</h2>\n<p>Omgevingsdienst IJsselland<br />Tel: 088-5251050<br />e-mail: info@odijsselland.nl<br />webstie: <a href=\"http://www.odijsselland.nl/\">www.odijsselland.nl</a></p>\n<p>Bezoekadres: L&uuml;beckplein 2, 8017 JZ Zwolle<br />Postadres: Postbus 40252, 8004 DG Zwolle</p>",
                     "datumWijziging": "2022-07-22T11:18:04"
                 }
-            ]
+            ],
+            "verantwoordelijkeOrganisatie": {
+                "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
+                "owmsPrefLabel": "Deventer"
+            },
+            "bevoegdeOrganisatie": {
+                "owmsIdentifier": "http://standaarden.overheid.nl/owms/terms/Deventer_(gemeente)",
+                "owmsPrefLabel": "Deventer"
+            }
         }
     ]
 }
