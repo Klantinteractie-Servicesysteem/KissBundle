@@ -21,7 +21,7 @@
 		"common-gateway/brp-bundle": ">=0.0.10",
 		"common-gateway/zgw-bundle": ">=0.1.17",
 		"common-gateway/klanten-bundle": ">=0.0.15",
-        "common-gateway/kvk-bundle": ">=0.0.5"
+        "common-gateway/kvk-bundle": ">=0.0.6"
 	},
 	"require-dev" : {
 		"symfony/dependency-injection" : "~3.4|~4.1|~5.0"
