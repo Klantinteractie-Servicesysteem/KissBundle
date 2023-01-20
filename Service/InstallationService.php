@@ -41,17 +41,17 @@ class InstallationService implements InstallerInterface
     ];
     
     public const SOURCES = [
-        ['name' => 'EnterpriseSearch API Search', 'location' => 'https://enterprise-search-ent-http.elasticsearch:3002',
+        ['name' => 'EnterpriseSearch API Search', 'location' => 'https://enterprise-search-ent-http:3002',
             'headers' => ['accept' => 'application/json'], 'auth' => 'apikey', 'apikey' => '!secret-ChangeMe!elastic-search-key', 'configuration' => ['verify' => false]],
-        ['name' => 'EnterpriseSearch API Private', 'location' => 'https://enterprise-search-ent-http.elasticsearch:3002',
+        ['name' => 'EnterpriseSearch API Private', 'location' => 'https://enterprise-search-ent-http:3002',
             'headers' => ['accept' => 'application/json'], 'auth' => 'apikey', 'apikey' => '!secret-ChangeMe!elastic-private-key', 'configuration' => ['verify' => false]],
         ['name' => 'OpenPub API', 'location' => 'https://openweb.dev.kiss-demo.nl/wp-json/wp/v2',
             'headers' => ['accept' => 'application/json'], 'auth' => 'none', 'configuration' => ['verify' => false]]
     ];
     
     public const PROXY_ENDPOINTS = [
-        ['name' => 'Elasticsearch proxy endpoint', 'proxy' => 'EnterpriseSearch API Search', 'path' => '/elastic', 'methods' => ['POST']],
-        ['name' => 'OpenPub WP proxy endpoint', 'proxy' => 'OpenPub API', 'path' => '/openpub', 'methods' => ['GET']]
+        ['name' => 'Elasticsearch proxy endpoint', 'proxy' => 'EnterpriseSearch API Search', 'path' => 'elastic', 'methods' => ['POST']],
+        ['name' => 'OpenPub WP proxy endpoint', 'proxy' => 'OpenPub API', 'path' => 'openpub', 'methods' => ['GET']]
     ];
 
     public const ACTION_HANDLERS = [
