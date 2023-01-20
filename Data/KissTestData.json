@@ -130,20 +130,6 @@
                         "voornamen": "Lisette",
                         "geslachtsnaam": "Beamont"
                     },
-                    "geboorte": {
-                        "datumOnvolledig": {
-                            "dag": 12,
-                            "datum": "1956-12-01",
-                            "jaar": 1956,
-                            "maand": 5
-                        },
-                        "land": {
-                            "code": "5002"
-                        },
-                        "plaats": {
-                            "omschrijving": "Clermont-Ferrand"
-                        }
-                    },
                     "datumIngangFamilierechtelijkeBetrekking": {
                         "dag": 1,
                         "datum": "1989-05-03",
@@ -156,20 +142,6 @@
                     "naam": {
                         "voornamen": "Guillaume",
                         "geslachtsnaam": "Moulin"
-                    },
-                    "geboorte": {
-                        "datumOnvolledig": {
-                            "dag": 3,
-                            "datum": "1955-04-03",
-                            "jaar": 1955,
-                            "maand": 4
-                        },
-                        "land": {
-                            "code": "5002"
-                        },
-                        "plaats": {
-                            "omschrijving": "Toulon"
-                        }
                     },
                     "datumIngangFamilierechtelijkeBetrekking": {
                         "dag": 1,
@@ -299,20 +271,6 @@
                         "voornamen": "Lisette",
                         "geslachtsnaam": "Beamont"
                     },
-                    "geboorte": {
-                        "datumOnvolledig": {
-                            "dag": 12,
-                            "datum": "1956-12-01",
-                            "jaar": 1956,
-                            "maand": 5
-                        },
-                        "land": {
-                            "code": "5002"
-                        },
-                        "plaats": {
-                            "omschrijving": "Clermont-Ferrand"
-                        }
-                    },
                     "datumIngangFamilierechtelijkeBetrekking": {
                         "dag": 1,
                         "datum": "1989-05-03",
@@ -325,20 +283,6 @@
                     "naam": {
                         "voornamen": "Guillaume",
                         "geslachtsnaam": "Moulin"
-                    },
-                    "geboorte": {
-                        "datumOnvolledig": {
-                            "dag": 3,
-                            "datum": "1955-04-03",
-                            "jaar": 1955,
-                            "maand": 4
-                        },
-                        "land": {
-                            "code": "5002"
-                        },
-                        "plaats": {
-                            "omschrijving": "Toulon"
-                        }
                     },
                     "datumIngangFamilierechtelijkeBetrekking": {
                         "dag": 1,
@@ -431,20 +375,6 @@
                         "voornamen": "Lisette",
                         "geslachtsnaam": "Beamont"
                     },
-                    "geboorte": {
-                        "datumOnvolledig": {
-                            "dag": 12,
-                            "datum": "1956-12-01",
-                            "jaar": 1956,
-                            "maand": 5
-                        },
-                        "land": {
-                            "code": "5002"
-                        },
-                        "plaats": {
-                            "omschrijving": "Clermont-Ferrand"
-                        }
-                    },
                     "datumIngangFamilierechtelijkeBetrekking": {
                         "dag": 1,
                         "datum": "1989-05-03",
@@ -457,20 +387,6 @@
                     "naam": {
                         "voornamen": "Guillaume",
                         "geslachtsnaam": "Moulin"
-                    },
-                    "geboorte": {
-                        "datumOnvolledig": {
-                            "dag": 3,
-                            "datum": "1955-04-03",
-                            "jaar": 1955,
-                            "maand": 4
-                        },
-                        "land": {
-                            "code": "5002"
-                        },
-                        "plaats": {
-                            "omschrijving": "Toulon"
-                        }
                     },
                     "datumIngangFamilierechtelijkeBetrekking": {
                         "dag": 1,
@@ -563,20 +479,6 @@
                         "voornamen": "Lisette",
                         "geslachtsnaam": "Beamont"
                     },
-                    "geboorte": {
-                        "datumOnvolledig": {
-                            "dag": 12,
-                            "datum": "1956-12-01",
-                            "jaar": 1956,
-                            "maand": 5
-                        },
-                        "land": {
-                            "code": "5002"
-                        },
-                        "plaats": {
-                            "omschrijving": "Clermont-Ferrand"
-                        }
-                    },
                     "datumIngangFamilierechtelijkeBetrekking": {
                         "dag": 1,
                         "datum": "1989-05-03",
@@ -589,20 +491,6 @@
                     "naam": {
                         "voornamen": "Guillaume",
                         "geslachtsnaam": "Moulin"
-                    },
-                    "geboorte": {
-                        "datumOnvolledig": {
-                            "dag": 3,
-                            "datum": "1955-04-03",
-                            "jaar": 1955,
-                            "maand": 4
-                        },
-                        "land": {
-                            "code": "5002"
-                        },
-                        "plaats": {
-                            "omschrijving": "Toulon"
-                        }
                     },
                     "datumIngangFamilierechtelijkeBetrekking": {
                         "dag": 1,
@@ -667,6 +555,28 @@
                   "maand": 11
                 }
             }
+        }
+    ],
+    "https://kissdevelopment.commonground.nu/kiss.resultaatypeomschrijvinggeneriek.schema.json": [
+        {
+			"omschrijving": "Contactverzoek",
+            "definitie": "Contactverzoek gemaakt"
+        },
+        {
+			"omschrijving": "zelfstandig",
+            "definitie": "Zelfstandig afgehandeld"
+        },
+        {
+			"omschrijving": "isAfgehandeld",
+            "definitie": "Afgehandeld, klant belt nog terug"
+        },
+        {
+			"omschrijving": "Afdeling",
+            "definitie": "Doorverbonden met de afdeling"
+        },
+        {
+			"omschrijving": "Collega",
+            "definitie": "Doorverbonden met de juiste collega"
         }
     ]
 }

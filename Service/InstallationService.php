@@ -30,12 +30,14 @@ class InstallationService implements InstallerInterface
     public const SCHEMAS_THAT_SHOULD_HAVE_ENDPOINTS = [
         ['reference' => 'https://kissdevelopment.commonground.nu/kiss.openpubSkill.schema.json',                 'path' => '/ref/openpub_skill',                    'methods' => []],
         ['reference' => 'https://kissdevelopment.commonground.nu/kiss.openpubType.schema.json',                 'path' => '/ref/openpub_type',                      'methods' => []],
-        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.afdelingsnaam.schema.json',                 'path' => '/afdelingsnamen',                    'methods' => []],
-        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.link.schema.json',                 'path' => '/links',                    'methods' => []],
+        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.afdelingsnaam.schema.json',                 'path' => '/ref/afdelingsnamen',                    'methods' => []],
+        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.link.schema.json',                 'path' => '/kiss/links',                    'methods' => []],
         ['reference' => 'https://kissdevelopment.commonground.nu/kiss.medewerker.schema.json',                 'path' => '/medewerkers',                    'methods' => []],
         ['reference' => 'https://kissdevelopment.commonground.nu/kiss.medewerkerAvailabilities.schema.json',                 'path' => '/mederwerkerAvailabilities',                    'methods' => []],
         ['reference' => 'https://kissdevelopment.commonground.nu/kiss.review.schema.json',                 'path' => '/reviews',                    'methods' => []],
         ['reference' => 'https://kissdevelopment.commonground.nu/kiss.sdgProduct.schema.json',                 'path' => '/sdg/kennisartikelen',                    'methods' => []],
+        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.pubPublicatie.schema.json',                 'path' => '/kiss_openpub_pub',                    'methods' => []],
+        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.resultaatypeomschrijvinggeneriek.schema.json',                 'path' => '/ref/resultaattypeomschrijvingen',                    'methods' => []],
     ];
     
     public const SOURCES = [
