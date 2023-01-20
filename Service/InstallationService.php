@@ -28,23 +28,23 @@ class InstallationService implements InstallerInterface
     //
 
     public const SCHEMAS_THAT_SHOULD_HAVE_ENDPOINTS = [
-        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.openpubSkill.schema.json',                 'path' => '/ref/openpub_skill',                    'methods' => []],
-        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.openpubType.schema.json',                 'path' => '/ref/openpub_type',                      'methods' => []],
-        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.afdelingsnaam.schema.json',                 'path' => '/ref/afdelingsnamen',                    'methods' => []],
-        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.link.schema.json',                 'path' => '/kiss/links',                    'methods' => []],
-        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.medewerker.schema.json',                 'path' => '/medewerkers',                    'methods' => []],
-        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.medewerkerAvailabilities.schema.json',                 'path' => '/mederwerkerAvailabilities',                    'methods' => []],
-        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.review.schema.json',                 'path' => '/reviews',                    'methods' => []],
-        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.sdgProduct.schema.json',                 'path' => '/sdg/kennisartikelen',                    'methods' => []],
-        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.pubPublicatie.schema.json',                 'path' => '/kiss_openpub_pub',                    'methods' => []],
-        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.resultaatypeomschrijvinggeneriek.schema.json',                 'path' => '/ref/resultaattypeomschrijvingen',                    'methods' => []],
+        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.openpubSkill.schema.json',                 'path' => 'ref/openpub_skill',                    'methods' => []],
+        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.openpubType.schema.json',                 'path' => 'ref/openpub_type',                      'methods' => []],
+        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.afdelingsnaam.schema.json',                 'path' => 'ref/afdelingsnamen',                    'methods' => []],
+        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.link.schema.json',                 'path' => 'kiss/links',                    'methods' => []],
+        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.medewerker.schema.json',                 'path' => 'medewerkers',                    'methods' => []],
+        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.medewerkerAvailabilities.schema.json',                 'path' => 'mederwerkerAvailabilities',                    'methods' => []],
+        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.review.schema.json',                 'path' => 'reviews',                    'methods' => []],
+        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.sdgProduct.schema.json',                 'path' => 'sdg/kennisartikelen',                    'methods' => []],
+        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.pubPublicatie.schema.json',                 'path' => 'kiss_openpub_pub',                    'methods' => []],
+        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.resultaatypeomschrijvinggeneriek.schema.json',                 'path' => 'ref/resultaattypeomschrijvingen',                    'methods' => []],
     ];
     
     public const SOURCES = [
         ['name' => 'EnterpriseSearch API Search', 'location' => 'https://enterprise-search-ent-http.elasticsearch:3002',
-            'headers' => ['accept' => 'application/json'], 'auth' => 'apikey', 'apikey' => '!secret-ChangeMe!', 'configuration' => ['verify' => false]],
+            'headers' => ['accept' => 'application/json'], 'auth' => 'apikey', 'apikey' => '!secret-ChangeMe!elastic-search-key', 'configuration' => ['verify' => false]],
         ['name' => 'EnterpriseSearch API Private', 'location' => 'https://enterprise-search-ent-http.elasticsearch:3002',
-            'headers' => ['accept' => 'application/json'], 'auth' => 'apikey', 'apikey' => '!secret-ChangeMe!', 'configuration' => ['verify' => false]],
+            'headers' => ['accept' => 'application/json'], 'auth' => 'apikey', 'apikey' => '!secret-ChangeMe!elastic-private-key', 'configuration' => ['verify' => false]],
         ['name' => 'OpenPub API', 'location' => 'https://openweb.dev.kiss-demo.nl/wp-json/wp/v2',
             'headers' => ['accept' => 'application/json'], 'auth' => 'none', 'configuration' => ['verify' => false]]
     ];
@@ -162,7 +162,7 @@ class InstallationService implements InstallerInterface
         foreach($objectsThatShouldHaveEndpoints as $objectThatShouldHaveEndpoint) {
             $entity = $this->entityManager->getRepository('App:Entity')->findOneBy(['reference' => $objectThatShouldHaveEndpoint['reference']]);
             if ($entity instanceof Entity && !$endpointRepository->findOneBy(['name' => $entity->getName()])) {
-                $endpoint = new Endpoint($entity, $objectThatShouldHaveEndpoint['path'], $objectThatShouldHaveEndpoint['methods']);
+                $endpoint = new Endpoint($entity, $objectThatShouldHaveEndpoint);
 
                 $this->entityManager->persist($endpoint);
                 $this->entityManager->flush();
@@ -202,7 +202,7 @@ class InstallationService implements InstallerInterface
         foreach($proxyEndpoints as $proxyEndpoint) {
             $source = $this->entityManager->getRepository('App:Gateway')->findOneBy(['name' => $proxyEndpoint['proxy']]);
             if ($source instanceof Source && !$endpointRepository->findOneBy(['name' => $proxyEndpoint['name'], 'proxy' => $source])) {
-                $endpoint = new Endpoint(null, $proxyEndpoint['path'], $proxyEndpoint['methods'], $source);
+                $endpoint = new Endpoint(null, $source, $proxyEndpoint);
             
                 $this->entityManager->persist($endpoint);
                 $this->entityManager->flush();
