@@ -25,7 +25,6 @@ class InstallationService implements InstallerInterface
         'https://kissdevelopment.commonground.nu/kiss.openpubSkill.schema.json',
         'https://kissdevelopment.commonground.nu/kiss.openpubType.schema.json'
     ];
-    //
 
     public const SCHEMAS_THAT_SHOULD_HAVE_ENDPOINTS = [
         ['reference' => 'https://kissdevelopment.commonground.nu/kiss.openpubSkill.schema.json',                 'path' => 'ref/openpub_skill',                    'methods' => []],
@@ -45,7 +44,7 @@ class InstallationService implements InstallerInterface
             'headers' => ['accept' => 'application/json'], 'auth' => 'apikey', 'apikey' => '!secret-ChangeMe!elastic-search-key', 'configuration' => ['verify' => false]],
         ['name' => 'EnterpriseSearch API Private', 'location' => 'https://enterprise-search-ent-http:3002',
             'headers' => ['accept' => 'application/json'], 'auth' => 'apikey', 'apikey' => '!secret-ChangeMe!elastic-private-key', 'configuration' => ['verify' => false]],
-        ['name' => 'OpenPub API', 'location' => 'https://openweb.dev.kiss-demo.nl/wp-json/wp/v2',
+        ['name' => 'OpenPub API', 'location' => 'https://openweb.{yourDomain}/wp-json/wp/v2',
             'headers' => ['accept' => 'application/json'], 'auth' => 'none', 'configuration' => ['verify' => false]]
     ];
     
