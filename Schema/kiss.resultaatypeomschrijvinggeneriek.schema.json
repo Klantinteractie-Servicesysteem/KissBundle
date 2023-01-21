@@ -4,6 +4,7 @@
     "version": "0.1",
     "title": "RESULTAATTYPE-OMSCHRIJVING GENERIEK",
     "type": "object",
+    "nameProperties": ["definitie"],
     "properties": {
       "omschrijving": {
         "type":"string",

@@ -10,8 +10,11 @@
       "nullable": true
     },
     "publicationSkill": {
-      "type": "number",
-      "nullable": true
+      "type": "array",
+      "nullable": true,
+      "items": {
+        "type": "number"
+      }
     },
     "publicationEndDate": {
       "type": "datetime",
