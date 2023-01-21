@@ -260,7 +260,7 @@
                     "ochtend": true,
                     "middag": false
                 },
-                "woendag": {
+                "woensdag": {
                     "ochtend": true,
                     "middag": false
                 },
@@ -321,7 +321,7 @@
                     "ochtend": true,
                     "middag": true
                 },
-                "woendag": {
+                "woensdag": {
                     "ochtend": true,
                     "middag": true
                 },
@@ -382,7 +382,7 @@
                     "ochtend": true,
                     "middag": false
                 },
-                "woendag": {
+                "woensdag": {
                     "ochtend": true,
                     "middag": false
                 },
@@ -438,7 +438,7 @@
                     "ochtend": true,
                     "middag": true
                 },
-                "woendag": {
+                "woensdag": {
                     "ochtend": true,
                     "middag": false
                 },
@@ -546,7 +546,7 @@
                     "ochtend": true,
                     "middag": true
                 },
-                "woendag": {
+                "woensdag": {
                     "ochtend": true,
                     "middag": true
                 },
@@ -603,7 +603,7 @@
                     "ochtend": true,
                     "middag": true
                 },
-                "woendag": {
+                "woensdag": {
                     "ochtend": false,
                     "middag": false
                 },
