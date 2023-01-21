@@ -20,7 +20,7 @@
 		"commongateway/corebundle": "dev-version-kiss",
 		"common-gateway/brp-bundle": ">=0.0.10",
 		"common-gateway/zgw-bundle": ">=0.1.18",
-		"common-gateway/klanten-bundle": ">=0.0.16",
+		"common-gateway/klanten-bundle": ">=0.0.17",
         "common-gateway/kvk-bundle": ">=0.0.9"
 	},
 	"require-dev" : {
