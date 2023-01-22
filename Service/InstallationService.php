@@ -22,7 +22,9 @@ class InstallationService implements InstallerInterface
 
     public const OBJECTS_THAT_SHOULD_HAVE_CARDS = [
         'https://kissdevelopment.commonground.nu/kiss.openpubSkill.schema.json',
-        'https://kissdevelopment.commonground.nu/kiss.openpubType.schema.json'
+        'https://kissdevelopment.commonground.nu/kiss.resultaatypeomschrijvinggeneriek.schema.json',
+        'https://kissdevelopment.commonground.nu/kiss.link.schema.json',
+        'https://kissdevelopment.commonground.nu/kiss.afdelingsnaam.schema.json'
     ];
     //
 
