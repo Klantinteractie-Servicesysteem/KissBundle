@@ -9,6 +9,7 @@ use App\Entity\DashboardCard;
 use App\Entity\Cronjob;
 use App\Entity\Endpoint;
 use App\Entity\Entity;
+use App\Entity\Gateway as Source;
 use CommonGateway\CoreBundle\Installer\InstallerInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Doctrine\ORM\EntityManagerInterface;
@@ -26,18 +27,32 @@ class InstallationService implements InstallerInterface
         'https://kissdevelopment.commonground.nu/kiss.link.schema.json',
         'https://kissdevelopment.commonground.nu/kiss.afdelingsnaam.schema.json'
     ];
-    //
 
     public const SCHEMAS_THAT_SHOULD_HAVE_ENDPOINTS = [
-        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.openpubSkill.schema.json',                 'path' => '/ref/openpub_skill',                    'methods' => []],
-        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.openpubType.schema.json',                 'path' => '/ref/openpub_type',                      'methods' => []],
-        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.afdelingsnaam.schema.json',                 'path' => '/afdelingsnamen',                    'methods' => []],
-        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.link.schema.json',                 'path' => '/links',                    'methods' => []],
-        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.medewerker.schema.json',                 'path' => '/medewerkers',                    'methods' => []],
-        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.medewerkerAvailabilities.schema.json',                 'path' => '/mederwerkerAvailabilities',                    'methods' => []],
-        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.review.schema.json',                 'path' => '/reviews',                    'methods' => []],
-        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.sdgProduct.schema.json',                 'path' => '/sdg/kennisartikelen',                    'methods' => []],
-        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.resultaatypeomschrijvinggeneriek.schema.json',                 'path' => '/ref/resultaattypeomschrijvingen',                    'methods' => []],
+        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.openpubSkill.schema.json',                 'path' => 'ref/openpub_skill',                    'methods' => []],
+        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.openpubType.schema.json',                 'path' => 'ref/openpub_type',                      'methods' => []],
+        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.afdelingsnaam.schema.json',                 'path' => 'ref/afdelingsnamen',                    'methods' => []],
+        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.link.schema.json',                 'path' => 'kiss/links',                    'methods' => []],
+        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.medewerker.schema.json',                 'path' => 'medewerkers',                    'methods' => []],
+        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.medewerkerAvailabilities.schema.json',                 'path' => 'mederwerkerAvailabilities',                    'methods' => []],
+        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.review.schema.json',                 'path' => 'reviews',                    'methods' => []],
+        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.sdgProduct.schema.json',                 'path' => 'sdg/kennisartikelen',                    'methods' => []],
+        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.pubPublicatie.schema.json',                 'path' => 'kiss_openpub_pub',                    'methods' => []],
+        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.resultaatypeomschrijvinggeneriek.schema.json',                 'path' => 'ref/resultaattypeomschrijvingen',                    'methods' => []],
+    ];
+    
+    public const SOURCES = [
+        ['name' => 'EnterpriseSearch API Search', 'location' => 'https://enterprise-search-ent-http:3002',
+            'headers' => ['accept' => 'application/json'], 'auth' => 'apikey', 'apikey' => '!secret-ChangeMe!elastic-search-key', 'configuration' => ['verify' => false]],
+        ['name' => 'EnterpriseSearch API Private', 'location' => 'https://enterprise-search-ent-http:3002',
+            'headers' => ['accept' => 'application/json'], 'auth' => 'apikey', 'apikey' => '!secret-ChangeMe!elastic-private-key', 'configuration' => ['verify' => false]],
+        ['name' => 'OpenPub API', 'location' => 'https://openweb.{yourDomain}/wp-json/wp/v2',
+            'headers' => ['accept' => 'application/json'], 'auth' => 'none', 'configuration' => ['verify' => false]]
+    ];
+    
+    public const PROXY_ENDPOINTS = [
+        ['name' => 'Elasticsearch proxy endpoint', 'proxy' => 'EnterpriseSearch API Search', 'path' => 'elastic', 'methods' => ['POST']],
+        ['name' => 'OpenPub WP proxy endpoint', 'proxy' => 'OpenPub API', 'path' => 'openpub', 'methods' => ['GET']]
     ];
 
     public const ACTION_HANDLERS = [
@@ -133,7 +148,7 @@ class InstallationService implements InstallerInterface
             $defaultConfig = $this->addActionConfiguration($actionHandler);
 
             $action = new Action($actionHandler);
-            $action->setListens(['kiss.default.listens']);
+            $action->setListens(['commongateway.response.pre']);
             $action->setConfiguration($defaultConfig);
 
             $this->entityManager->persist($action);
@@ -148,7 +163,7 @@ class InstallationService implements InstallerInterface
         foreach($objectsThatShouldHaveEndpoints as $objectThatShouldHaveEndpoint) {
             $entity = $this->entityManager->getRepository('App:Entity')->findOneBy(['reference' => $objectThatShouldHaveEndpoint['reference']]);
             if ($entity instanceof Entity && !$endpointRepository->findOneBy(['name' => $entity->getName()])) {
-                $endpoint = new Endpoint($entity, $objectThatShouldHaveEndpoint['path'], $objectThatShouldHaveEndpoint['methods']);
+                $endpoint = new Endpoint($entity, null, $objectThatShouldHaveEndpoint);
 
                 $this->entityManager->persist($endpoint);
                 $this->entityManager->flush();
@@ -157,6 +172,46 @@ class InstallationService implements InstallerInterface
         }
         (isset($this->io) ? $this->io->writeln(count($endpoints).' Endpoints Created'): '');
 
+        return $endpoints;
+    }
+    
+    private function createSources($sourcesThatShouldExist): array
+    {
+        $sourceRepository = $this->entityManager->getRepository('App:Gateway');
+        $sources = [];
+    
+        foreach($sourcesThatShouldExist as $sourceThatShouldExist) {
+            if (!$sourceRepository->findOneBy(['name' => $sourceThatShouldExist['name']])) {
+                $source = new Source($sourceThatShouldExist);
+                $source->setApikey(array_key_exists('apikey', $sourceThatShouldExist) ? $sourceThatShouldExist['apikey'] : '');
+            
+                $this->entityManager->persist($source);
+                $this->entityManager->flush();
+                $sources[] = $source;
+            }
+        }
+    
+        (isset($this->io) ? $this->io->writeln(count($sources).' Sources Created'): '');
+    
+        return $sources;
+    }
+    
+    private function createProxyEndpoints($proxyEndpoints): array
+    {
+        $endpointRepository = $this->entityManager->getRepository('App:Endpoint');
+        $endpoints = [];
+        foreach($proxyEndpoints as $proxyEndpoint) {
+            $source = $this->entityManager->getRepository('App:Gateway')->findOneBy(['name' => $proxyEndpoint['proxy']]);
+            if ($source instanceof Source && !$endpointRepository->findOneBy(['name' => $proxyEndpoint['name'], 'proxy' => $source])) {
+                $endpoint = new Endpoint(null, $source, $proxyEndpoint);
+            
+                $this->entityManager->persist($endpoint);
+                $this->entityManager->flush();
+                $endpoints[] = $endpoint;
+            }
+        }
+        (isset($this->io) ? $this->io->writeln(count($endpoints).' Proxy Endpoints Created'): '');
+    
         return $endpoints;
     }
 
@@ -224,7 +279,10 @@ class InstallationService implements InstallerInterface
 
         // Let create some endpoints
         $this->createEndpoints($this::SCHEMAS_THAT_SHOULD_HAVE_ENDPOINTS);
-
+        
+        // Create Sources & proxy endpoints
+        $this->createSources($this::SOURCES);
+        $this->createProxyEndpoints($this::PROXY_ENDPOINTS);
 
         // Lets see if there is a generic search endpoint
 
@@ -237,8 +295,9 @@ class InstallationService implements InstallerInterface
         {
             $cronjob = new Cronjob();
             $cronjob->setName('Kiss');
-            $cronjob->setDescription("This cronjob fires all the kiss actions every 5 minutes");
+            $cronjob->setDescription("This cronjob fires all the kiss actions every minute");
             $cronjob->setThrows(['kiss.default.listens']);
+            $cronjob->setCrontab('*/1 * * * *');
 
             $this->entityManager->persist($cronjob);
 

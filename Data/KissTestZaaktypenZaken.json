@@ -221,7 +221,6 @@
             },
             "rollen": [
                 {
-                    "zaak": "3bb9bccc-0619-4c66-905e-fc5f606b16b0",
                     "roltype": "b76d0354-5a77-41ba-b84f-b1eeda3b9f78",
                     "indicatieMachtiging": "machtiginggever",
                     "roltoelichting": "Indiener van de melding",
@@ -235,7 +234,6 @@
                     }
                 },
                 {
-                    "zaak": "3bb9bccc-0619-4c66-905e-fc5f606b16b0",
                     "roltype": "80c74793-a752-4e00-a996-925fb99eed21",
                     "roltoelichting": "Behandelaar van de melding",
                     "omschrijvingGeneriek": "Behandelaar",
