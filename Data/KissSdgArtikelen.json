@@ -3,6 +3,7 @@
         {
             "upnLabel": "omgevingsvergunning bouw",
             "upnUri": "http://standaarden.overheid.nl/owms/terms/omgevingsvergunning_bouw",
+            "url": "http://pdc.data.ergens.nl/sdg/api/v1/producten/e9388ded-31c8-4561-96c5-42e7352825dd",
             "versie": 0,
             "publicatieDatum": "2021-03-19T00:17:07",
             "productAanwezig": true,
@@ -71,6 +72,7 @@
         {
             "upnLabel": "individuele inkomenstoeslag",
             "upnUri": "http://standaarden.overheid.nl/owms/terms/indInkToesl",
+            "url": "http://pdc.data.ergens.nl/sdg/api/v1/producten/5d96f61e-5a87-4d59-8676-70402b215a4e",
             "versie": 0,
             "publicatieDatum": "2022-06-28",
             "productAanwezig": true,
@@ -121,6 +123,7 @@
         {
             "upnLabel": "asbestverwijdering",
             "upnUri": "http://standaarden.overheid.nl/owms/terms/asbestverwijdering",
+            "url": "http://pdc.data.ergens.nl/sdg/api/v1/producten/899a8867-6251-471f-9914-bed1b9c237a5",
             "versie": 0,
             "publicatieDatum": "2021-03-15T17:00:50",
             "productAanwezig": true,
@@ -171,6 +174,7 @@
         {
             "upnLabel": "omgevingsvergunning kap",
             "upnUri": "http://standaarden.overheid.nl/owms/terms/omgevingsvergunning_kap",
+            "url": "http://pdc.data.ergens.nl/sdg/api/v1/producten/253be85c-64c4-49a7-afaf-c4100b88133a",
             "versie": 0,
             "publicatieDatum": "2022-04-25T15:08:11",
             "productAanwezig": true,
@@ -249,6 +253,7 @@
         {
             "upnLabel": "briefadres",
             "upnUri": "http://standaarden.overheid.nl/owms/terms/briefadres",
+            "url": "http://pdc.data.ergens.nl/sdg/api/v1/producten/dcb9bafe-2c61-4a27-9fc4-703b7e2a49f5",
             "versie": 0,
             "publicatieDatum": "2021-06-24",
             "productAanwezig": true,
@@ -300,6 +305,7 @@
         {
             "upnLabel": "omgevingsvergunning sloop",
             "upnUri": "http://standaarden.overheid.nl/owms/terms/omgevingsvergunning_sloop",
+            "url": "http://pdc.data.ergens.nl/sdg/api/v1/producten/e94d35b7-2903-4593-8dad-f91753157f54",
             "versie": 0,
             "publicatieDatum": "2021-03-24T17:23:02",
             "productAanwezig": true,
@@ -352,6 +358,7 @@
         {
             "upnLabel": "brp-wijzigingsverzoek",
             "upnUri": "http://standaarden.overheid.nl/owms/terms/brpWijzVzk",
+            "url": "http://pdc.data.ergens.nl/sdg/api/v1/producten/dfe44101-afbc-4ed4-a386-76cd182b20d1",
             "versie": 1,
             "publicatieDatum": "2022-10-18T12:55:30",
             "productAanwezig": true,
@@ -421,6 +428,7 @@
         {
             "upnLabel": "omgevingsvergunning brandveilig gebruik",
             "upnUri": "http://standaarden.overheid.nl/owms/terms/omgVgBrvGebr",
+            "url": "http://pdc.data.ergens.nl/sdg/api/v1/producten/6e424b39-be9a-4247-8fa5-32182d30875c",
             "versie": 0,
             "publicatieDatum": "2021-07-30T09:24:50",
             "productAanwezig": true,
@@ -517,6 +525,7 @@
         {
             "upnLabel": "omgevingsvergunning milieu",
             "upnUri": "http://standaarden.overheid.nl/owms/terms/omgevingsvergunning_milieu",
+            "url": "http://pdc.data.ergens.nl/sdg/api/v1/producten/c5deefa1-9256-4efc-8b11-0848834fd1ec",
             "versie": 0,
             "publicatieDatum": "2022-07-22T11:18:04",
             "productAanwezig": true,
