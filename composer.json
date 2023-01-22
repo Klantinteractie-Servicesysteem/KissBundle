@@ -18,9 +18,9 @@
     "require": {
         "php": ">=7.4",
 		"commongateway/corebundle": "dev-version-kiss",
-		"common-gateway/brp-bundle": ">=0.0.9",
+		"common-gateway/brp-bundle": ">=0.0.11",
 		"common-gateway/zgw-bundle": ">=0.1.16",
-		"common-gateway/klanten-bundle": ">=0.0.12"
+		"common-gateway/klanten-bundle": ">=0.0.18"
 	},
 	"require-dev" : {
 		"symfony/dependency-injection" : "~3.4|~4.1|~5.0"
