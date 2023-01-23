@@ -113,7 +113,7 @@ class InstallationService implements InstallerInterface
                     "mappingOut" => [
                         "object" => "object | array",
                         "object_meta" => "function+department+skills | concatenation <br/>",
-                        "title" => "embedded.contact.voornaam+embedded.contact.voorvoegselAchternaam+embedded.contact.achternaam | concatenation &nbsp;",
+                        "title" => "contact.voornaam+contact.voorvoegselAchternaam+contact.achternaam | concatenation &nbsp;",
                         "self" => "'/api/medewerkers/'+_self.id | concatenation",
                         "id" => "'smoelenboek_'+_self.id | concatenation"
                     ],
@@ -181,8 +181,8 @@ class InstallationService implements InstallerInterface
                     ],
                     "mappingOut" => [
                         "object" => "object | array",
-                        "object_meta" => "embedded.vertalingen.0.specifiekeTekst | concatenation <br/>",
-                        "title" => "embedded.vertalingen.0.productTitelDecentraal | concatenation &nbsp;",
+                        "object_meta" => "vertalingen.0.specifiekeTekst | concatenation <br/>",
+                        "title" => "vertalingen.0.productTitelDecentraal | concatenation &nbsp;",
                         "self" => "'/api/sdg/kennisartikel/'+_self.id | concatenation",
                         "id" => "'kennisartikel_'+_self.id | concatenation"
                     ],
