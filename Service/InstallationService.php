@@ -56,7 +56,7 @@ class InstallationService implements InstallerInterface
     ];
 
     public const ACTION_HANDLERS = [
-        ['actionHandler' => 'Kiss\KissBundle\ActionHandler\HandelsRegisterSearchHandler',],
+        ['actionHandler' => 'Kiss\KissBundle\ActionHandler\HandelsRegisterSearchHandler', 'listens' => ['commongateway.response.pre']],
         [
             'actionHandler' => 'App\ActionHandler\SynchronizationCollectionHandler',
             'config'=> [
