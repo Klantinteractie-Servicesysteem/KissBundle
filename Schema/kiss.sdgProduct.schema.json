@@ -5,6 +5,12 @@
     "title": "SDGProduct",
     "type": "object",
     "properties": {
+      "url": {
+        "type":"string",
+        "format": "uri",
+        "nullable": true,
+        "description":"De unieke URL van dit object binnen deze API."
+      },
       "upnLabel": {
         "type": "string",
         "nullable": true
