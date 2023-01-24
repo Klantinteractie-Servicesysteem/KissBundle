@@ -419,8 +419,13 @@ class InstallationService implements InstallerInterface
         foreach ($actionHandlers as $handler) {
             $actionHandler = $this->container->get($handler['actionHandler']);
 
-            if ($this->entityManager->getRepository('App:Action')->findOneBy(['class'=> get_class($actionHandler)])) {
-                (isset($this->io)?$this->io->writeln(['Action found for '.$handler]):'');
+            if (array_key_exists('name', $handler)) {
+                if ($this->entityManager->getRepository('App:Action')->findOneBy(['name'=> $handler['name']])) {
+                    (isset($this->io)?$this->io->writeln(['Action found with name '.$handler['name']]):'');
+                    continue;
+                }
+            } elseif ($this->entityManager->getRepository('App:Action')->findOneBy(['class'=> get_class($actionHandler)])) {
+                (isset($this->io)?$this->io->writeln(['Action found for '.$handler['actionHandler']]):'');
                 continue;
             }
 
