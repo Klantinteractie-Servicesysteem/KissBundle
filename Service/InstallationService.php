@@ -56,8 +56,9 @@ class InstallationService implements InstallerInterface
     ];
 
     public const ACTION_HANDLERS = [
-        ['actionHandler' => 'Kiss\KissBundle\ActionHandler\HandelsRegisterSearchHandler', 'listens' => ['commongateway.response.pre']],
+        ['name' => 'HandelsRegisterSearchAction', 'actionHandler' => 'Kiss\KissBundle\ActionHandler\HandelsRegisterSearchHandler', 'listens' => ['commongateway.response.pre']],
         [
+            'name' => 'SyncPubAction',
             'actionHandler' => 'App\ActionHandler\SynchronizationCollectionHandler',
             'config'=> [
                 'location' => '/kiss_openpub_pub',
@@ -98,6 +99,7 @@ class InstallationService implements InstallerInterface
             ]
         ],
         [
+            'name' => 'SyncEmployeeElasticAction',
             'actionHandler' => 'App\ActionHandler\SynchronizationPushHandler',
             'config' => [
                 'location' => '/api/as/v1/engines/kiss-engine/documents',
@@ -166,6 +168,7 @@ class InstallationService implements InstallerInterface
             ]
         ],
         [
+            'name' => 'SyncKennisArtikelElasticAction',
             'actionHandler' => 'App\ActionHandler\SynchronizationPushHandler',
             'config' => [
                 'location' => '/api/as/v1/engines/kiss-engine/documents',
@@ -246,6 +249,7 @@ class InstallationService implements InstallerInterface
             ]
         ],
         [
+            'name' => 'SendReviewMailAction',
             'actionHandler' => 'App\ActionHandler\EmailHandler',
             'configuration' => [
                 "serviceDNS" => "",
@@ -418,7 +422,7 @@ class InstallationService implements InstallerInterface
                 continue;
             }
 
-            if (!$schema = $actionHandler->getConfiguration()) {
+            if (!$actionHandler->getConfiguration()) {
                 continue;
             }
 
@@ -426,12 +430,13 @@ class InstallationService implements InstallerInterface
             isset($handler['config']) && $defaultConfig = $this->overrideConfig($defaultConfig, $handler['config']);
 
             $action = new Action($actionHandler);
-            $action->setListens(isset($handler['listens']) ? $handler['listens'] : ['kiss.default.listens']);
+            array_key_exists('name', $handler) ? $action->setName($handler['name']) : '';
+            $action->setListens($handler['listens'] ?? ['kiss.default.listens']);
             $action->setConfiguration($defaultConfig);
-            $action->setConditions(isset($handler['conditions']) ? $handler['conditions'] : ['==' => [1,1]]);
+            $action->setConditions($handler['conditions'] ?? ['==' => [1, 1]]);
 
             $this->entityManager->persist($action);
-            (isset($this->io)?$this->io->writeln(['Action created for '.$handler['actionHandler']]):'');
+            (isset($this->io)?$this->io->writeln(['Created Action '.$action->getName().' with Handler: '.$handler['actionHandler']]):'');
         }
     }
 
