@@ -11,6 +11,7 @@ use App\Entity\Endpoint;
 use App\Entity\Entity;
 use App\Entity\Gateway as Source;
 use CommonGateway\CoreBundle\Installer\InstallerInterface;
+use Exception;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
@@ -333,8 +334,8 @@ class InstallationService implements InstallerInterface
                     if (isset($value['$ref'])) {
                         try {
                             $entity = $this->entityManager->getRepository('App:Entity')->findOneBy(['reference' => $value['$ref']]);
-                        } catch (\Exception $exception) {
-                            throw new \Exception("No entity found with reference {$value['$ref']}");
+                        } catch (Exception $exception) {
+                            throw new Exception("No entity found with reference {$value['$ref']}");
                         }
                         $defaultConfig[$key] = $entity->getId()->toString();
                     }
@@ -366,7 +367,7 @@ class InstallationService implements InstallerInterface
      * @param array $defaultConfig
      * @param array $overrides
      * @return array
-     * @throws \Exception
+     * @throws Exception
      */
     public function overrideConfig(array $defaultConfig, array $overrides): array
     {
@@ -376,13 +377,13 @@ class InstallationService implements InstallerInterface
             } elseif($key == 'entity') {
                 $entity = $this->entityManager->getRepository('App:Entity')->findOneBy(['reference' => $override]);
                 if(!$entity) {
-                    throw new \Exception("No entity found with reference {$override}");
+                    throw new Exception("No entity found with reference {$override}");
                 }
                 $defaultConfig[$key] = $entity->getId()->toString();
             } elseif($key == 'source') {
                 $source = $this->entityManager->getRepository('App:Gateway')->findOneBy(['name' => $override]);
                 if(!$source) {
-                    throw new \Exception("No source found with name {$override}");
+                    throw new Exception("No source found with name {$override}");
                 }
                 $defaultConfig[$key] = $source->getId()->toString();
             } else {
@@ -397,17 +398,18 @@ class InstallationService implements InstallerInterface
         if($conditions['=='][0]['var'] == 'entity') {
             try {
                 $conditions['=='][1] = $this->entityManager->getRepository('App:Entity')->findOneBy(['reference' => $conditions['=='][1]]);
-            } catch (\Exception $exception) {
-                throw new \Exception("No entity found with reference {$conditions['=='][1]}");
+            } catch (Exception $exception) {
+                throw new Exception("No entity found with reference {$conditions['=='][1]}");
             }
         }
         return $conditions;
     }
-
+    
     /**
      * This function creates actions for all the actionHandlers in Kiss
      *
      * @return void
+     * @throws Exception
      */
     public function createActions(): void
     {
@@ -439,7 +441,13 @@ class InstallationService implements InstallerInterface
             (isset($this->io)?$this->io->writeln(['Created Action '.$action->getName().' with Handler: '.$handler['actionHandler']]):'');
         }
     }
-
+    
+    /**
+     * Creates the kiss Endpoints
+     *
+     * @param $objectsThatShouldHaveEndpoints
+     * @return array
+     */
     private function createEndpoints($objectsThatShouldHaveEndpoints): array
     {
         $endpointRepository = $this->entityManager->getRepository('App:Endpoint');
@@ -458,7 +466,13 @@ class InstallationService implements InstallerInterface
 
         return $endpoints;
     }
-
+    
+    /**
+     * Creates the kiss Sources
+     *
+     * @param $sourcesThatShouldExist
+     * @return array
+     */
     private function createSources($sourcesThatShouldExist): array
     {
         $sourceRepository = $this->entityManager->getRepository('App:Gateway');
@@ -479,7 +493,13 @@ class InstallationService implements InstallerInterface
 
         return $sources;
     }
-
+    
+    /**
+     * Creates the kiss proxy endpoints for some of the created sources
+     *
+     * @param $proxyEndpoints
+     * @return array
+     */
     private function createProxyEndpoints($proxyEndpoints): array
     {
         $endpointRepository = $this->entityManager->getRepository('App:Endpoint');
