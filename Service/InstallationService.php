@@ -536,7 +536,9 @@ class InstallationService implements InstallerInterface
     private function createCollections(): array
     {
         $collectionConfigs = [
-            ['name' => 'Kiss',  'prefix' => 'kiss', 'schemaPrefix' => 'https://kissdevelopment.commonground.nu/kiss'],
+            // todo: disabled prefixes for now, because we need to change the kiss front-end first
+//            ['name' => 'Kiss',  'prefix' => 'kiss', 'schemaPrefix' => 'https://kissdevelopment.commonground.nu/kiss'],
+            ['name' => 'Kiss', 'schemaPrefix' => 'https://kissdevelopment.commonground.nu/kiss'],
         ];
         $collections = [];
         foreach($collectionConfigs as $collectionConfig) {
