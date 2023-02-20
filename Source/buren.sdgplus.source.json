@@ -1,0 +1,7 @@
+{
+    "title": "SDG Plus API",
+    "$id": "https://buren.nl/source/buren.sdgplus.source.json",
+    "$schema": "https://json-schema.org/draft/2020-12/source",
+    "version": "0.0.1",
+    "name": "SDG Plus API"
+}

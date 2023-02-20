@@ -640,7 +640,7 @@ class InstallationService implements InstallerInterface
         $this->createEndpoints($this::SCHEMAS_THAT_SHOULD_HAVE_ENDPOINTS);
 
         // Create Sources & proxy endpoints
-        $this->createSources($this::SOURCES);
+        // $this->createSources($this::SOURCES); // OLD
         $this->createProxyEndpoints($this::PROXY_ENDPOINTS);
         
         // Clean up prefixes from all ZGW endpoints

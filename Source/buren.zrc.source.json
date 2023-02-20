@@ -1,0 +1,7 @@
+{
+    "title": "ZRC API",
+    "$id": "https://buren.nl/source/buren.zrc.source.json",
+    "$schema": "https://json-schema.org/draft/2020-12/source",
+    "version": "0.0.1",
+    "name": "ZRC API"
+}
