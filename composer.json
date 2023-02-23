@@ -19,7 +19,7 @@
         "php": ">=7.4",
 		"commongateway/corebundle": "dev-feature/installation-from-json",
 		"common-gateway/brp-bundle": "dev-feature/use-new-installationService",
-//		"common-gateway/zgw-bundle": "dev-feature/use-new-installationService",
+		"common-gateway/zgw-bundle": "dev-feature/use-new-installationService",
 		"common-gateway/klanten-bundle": "dev-feature/use-new-installationService",
         "common-gateway/kvk-bundle": "dev-feature/use-new-installationService"
 	},
