@@ -1,3 +1,11 @@
 {
-  "installationService": "Kiss\\KissBundle\\Service\\InstallationService"
+  "installationService": "Kiss\\KissBundle\\Service\\InstallationService",
+  "cards": {
+    "schemas": [
+      "https://kissdevelopment.commonground.nu/kiss.openpubSkill.schema.json",
+      "https://kissdevelopment.commonground.nu/kiss.resultaatypeomschrijvinggeneriek.schema.json",
+      "https://kissdevelopment.commonground.nu/kiss.link.schema.json",
+      "https://kissdevelopment.commonground.nu/kiss.afdelingsnaam.schema.json"
+    ]
+  }
 }
