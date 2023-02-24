@@ -7,5 +7,73 @@
       "https://kissdevelopment.commonground.nu/kiss.link.schema.json",
       "https://kissdevelopment.commonground.nu/kiss.afdelingsnaam.schema.json"
     ]
+  },
+  "endpoints": {
+    "sources": [
+      {
+        "name": "Elasticsearch proxy endpoint",
+        "reference": "https://kissdevelopment.commonground.nu/source/kiss.enterpriseSearchSearch.source.json",
+        "path": "elastic",
+        "methods": ["POST"]
+      },
+      {
+        "name": "OpenPub WP proxy endpoint",
+        "reference": "https://kissdevelopment.commonground.nu/source/kiss.OpenPub.source.json",
+        "path": "openpub",
+        "methods": ["GET"]
+      }
+    ],
+    "schemas": [
+      {
+        "reference": "https://kissdevelopment.commonground.nu/kiss.pubPublicatie.schema.json",
+        "path": "kiss_openpub_pub",
+        "methods": []
+      },
+      {
+        "reference": "https://kissdevelopment.commonground.nu/kiss.openpubSkill.schema.json",
+        "path": "ref/openpub_skill",
+        "methods": []
+      },
+      {
+        "reference": "https://kissdevelopment.commonground.nu/kiss.openpubType.schema.json",
+        "path": "ref/openpub_type",
+        "methods": []
+      },
+      {
+        "reference": "https://kissdevelopment.commonground.nu/kiss.afdelingsnaam.schema.json",
+        "path": "ref/afdelingsnamen",
+        "methods": []
+      },
+      {
+        "reference": "https://kissdevelopment.commonground.nu/kiss.resultaatypeomschrijvinggeneriek.schema.json",
+        "path": "ref/resultaattypeomschrijvingen",
+        "methods": []
+      },
+      {
+        "reference": "https://kissdevelopment.commonground.nu/kiss.link.schema.json",
+        "path": "kiss/links",
+        "methods": []
+      },
+      {
+        "reference": "https://kissdevelopment.commonground.nu/kiss.sdgProduct.schema.json",
+        "path": "sdg/kennisartikelen",
+        "methods": []
+      },
+      {
+        "reference": "https://kissdevelopment.commonground.nu/kiss.medewerker.schema.json",
+        "path": "medewerkers",
+        "methods": []
+      },
+      {
+        "reference": "https://kissdevelopment.commonground.nu/kiss.medewerkerAvailabilities.schema.json",
+        "path": "mederwerkerAvailabilities",
+        "methods": []
+      },
+      {
+        "reference": "https://kissdevelopment.commonground.nu/kiss.review.schema.json",
+        "path": "reviews",
+        "methods": []
+      }
+    ]
   }
 }

@@ -1,0 +1,16 @@
+{
+    "title": "EnterpriseSearch API Private",
+    "$id": "https://kissdevelopment.commonground.nu/source/kiss.enterpriseSearchPrivate.source.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Gateway.schema.json",
+    "version": "0.0.1",
+    "name": "EnterpriseSearch API Private",
+    "location": "https://enterprise-search-ent-http:3002",
+    "headers": {
+        "accept" : "application/json"
+    },
+    "auth": "apikey",
+    "apikey": "!secret-ChangeMe!elastic-search-key",
+    "configuration": {
+        "verify" : false
+    }
+}

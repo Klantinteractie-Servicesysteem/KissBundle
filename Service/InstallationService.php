@@ -30,33 +30,35 @@ class InstallationService implements InstallerInterface
 //        'https://kissdevelopment.commonground.nu/kiss.afdelingsnaam.schema.json'
 //    ];
 
-    public const SCHEMAS_THAT_SHOULD_HAVE_ENDPOINTS = [
-        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.openpubSkill.schema.json',                 'path' => 'ref/openpub_skill',                    'methods' => []],
-        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.openpubType.schema.json',                 'path' => 'ref/openpub_type',                      'methods' => []],
-        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.afdelingsnaam.schema.json',                 'path' => 'ref/afdelingsnamen',                    'methods' => []],
-        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.link.schema.json',                 'path' => 'kiss/links',                    'methods' => []],
-        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.medewerker.schema.json',                 'path' => 'medewerkers',                    'methods' => []],
-        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.medewerkerAvailabilities.schema.json',                 'path' => 'mederwerkerAvailabilities',                    'methods' => []],
-        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.review.schema.json',                 'path' => 'reviews',                    'methods' => []],
-        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.sdgProduct.schema.json',                 'path' => 'sdg/kennisartikelen',                    'methods' => []],
-        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.pubPublicatie.schema.json',                 'path' => 'kiss_openpub_pub',                    'methods' => []],
-        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.resultaatypeomschrijvinggeneriek.schema.json',                 'path' => 'ref/resultaattypeomschrijvingen',                    'methods' => []],
-    ];
-    
-    // TODO: change const SOURCES into Source.json files
-    public const SOURCES = [
-        ['name' => 'EnterpriseSearch API Search', 'location' => 'https://enterprise-search-ent-http:3002',
-            'headers' => ['accept' => 'application/json'], 'auth' => 'apikey', 'apikey' => '!secret-ChangeMe!elastic-search-key', 'configuration' => ['verify' => false]],
-        ['name' => 'EnterpriseSearch API Private', 'location' => 'https://enterprise-search-ent-http:3002',
-            'headers' => ['accept' => 'application/json'], 'auth' => 'apikey', 'apikey' => '!secret-ChangeMe!elastic-private-key', 'configuration' => ['verify' => false]],
-        ['name' => 'OpenPub API', 'location' => 'https://openweb.{yourDomain}/wp-json/wp/v2',
-            'headers' => ['accept' => 'application/json'], 'auth' => 'none', 'configuration' => ['verify' => false]]
-    ];
+    // todo: remove this if installation.json version works
+//    public const SCHEMAS_THAT_SHOULD_HAVE_ENDPOINTS = [
+//        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.openpubSkill.schema.json',                 'path' => 'ref/openpub_skill',                    'methods' => []],
+//        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.openpubType.schema.json',                 'path' => 'ref/openpub_type',                      'methods' => []],
+//        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.afdelingsnaam.schema.json',                 'path' => 'ref/afdelingsnamen',                    'methods' => []],
+//        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.link.schema.json',                 'path' => 'kiss/links',                    'methods' => []],
+//        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.medewerker.schema.json',                 'path' => 'medewerkers',                    'methods' => []],
+//        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.medewerkerAvailabilities.schema.json',                 'path' => 'mederwerkerAvailabilities',                    'methods' => []],
+//        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.review.schema.json',                 'path' => 'reviews',                    'methods' => []],
+//        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.sdgProduct.schema.json',                 'path' => 'sdg/kennisartikelen',                    'methods' => []],
+//        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.pubPublicatie.schema.json',                 'path' => 'kiss_openpub_pub',                    'methods' => []],
+//        ['reference' => 'https://kissdevelopment.commonground.nu/kiss.resultaatypeomschrijvinggeneriek.schema.json',                 'path' => 'ref/resultaattypeomschrijvingen',                    'methods' => []],
+//    ];
 
-    public const PROXY_ENDPOINTS = [
-        ['name' => 'Elasticsearch proxy endpoint', 'proxy' => 'EnterpriseSearch API Search', 'path' => 'elastic', 'methods' => ['POST']],
-        ['name' => 'OpenPub WP proxy endpoint', 'proxy' => 'OpenPub API', 'path' => 'openpub', 'methods' => ['GET']]
-    ];
+    // todo: remove this if Installation/Source/etc.json versions works
+//    public const SOURCES = [
+//        ['name' => 'EnterpriseSearch API Search', 'location' => 'https://enterprise-search-ent-http:3002',
+//            'headers' => ['accept' => 'application/json'], 'auth' => 'apikey', 'apikey' => '!secret-ChangeMe!elastic-search-key', 'configuration' => ['verify' => false]],
+//        ['name' => 'EnterpriseSearch API Private', 'location' => 'https://enterprise-search-ent-http:3002',
+//            'headers' => ['accept' => 'application/json'], 'auth' => 'apikey', 'apikey' => '!secret-ChangeMe!elastic-private-key', 'configuration' => ['verify' => false]],
+//        ['name' => 'OpenPub API', 'location' => 'https://openweb.{yourDomain}/wp-json/wp/v2',
+//            'headers' => ['accept' => 'application/json'], 'auth' => 'none', 'configuration' => ['verify' => false]]
+//    ];
+
+    // todo: remove this if installation.json version works
+//    public const PROXY_ENDPOINTS = [
+//        ['name' => 'Elasticsearch proxy endpoint', 'proxy' => 'EnterpriseSearch API Search', 'path' => 'elastic', 'methods' => ['POST']],
+//        ['name' => 'OpenPub WP proxy endpoint', 'proxy' => 'OpenPub API', 'path' => 'openpub', 'methods' => ['GET']]
+//    ];
 
     public const ACTION_HANDLERS = [
         ['name' => 'HandelsRegisterSearchAction', 'actionHandler' => 'Kiss\KissBundle\ActionHandler\HandelsRegisterSearchHandler', 'listens' => ['commongateway.response.pre']],
@@ -449,82 +451,85 @@ class InstallationService implements InstallerInterface
         }
     }
     
-    /**
-     * Creates the kiss Endpoints
-     *
-     * @param $objectsThatShouldHaveEndpoints
-     * @return array
-     */
-    private function createEndpoints($objectsThatShouldHaveEndpoints): array
-    {
-        $endpointRepository = $this->entityManager->getRepository('App:Endpoint');
-        $endpoints = [];
-        foreach($objectsThatShouldHaveEndpoints as $objectThatShouldHaveEndpoint) {
-            $entity = $this->entityManager->getRepository('App:Entity')->findOneBy(['reference' => $objectThatShouldHaveEndpoint['reference']]);
-            if ($entity instanceof Entity && !$endpointRepository->findOneBy(['name' => $entity->getName()])) {
-                $endpoint = new Endpoint($entity, null, $objectThatShouldHaveEndpoint);
+    // todo: remove this if installation.json version works
+//    /**
+//     * Creates the kiss Endpoints
+//     *
+//     * @param $objectsThatShouldHaveEndpoints
+//     * @return array
+//     */
+//    private function createEndpoints($objectsThatShouldHaveEndpoints): array
+//    {
+//        $endpointRepository = $this->entityManager->getRepository('App:Endpoint');
+//        $endpoints = [];
+//        foreach($objectsThatShouldHaveEndpoints as $objectThatShouldHaveEndpoint) {
+//            $entity = $this->entityManager->getRepository('App:Entity')->findOneBy(['reference' => $objectThatShouldHaveEndpoint['reference']]);
+//            if ($entity instanceof Entity && !$endpointRepository->findOneBy(['name' => $entity->getName()])) {
+//                $endpoint = new Endpoint($entity, null, $objectThatShouldHaveEndpoint);
+//
+//                $this->entityManager->persist($endpoint);
+//                $this->entityManager->flush();
+//                $endpoints[] = $endpoint;
+//            }
+//        }
+//        (isset($this->io) ? $this->io->writeln(count($endpoints).' Endpoints Created'): '');
+//
+//        return $endpoints;
+//    }
 
-                $this->entityManager->persist($endpoint);
-                $this->entityManager->flush();
-                $endpoints[] = $endpoint;
-            }
-        }
-        (isset($this->io) ? $this->io->writeln(count($endpoints).' Endpoints Created'): '');
-
-        return $endpoints;
-    }
+    // todo: remove this if installation.json version works
+//    /**
+//     * Creates the kiss Sources
+//     *
+//     * @param $sourcesThatShouldExist
+//     * @return array
+//     */
+//    private function createSources($sourcesThatShouldExist): array
+//    {
+//        $sourceRepository = $this->entityManager->getRepository('App:Gateway');
+//        $sources = [];
+//
+//        foreach($sourcesThatShouldExist as $sourceThatShouldExist) {
+//            if (!$sourceRepository->findOneBy(['name' => $sourceThatShouldExist['name']])) {
+//                $source = new Source($sourceThatShouldExist);
+//                $source->setApikey(array_key_exists('apikey', $sourceThatShouldExist) ? $sourceThatShouldExist['apikey'] : '');
+//
+//                $this->entityManager->persist($source);
+//                $this->entityManager->flush();
+//                $sources[] = $source;
+//            }
+//        }
+//
+//        (isset($this->io) ? $this->io->writeln(count($sources).' Sources Created'): '');
+//
+//        return $sources;
+//    }
     
-    /**
-     * Creates the kiss Sources
-     *
-     * @param $sourcesThatShouldExist
-     * @return array
-     */
-    private function createSources($sourcesThatShouldExist): array
-    {
-        $sourceRepository = $this->entityManager->getRepository('App:Gateway');
-        $sources = [];
-
-        foreach($sourcesThatShouldExist as $sourceThatShouldExist) {
-            if (!$sourceRepository->findOneBy(['name' => $sourceThatShouldExist['name']])) {
-                $source = new Source($sourceThatShouldExist);
-                $source->setApikey(array_key_exists('apikey', $sourceThatShouldExist) ? $sourceThatShouldExist['apikey'] : '');
-
-                $this->entityManager->persist($source);
-                $this->entityManager->flush();
-                $sources[] = $source;
-            }
-        }
-
-        (isset($this->io) ? $this->io->writeln(count($sources).' Sources Created'): '');
-
-        return $sources;
-    }
-    
-    /**
-     * Creates the kiss proxy endpoints for some of the created sources
-     *
-     * @param $proxyEndpoints
-     * @return array
-     */
-    private function createProxyEndpoints($proxyEndpoints): array
-    {
-        $endpointRepository = $this->entityManager->getRepository('App:Endpoint');
-        $endpoints = [];
-        foreach($proxyEndpoints as $proxyEndpoint) {
-            $source = $this->entityManager->getRepository('App:Gateway')->findOneBy(['name' => $proxyEndpoint['proxy']]);
-            if ($source instanceof Source && !$endpointRepository->findOneBy(['name' => $proxyEndpoint['name'], 'proxy' => $source])) {
-                $endpoint = new Endpoint(null, $source, $proxyEndpoint);
-
-                $this->entityManager->persist($endpoint);
-                $this->entityManager->flush();
-                $endpoints[] = $endpoint;
-            }
-        }
-        (isset($this->io) ? $this->io->writeln(count($endpoints).' Proxy Endpoints Created'): '');
-
-        return $endpoints;
-    }
+    // todo: remove this if installation.json version works
+//    /**
+//     * Creates the kiss proxy endpoints for some of the created sources
+//     *
+//     * @param $proxyEndpoints
+//     * @return array
+//     */
+//    private function createProxyEndpoints($proxyEndpoints): array
+//    {
+//        $endpointRepository = $this->entityManager->getRepository('App:Endpoint');
+//        $endpoints = [];
+//        foreach($proxyEndpoints as $proxyEndpoint) {
+//            $source = $this->entityManager->getRepository('App:Gateway')->findOneBy(['name' => $proxyEndpoint['proxy']]);
+//            if ($source instanceof Source && !$endpointRepository->findOneBy(['name' => $proxyEndpoint['name'], 'proxy' => $source])) {
+//                $endpoint = new Endpoint(null, $source, $proxyEndpoint);
+//
+//                $this->entityManager->persist($endpoint);
+//                $this->entityManager->flush();
+//                $endpoints[] = $endpoint;
+//            }
+//        }
+//        (isset($this->io) ? $this->io->writeln(count($endpoints).' Proxy Endpoints Created'): '');
+//
+//        return $endpoints;
+//    }
     
     /**
      * Update all existing zgw endpoints and remove any prefixes
@@ -638,16 +643,18 @@ class InstallationService implements InstallerInterface
 //        $this->createDashboardCards($this::OBJECTS_THAT_SHOULD_HAVE_CARDS);
 
         $this->createCollections();
-
-        // Let create some endpoints
-        $this->createEndpoints($this::SCHEMAS_THAT_SHOULD_HAVE_ENDPOINTS);
-
-        // Create Sources & proxy endpoints
-        $this->createSources($this::SOURCES); // TODO: change const $this::SOURCES into Source.json files
-        $this->createProxyEndpoints($this::PROXY_ENDPOINTS);
+    
+        // todo: remove this if installation.json version works
+//        // Let create some endpoints
+//        $this->createEndpoints($this::SCHEMAS_THAT_SHOULD_HAVE_ENDPOINTS);
+    
+        // todo: remove this if installation.json version works
+//        // Create Sources & proxy endpoints
+//        $this->createSources($this::SOURCES);
+//        $this->createProxyEndpoints($this::PROXY_ENDPOINTS);
         
         // Clean up prefixes from all ZGW endpoints
-        $this->cleanZgwEndpointPrefixes();
+        $this->cleanZgwEndpointPrefixes(); // TODO: only thing we should leave here if all new installationService changes are done.
 
         // Lets see if there is a generic search endpoint
 
