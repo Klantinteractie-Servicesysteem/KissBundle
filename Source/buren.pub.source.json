@@ -1,7 +1,7 @@
 {
     "title": "OpenPub API",
     "$id": "https://buren.nl/source/buren.pub.source.json",
-    "$schema": "https://json-schema.org/draft/2020-12/source",
+    "$schema": "https://docs.commongateway.nl/schemas/Gateway.schema.json",
     "version": "0.0.1",
     "name": "OpenPub",
     "location": "https://gemeenteburen-openpub.accept02.yard.nl/wp-json/owc/openpub/v1/items"
