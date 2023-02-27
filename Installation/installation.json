@@ -1,5 +1,11 @@
 {
   "installationService": "Kiss\\KissBundle\\Service\\InstallationService",
+  "collections": [
+    {
+      "reference": "https://kissdevelopment.commonground.nu/cronjob/kiss.default.cronjob.json",
+      "schemaPrefix": "https://kissdevelopment.commonground.nu/kiss"
+    }
+  ],
   "cards": {
     "schemas": [
       "https://kissdevelopment.commonground.nu/kiss.openpubSkill.schema.json",

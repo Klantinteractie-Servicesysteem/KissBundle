@@ -468,34 +468,8 @@ class InstallationService implements InstallerInterface
         return $collection;
     }
 
-    private function createCollections(): array
-    {
-        $collectionConfigs = [
-            // todo: disabled prefixes for now, because we need to change the kiss front-end first
-//            ['name' => 'Kiss',  'prefix' => 'kiss', 'schemaPrefix' => 'https://kissdevelopment.commonground.nu/kiss'],
-            ['name' => 'Kiss',  'prefix' => null, 'schemaPrefix' => 'https://kissdevelopment.commonground.nu/kiss'],
-        ];
-        $collections = [];
-        foreach($collectionConfigs as $collectionConfig) {
-            $collectionsFromEntityManager = $this->entityManager->getRepository('App:CollectionEntity')->findBy(['name' => $collectionConfig['name']]);
-            if(count($collectionsFromEntityManager) == 0){
-                $collection = new CollectionEntity($collectionConfig['name'], $collectionConfig['prefix'], 'KissBundle');
-            } else {
-                $collection = $collectionsFromEntityManager[0];
-            }
-            $collection = $this->addSchemasToCollection($collection, $collectionConfig['schemaPrefix']);
-            $this->entityManager->persist($collection);
-            $this->entityManager->flush();
-            $collections[$collectionConfig['name']] = $collection;
-        }
-        (isset($this->io) ? $this->io->writeln(count($collections).' Collections Created'): '');
-        return $collections;
-    }
-
     public function checkDataConsistency()
     {
-        $this->createCollections();
-        
         // Clean up prefixes from all ZGW endpoints
         $this->cleanZgwEndpointPrefixes(); // TODO: only thing we should leave here if all new installationService changes are done.
 
