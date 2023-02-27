@@ -1,7 +1,7 @@
 {
     "title": "Kiss",
-    "$id": "https://kissdevelopment.commonground.nu/cronjob/kiss.default.cronjob.json",
-    "$schema": "https://docs.commongateway.nl/schemas/Cronjob.schema.json",
+    "$id": "https://kissdevelopment.commonground.nu/collection/kiss.default.collection.json",
+    "$schema": "https://docs.commongateway.nl/schemas/CollectionEntity.schema.json",
     "version": "0.0.1",
     "prefix": null,
     "plugin": "KissBundle"
