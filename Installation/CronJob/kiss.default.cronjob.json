@@ -1,7 +1,11 @@
 {
-    "title": "BRP API",
-    "$id": "https://buren.nl/source/buren.brp.source.json",
-    "$schema": "https://docs.commongateway.nl/schemas/Gateway.schema.json",
+    "title": "Kiss",
+    "$id": "https://kissdevelopment.commonground.nu/source/kiss.default.cronjob.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Cronjob.schema.json",
     "version": "0.0.1",
-    "name": "BRP API"
+    "description": "This cronjob fires all the kiss actions every minute",
+    "crontab": "*/1 * * * *",
+    "throws": [
+        "kiss.default.listens"
+    ]
 }
