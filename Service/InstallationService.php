@@ -502,24 +502,6 @@ class InstallationService implements InstallerInterface
         // aanmaken van actions met een cronjob
         $this->createActions();
 
-        (isset($this->io)?$this->io->writeln(['','<info>Looking for cronjobs</info>']):'');
-        // We only need 1 cronjob so lets set that
-        if(!$cronjob = $this->entityManager->getRepository('App:Cronjob')->findOneBy(['name'=>'Kiss']))
-        {
-            $cronjob = new Cronjob();
-            $cronjob->setName('Kiss');
-            $cronjob->setDescription("This cronjob fires all the kiss actions every minute");
-            $cronjob->setThrows(['kiss.default.listens']);
-            $cronjob->setCrontab('*/1 * * * *');
-
-            $this->entityManager->persist($cronjob);
-
-            (isset($this->io)?$this->io->writeln(['','Created a cronjob for Kiss']):'');
-        }
-        else {
-            (isset($this->io)?$this->io->writeln(['','There is already a cronjob for Kiss']):'');
-        }
-
         $this->entityManager->flush();
     }
 }
