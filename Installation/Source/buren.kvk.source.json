@@ -2,6 +2,5 @@
     "title": "Kvk API",
     "$id": "https://buren.nl/source/buren.kvk.source.json",
     "$schema": "https://docs.commongateway.nl/schemas/Gateway.schema.json",
-    "version": "0.0.1",
-    "name": "Kvk API"
+    "version": "0.0.1"
 }

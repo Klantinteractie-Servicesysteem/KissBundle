@@ -3,7 +3,6 @@
     "$id": "https://kissdevelopment.commonground.nu/source/kiss.OpenPub.source.json",
     "$schema": "https://docs.commongateway.nl/schemas/Gateway.schema.json",
     "version": "0.0.1",
-    "name": "OpenPub API",
     "location": "https://openweb.{yourDomain}/wp-json/wp/v2",
     "headers": {
         "accept" : "application/json"

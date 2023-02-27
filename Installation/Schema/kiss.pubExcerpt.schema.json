@@ -1,0 +1,17 @@
+{
+  "$id": "https://kissdevelopment.commonground.nu/kiss.pubExcerpt.schema.json",
+  "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
+  "version": "0.1",
+  "title": "KissPubExcerpt",
+  "type": "object",
+  "properties": {
+    "rendered": {
+      "type": "string",
+      "nullable": true
+    },
+    "protected": {
+      "type": "boolean",
+      "nullable": true
+    }
+  }
+}

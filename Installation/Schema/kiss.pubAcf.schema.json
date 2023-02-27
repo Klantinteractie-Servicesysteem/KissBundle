@@ -1,0 +1,36 @@
+{
+  "$id": "https://kissdevelopment.commonground.nu/kiss.pubAcf.schema.json",
+  "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
+  "version": "0.1",
+  "title": "KissPubAcf",
+  "type": "object",
+  "properties": {
+    "publicationType": {
+      "type": "number",
+      "nullable": true
+    },
+    "publicationSkill": {
+      "type": "array",
+      "nullable": true,
+      "items": {
+        "type": "number"
+      }
+    },
+    "publicationEndDate": {
+      "type": "datetime",
+      "nullable": true
+    },
+    "publicationFeatured": {
+      "type": "boolean",
+      "nullable": true
+    },
+    "publicationTitle": {
+      "type": "string",
+      "nullable": true
+    },
+    "publicationContent": {
+      "type": "string",
+      "nullable": true
+    }
+  }
+}

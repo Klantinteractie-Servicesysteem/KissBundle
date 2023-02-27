@@ -2,6 +2,5 @@
     "title": "SDG Plus API",
     "$id": "https://buren.nl/source/buren.sdgplus.source.json",
     "$schema": "https://docs.commongateway.nl/schemas/Gateway.schema.json",
-    "version": "0.0.1",
-    "name": "SDG Plus API"
+    "version": "0.0.1"
 }

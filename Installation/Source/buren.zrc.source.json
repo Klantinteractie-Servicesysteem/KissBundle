@@ -2,6 +2,5 @@
     "title": "ZRC API",
     "$id": "https://buren.nl/source/buren.zrc.source.json",
     "$schema": "https://docs.commongateway.nl/schemas/Gateway.schema.json",
-    "version": "0.0.1",
-    "name": "ZRC API"
+    "version": "0.0.1"
 }
