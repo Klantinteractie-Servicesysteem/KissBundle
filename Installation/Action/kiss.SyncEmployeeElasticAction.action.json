@@ -12,7 +12,7 @@
             }, "https://kissdevelopment.commonground.nu/kiss.medewerker.schema.json"
         ]
     },
-    "actionHandler": "AppActionHandlerSynchronizationPushHandler",
+    "class": "AppActionHandlerSynchronizationPushHandler",
     "config":
     {
         "location": "/api/as/v1/engines/kiss-engine/documents",

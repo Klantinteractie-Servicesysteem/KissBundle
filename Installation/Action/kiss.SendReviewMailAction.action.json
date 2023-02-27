@@ -12,7 +12,7 @@
             }, "https://kissdevelopment.commonground.nu/kiss.review.schema.json"
         ]
     },
-    "actionHandler": "AppActionHandlerEmailHandler",
+    "class": "AppActionHandlerEmailHandler",
     "configuration":
     {
         "serviceDNS": "",

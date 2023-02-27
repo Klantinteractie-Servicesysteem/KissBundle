@@ -12,7 +12,7 @@
             }, "https://kissdevelopment.commonground.nu/kiss.sdgProduct.schema.json"
         ]
     },
-    "actionHandler": "AppActionHandlerSynchronizationPushHandler",
+    "class": "AppActionHandlerSynchronizationPushHandler",
     "config":
     {
         "location": "/api/as/v1/engines/kiss-engine/documents",
