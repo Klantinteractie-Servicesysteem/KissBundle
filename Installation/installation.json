@@ -2,7 +2,7 @@
   "installationService": "Kiss\\KissBundle\\Service\\InstallationService",
   "collections": [
     {
-      "reference": "https://kissdevelopment.commonground.nu/cronjob/kiss.default.cronjob.json",
+      "reference": "https://kissdevelopment.commonground.nu/collection/kiss.default.collection.json",
       "schemaPrefix": "https://kissdevelopment.commonground.nu/kiss"
     }
   ],
@@ -12,6 +12,22 @@
       "https://kissdevelopment.commonground.nu/kiss.resultaatypeomschrijvinggeneriek.schema.json",
       "https://kissdevelopment.commonground.nu/kiss.link.schema.json",
       "https://kissdevelopment.commonground.nu/kiss.afdelingsnaam.schema.json"
+    ]
+  },
+  "actions": {
+    "handlers": [
+      {
+        "name": "HandelsRegisterSearchAction",
+        "reference": "https://kissdevelopment.commonground.nu/action/kiss.HandelsRegisterSearchAction.action.json",
+        "actionHandler": "Kiss\\KissBundle\\ActionHandler\\HandelsRegisterSearchHandler",
+        "listens": ["commongateway.response.pre"]
+      }
+    ],
+    "fixConfigRef": [
+      "https://kissdevelopment.commonground.nu/action/kiss.SendReviewMailAction.action.json",
+      "https://kissdevelopment.commonground.nu/action/kiss.SyncKennisArtikelElasticAction.action.json",
+      "https://kissdevelopment.commonground.nu/action/kiss.SyncEmployeeElasticAction.action.json",
+      "https://kissdevelopment.commonground.nu/action/kiss.SyncPubAction.action.json"
     ]
   },
   "endpoints": {
