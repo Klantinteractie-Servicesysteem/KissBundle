@@ -8,7 +8,7 @@
     {
         "==": [1, 1]
     },
-    "class": "AppActionHandlerSynchronizationCollectionHandler",
+    "class": "App\\ActionHandler\\SynchronizationCollectionHandler",
     "configuration":
     {
         "location": "/kiss_openpub_pub",
