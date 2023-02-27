@@ -13,7 +13,7 @@
         ]
     },
     "class": "App\\ActionHandler\\SynchronizationPushHandler",
-    "config":
+    "configuration":
     {
         "location": "/api/as/v1/engines/kiss-engine/documents",
         "entity": "https://kissdevelopment.commonground.nu/kiss.medewerker.schema.json",
