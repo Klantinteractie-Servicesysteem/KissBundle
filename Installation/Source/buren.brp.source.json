@@ -10,6 +10,7 @@
     },
     "auth": "none",
     "configuration": {
+        "verify": false,
         "cert": "-----BEGIN CERTIFICATE-----\\nCertificate-placeholder\\n-----END CERTIFICATE-----",
         "ssl_key": [
             "-----BEGIN ENCRYPTED PRIVATE KEY-----\\nEncryptedPrivateKey-placeholder\\n-----END ENCRYPTED PRIVATE KEY-----",
