@@ -16,5 +16,14 @@
             "-----BEGIN ENCRYPTED PRIVATE KEY-----\\nEncryptedPrivateKey-placeholder\\n-----END ENCRYPTED PRIVATE KEY-----",
             "password-placeholder"
         ]
+    },
+    "endpointsConfig": {
+        "global": {
+            "out": {
+                "query": {
+                    "mapping": "https://buren.nl/mapping/buren.brpSourceOutQuery.mapping.json"
+                }
+            }
+        }
     }
 }
