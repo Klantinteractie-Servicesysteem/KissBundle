@@ -2,5 +2,19 @@
     "title": "BRP API",
     "$id": "https://buren.nl/source/buren.brp.source.json",
     "$schema": "https://docs.commongateway.nl/schemas/Gateway.schema.json",
-    "version": "0.0.1"
+    "version": "0.0.1",
+    "description": "Proeftuinomgeving iConnectAPI",
+    "location": "https://lab.api.mijniconnect.nl/iconnect/apihcbrp/mks/v1",
+    "headers": {
+        "accept" : "application/json"
+    },
+    "auth": "none",
+    "configuration": {
+        "verify" : false,
+        "cert": [
+            "-----BEGIN CERTIFICATE-----\\nCertificate-placeholder\\n-----END CERTIFICATE-----",
+            "password-placeholder"
+        ],
+        "ssl_key": "-----BEGIN ENCRYPTED PRIVATE KEY-----\\nEncryptedPrivateKey-placeholder\\n-----END ENCRYPTED PRIVATE KEY-----"
+    }
 }
