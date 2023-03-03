@@ -5,8 +5,14 @@
   "version": "0.0.1",
   "passTrough": true,
   "mapping": {
+    "expand": "ouders,partners,kinderen",
     "geboorte__datum": "embedded.geboorte.embedded.datumOnvolledig.datum",
     "verblijfplaats__postcode": "embedded.verblijfplaats.postcode",
     "verblijfplaats__huisnummer": "embedded.verblijfplaats.huisnummer[int_compare]"
-  }
+  },
+  "unset": [
+    "embedded.geboorte.embedded.datumOnvolledig.datum",
+    "embedded.verblijfplaats.postcode",
+    "embedded.verblijfplaats.huisnummer[int_compare]"
+  ]
 }
