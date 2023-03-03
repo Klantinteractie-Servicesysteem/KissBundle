@@ -4,7 +4,7 @@
     "$schema": "https://docs.commongateway.nl/schemas/Gateway.schema.json",
     "version": "0.0.1",
     "description": "Proeftuinomgeving iConnectAPI",
-    "location": "https://lab.api.mijniconnect.nl/iconnect/apihcbrp/mks/v1",
+    "location": "https://lab.api.mijniconnect.nl/iconnect/apihcbrp/mks/v1/ingeschrevenpersonen",
     "headers": {
         "accept" : "application/json"
     },
