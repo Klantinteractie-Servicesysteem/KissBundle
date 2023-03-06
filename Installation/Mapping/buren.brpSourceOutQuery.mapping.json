@@ -11,8 +11,8 @@
     "verblijfplaats__huisnummer": "embedded&#46;verblijfplaats&#46;huisnummer.int_compare"
   },
   "unset": [
-    "embedded.geboorte.embedded.datumOnvolledig.datum",
-    "embedded.verblijfplaats.postcode",
-    "embedded.verblijfplaats.huisnummer"
+    "embedded&#46;geboorte&#46;embedded&#46;datumOnvolledig&#46;datum",
+    "embedded&#46;verblijfplaats&#46;postcode",
+    "embedded&#46;verblijfplaats&#46;huisnummer"
   ]
 }
