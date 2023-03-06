@@ -23,6 +23,11 @@
                 "query": {
                     "mapping": "https://buren.nl/mapping/buren.brpSourceOutQuery.mapping.json"
                 }
+            },
+            "in": {
+                "body": {
+                    "mapping": "https://buren.nl/mapping/buren.brpSourceInBody.mapping.json"
+                }
             }
         }
     }
