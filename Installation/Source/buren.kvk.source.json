@@ -6,9 +6,12 @@
     "description": "Proeftuinomgeving iConnectAPI",
     "location": "https://lab.api.mijniconnect.nl/iconnect/apikvk",
     "headers": {
-        "accept" : "application/json"
+        "accept" : "application/json",
+        "x-origin-oin": "00000003273229750000"
     },
-    "auth": "none",
+    "auth": "apikey",
+    "apikey": "secret",
+    "authorizationHeader": "apikey",
     "configuration": {
         "verify": false,
         "cert": "-----BEGIN CERTIFICATE-----\\nCertificate-placeholder\\n-----END CERTIFICATE-----",
