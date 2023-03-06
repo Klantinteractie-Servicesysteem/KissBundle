@@ -6,7 +6,7 @@
   "passTrough": true,
   "mapping": {
     "expand": "ouders,partners,kinderen",
-    "geboorte__datum": "{% if embedded.geboorte.embedded.datumOnvolledig.datum is defined %}embedded&#46;geboorte&#46;embedded&#46;datumOnvolledig&#46;datum{% else %}geboorte__datum{% endif %}",
+    "geboorte__datum": "embedded&#46;geboorte&#46;embedded&#46;datumOnvolledig&#46;datum",
     "verblijfplaats__postcode": "embedded&#46;verblijfplaats&#46;postcode",
     "verblijfplaats__huisnummer": "embedded&#46;verblijfplaats&#46;huisnummer.int_compare"
   },
@@ -16,8 +16,8 @@
     "embedded&#46;verblijfplaats&#46;huisnummer"
   ],
   "cast": {
-    "geboorte__datum": "keyCantBeValue",
-    "verblijfplaats__postcode": "keyCantBeValue",
-    "verblijfplaats__huisnummer": "keyCantBeValue"
+    "geboorte__datum": "unsetIfValue==embedded&#46;geboorte&#46;embedded&#46;datumOnvolledig&#46;datum",
+    "verblijfplaats__postcode": "unsetIfValue==embedded&#46;verblijfplaats&#46;postcode",
+    "verblijfplaats__huisnummer": "unsetIfValue==embedded&#46;verblijfplaats&#46;huisnummer.int_compare"
   }
 }
