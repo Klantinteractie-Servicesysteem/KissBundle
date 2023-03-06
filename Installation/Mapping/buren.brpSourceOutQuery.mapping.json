@@ -6,13 +6,13 @@
   "passTrough": true,
   "mapping": {
     "expand": "ouders,partners,kinderen",
-    "geboorte__datum": "embedded.geboorte.embedded.datumOnvolledig.datum",
-    "verblijfplaats__postcode": "embedded.verblijfplaats.postcode",
-    "verblijfplaats__huisnummer": "embedded.verblijfplaats.huisnummer[int_compare]"
+    "geboorte__datum": "embedded&#46;geboorte&#46;embedded&#46;datumOnvolledig&#46;datum",
+    "verblijfplaats__postcode": "embedded&#46;verblijfplaats&#46;postcode",
+    "verblijfplaats__huisnummer": "embedded&#46;verblijfplaats&#46;huisnummer.int_compare"
   },
   "unset": [
     "embedded.geboorte.embedded.datumOnvolledig.datum",
     "embedded.verblijfplaats.postcode",
-    "embedded.verblijfplaats.huisnummer[int_compare]"
+    "embedded.verblijfplaats.huisnummer"
   ]
 }
