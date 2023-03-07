@@ -13,7 +13,7 @@
     "extend"
   ],
   "cast": {
-    "handelsnaam": "unsetIfValue==eersteHandelsnaam.like",
+    "eersteHandelsnaam": "unsetIfValue==eersteHandelsnaam.like",
     "kvkNummer": "unsetIfValue==kvkNummer"
   }
 }
