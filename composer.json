@@ -17,11 +17,11 @@
     "minimum-stability" : "dev",
     "require": {
         "php": ">=7.4",
-		"commongateway/corebundle": ">=1.0.15",
-		"common-gateway/brp-bundle": ">=0.0.15",
+		"commongateway/corebundle": ">=1.0.16",
+		"common-gateway/brp-bundle": ">=0.0.16",
 		"common-gateway/zgw-bundle": "dev-feature/use-new-installationService",
-		"common-gateway/klanten-bundle": ">=0.0.27",
-        "common-gateway/kvk-bundle": ">=0.0.14"
+		"common-gateway/klanten-bundle": ">=0.0.28",
+        "common-gateway/kvk-bundle": ">=0.0.15"
 	},
 	"require-dev" : {
 		"symfony/dependency-injection" : "~3.4|~4.1|~5.0"
