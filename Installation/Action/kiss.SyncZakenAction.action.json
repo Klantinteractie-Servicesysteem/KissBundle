@@ -1,0 +1,39 @@
+{
+  "title": "SyncZakenAction",
+  "$id": "https://kissdevelopment.commonground.nu/action/kiss.SyncZakenAction.action.json",
+  "$schema": "https://docs.commongateway.nl/schemas/Action.schema.json",
+  "version": "0.0.1",
+  "listens": [
+    "kiss.default.listens"
+  ],
+  "conditions": {
+    "==": [
+      1,
+      1
+    ]
+  },
+  "class": "App\\ActionHandler\\SynchronizationCollectionHandler",
+  "configuration": {
+    "useDataFromCollection": true,
+    "location": "/zaken",
+    "entity": "https://vng.opencatalogi.nl/schemas/zrc.zaak.schema.json",
+    "source": "https://buren.nl/source/buren.zrc.source.json",
+    "apiSource": {
+      "location": {
+        "objects": "results",
+        "object": "#",
+        "idField": "uuid",
+        "dateChangedField": "publicatiedatum"
+      },
+      "sourcePaginated": true,
+      "syncFromList": true,
+      "sourceLeading": true,
+      "mappingOut": [],
+      "translationsIn": [],
+      "translationsOut": [],
+      "skeletonIn": [],
+      "skeletonOut": [],
+      "collectionDelete": true
+    }
+  }
+}
