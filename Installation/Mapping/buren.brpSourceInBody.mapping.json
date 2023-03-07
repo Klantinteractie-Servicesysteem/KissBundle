@@ -6,6 +6,7 @@
   "passTrough": false,
   "mapping": {
     "results": "_embedded.ingeschrevenpersonen",
-    "results.0.embedded.geboorte": "_embedded.ingeschrevenpersonen.geboorte"
+    "results.0.embedded.geboorte": "_embedded.ingeschrevenpersonen.geboorte",
+    "todo": "test and make sure this works^ we need to have data in embedded.geboorte, same for other subobjects?"
   }
 }

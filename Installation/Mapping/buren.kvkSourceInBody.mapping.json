@@ -8,6 +8,7 @@
     "results": "resultaten",
     "total": "totaal",
     "page": "pagina",
-    "results.0.eersteHandelsnaam": "resultaten.0.handelsnaam"
+    "results.0.eersteHandelsnaam": "resultaten.0.handelsnaam",
+    "todo": "This^ only works for the first item in the list, we need it to work for all results.eersteHandelsnaam"
   }
 }
