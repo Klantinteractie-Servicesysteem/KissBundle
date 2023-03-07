@@ -1,12 +1,12 @@
 {
-    "title": "ZRC API",
+    "title": "OpenZaak ZRC API",
     "$id": "https://buren.nl/source/buren.zrc.source.json",
     "$schema": "https://docs.commongateway.nl/schemas/Gateway.schema.json",
-    "version": "0.0.1",
+    "version": "0.0.3",
     "description": "Een API om een zaakregistratiecomponent (ZRC) te benaderen.",
     "location": "https://open-zaak.test.buren.opengem.nl/zaken/api/v1",
     "headers": {
-        "accept" : "application/json",
+        "accept": "application/json",
         "Accept-Crs": "EPSG:4326",
         "Content-Crs": "EPSG:4326"
     },

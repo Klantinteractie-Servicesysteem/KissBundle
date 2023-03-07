@@ -2,41 +2,18 @@
 
 namespace Kiss\KissBundle\Service;
 
-use App\Entity\Action;
 use App\Entity\CollectionEntity;
-use App\Entity\DashboardCard;
-use App\Entity\Cronjob;
-use App\Entity\Endpoint;
-use App\Entity\Entity;
 use CommonGateway\CoreBundle\Installer\InstallerInterface;
-use Exception;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Doctrine\ORM\EntityManagerInterface;
-use Symfony\Component\Console\Style\SymfonyStyle;
 
 class InstallationService implements InstallerInterface
 {
     private EntityManagerInterface $entityManager;
-    private ContainerInterface $container;
-    private SymfonyStyle $io;
 
-    public function __construct(EntityManagerInterface $entityManager, ContainerInterface $container)
+    public function __construct(EntityManagerInterface $entityManager)
     {
         $this->entityManager = $entityManager;
-        $this->container = $container;
-    }
-
-    /**
-     * Set symfony style in order to output to the console
-     *
-     * @param SymfonyStyle $io
-     * @return self
-     */
-    public function setStyle(SymfonyStyle $io):self
-    {
-        $this->io = $io;
-
-        return $this;
     }
 
     public function install(){
@@ -102,7 +79,7 @@ class InstallationService implements InstallerInterface
     public function checkDataConsistency()
     {
         // Clean up prefixes from all ZGW endpoints
-        $this->cleanZgwEndpointPrefixes(); // TODO: only thing we should leave here if all new installationService changes are done.
+        $this->cleanZgwEndpointPrefixes();
 
         $this->entityManager->flush();
     }

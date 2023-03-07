@@ -1,0 +1,23 @@
+{
+  "title": "brpSourceOutQuery",
+  "$id": "https://buren.nl/mapping/buren.brpSourceOutQuery.mapping.json",
+  "$schema": "https://docs.commongateway.nl/schemas/Mapping.schema.json",
+  "version": "0.0.1",
+  "passTrough": true,
+  "mapping": {
+    "expand": "ouders,partners,kinderen",
+    "geboorte__datum": "embedded&#46;geboorte&#46;embedded&#46;datumOnvolledig&#46;datum",
+    "verblijfplaats__postcode": "embedded&#46;verblijfplaats&#46;postcode",
+    "verblijfplaats__huisnummer": "embedded&#46;verblijfplaats&#46;huisnummer.int_compare"
+  },
+  "unset": [
+    "embedded&#46;geboorte&#46;embedded&#46;datumOnvolledig&#46;datum",
+    "embedded&#46;verblijfplaats&#46;postcode",
+    "embedded&#46;verblijfplaats&#46;huisnummer"
+  ],
+  "cast": {
+    "geboorte__datum": "unsetIfValue==embedded&#46;geboorte&#46;embedded&#46;datumOnvolledig&#46;datum",
+    "verblijfplaats__postcode": "unsetIfValue==embedded&#46;verblijfplaats&#46;postcode",
+    "verblijfplaats__huisnummer": "unsetIfValue==embedded&#46;verblijfplaats&#46;huisnummer.int_compare"
+  }
+}
