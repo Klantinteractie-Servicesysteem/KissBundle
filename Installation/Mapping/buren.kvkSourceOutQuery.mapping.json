@@ -7,7 +7,11 @@
   "mapping": {
     "handelsnaam": "eersteHandelsnaam.like"
   },
-  "unset": ["eersteHandelsnaam", ".page", "extend"],
+  "unset": [
+    "eersteHandelsnaam",
+    "_page",
+    "extend"
+  ],
   "cast": {
     "handelsnaam": "unsetIfValue==eersteHandelsnaam.like",
     "kvkNummer": "unsetIfValue==kvkNummer"
