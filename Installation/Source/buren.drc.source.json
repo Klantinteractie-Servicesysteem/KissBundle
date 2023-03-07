@@ -2,5 +2,14 @@
     "title": "DRC API",
     "$id": "https://buren.nl/source/buren.drc.source.json",
     "$schema": "https://docs.commongateway.nl/schemas/Gateway.schema.json",
-    "version": "0.0.1"
+    "version": "0.0.1",
+    "description": "Een API om een documentregistratiecomponent (DRC) te benaderen.",
+    "location": "https://open-zaak.test.buren.opengem.nl/documenten/api/v1",
+    "headers": {
+        "Accept-Crs": "EPSG:4326",
+        "Content-Crs": "EPSG:4326"
+    },
+    "auth": "jwt-HS256",
+    "jwtId": "client_id",
+    "secret": "secret"
 }
