@@ -26,19 +26,6 @@ class InstallationService implements InstallerInterface
         $this->container = $container;
     }
 
-    /**
-     * Set symfony style in order to output to the console
-     *
-     * @param SymfonyStyle $io
-     * @return self
-     */
-    public function setStyle(SymfonyStyle $io):self
-    {
-        $this->io = $io;
-
-        return $this;
-    }
-
     public function install(){
         $this->checkDataConsistency();
     }
