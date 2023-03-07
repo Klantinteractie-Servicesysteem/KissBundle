@@ -5,7 +5,11 @@
   "version": "0.0.1",
   "passTrough": true,
   "mapping": {
-    "handelsnaam": "eersteHandelsnaam"
+    "handelsnaam": "eersteHandelsnaam.like"
   },
-  "unset": []
+  "unset": ["eersteHandelsnaam", ".page", "extend"],
+  "cast": {
+    "handelsnaam": "unsetIfValue==eersteHandelsnaam.like",
+    "kvkNummer": "unsetIfValue==kvkNummer"
+  }
 }
