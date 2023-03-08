@@ -7,5 +7,5 @@
   "mapping": {
     "eersteHandelsnaam": "handelsnaam"
   },
-  "unset": "handelsnaam"
+  "unset": ["handelsnaam"]
 }
