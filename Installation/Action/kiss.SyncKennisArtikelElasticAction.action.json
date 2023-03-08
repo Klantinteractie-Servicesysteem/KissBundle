@@ -1,0 +1,63 @@
+{
+    "title": "SyncKennisArtikelElasticAction",
+    "$id": "https://kissdevelopment.commonground.nu/action/kiss.SyncKennisArtikelElasticAction.action.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Action.schema.json",
+    "version": "0.0.1",
+    "listens": ["commongateway.object.create", "commongateway.object.update"],
+    "conditions":
+    {
+        "==": [
+            {
+                "var": "entity"
+            }, "https://kissdevelopment.commonground.nu/kiss.sdgProduct.schema.json"
+        ]
+    },
+    "class": "App\\ActionHandler\\SynchronizationPushHandler",
+    "configuration":
+    {
+        "location": "/api/as/v1/engines/kiss-engine/documents",
+        "entity": "https://kissdevelopment.commonground.nu/kiss.sdgProduct.schema.json",
+        "source": "https://kissdevelopment.commonground.nu/source/kiss.enterpriseSearchPrivate.source.json",
+        "apiSource":
+        {
+            "location":
+            {
+                "dateChangedField": "",
+                "idField": "0.id",
+                "objects": "#"
+            },
+            "mappingIn": [],
+            "mappingOut":
+            {
+                "object": "object | array",
+                "object_meta": "vertalingen.0.specifiekeTekst | concatenation <br/>",
+                "title": "vertalingen.0.productTitelDecentraal | concatenation &nbsp;",
+                "self": "'/api/sdg/kennisartikel/'+_self.id | concatenation",
+                "id": "'kennisartikel_'+_self.id | concatenation"
+            },
+            "queryMethod": "page",
+            "skeletonIn": [],
+            "skeletonOut":
+            {
+                "object_bron": "Kennisartikel",
+                "title": "kennisartikel"
+            },
+            "sourceLeading": false,
+            "syncFromList": true,
+            "translationsIn": [],
+            "translationsOut": [],
+            "unavailablePropertiesOut": ["url", "uuid", "upnLabel", "upnUri", "versie", "publicatieDatum", "productAanwezig", "productValtOnder", "verantwoordelijkeOrganisatie", "bevoegdeOrganisatie", "catalogus", "locaties", "doelgroep", "vertalingen", "gerelateerdeProducten", "_self"]
+        },
+        "callService": [
+            {
+                "key": "method",
+                "value": "POST"
+            }
+        ],
+        "replaceTwigLocation": "",
+        "useDataFromCollection": false,
+        "queryParams": [],
+        "owner": "",
+        "actionConditions": []
+    }
+}

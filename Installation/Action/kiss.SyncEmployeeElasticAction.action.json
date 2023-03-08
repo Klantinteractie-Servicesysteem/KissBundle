@@ -1,0 +1,63 @@
+{
+    "title": "SyncEmployeeElasticAction",
+    "$id": "https://kissdevelopment.commonground.nu/action/kiss.SyncEmployeeElasticAction.action.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Action.schema.json",
+    "version": "0.0.1",
+    "listens": ["commongateway.object.create", "commongateway.object.update"],
+    "conditions":
+    {
+        "==": [
+            {
+                "var": "entity"
+            }, "https://kissdevelopment.commonground.nu/kiss.medewerker.schema.json"
+        ]
+    },
+    "class": "App\\ActionHandler\\SynchronizationPushHandler",
+    "configuration":
+    {
+        "location": "/api/as/v1/engines/kiss-engine/documents",
+        "entity": "https://kissdevelopment.commonground.nu/kiss.medewerker.schema.json",
+        "source": "https://kissdevelopment.commonground.nu/source/kiss.enterpriseSearchPrivate.source.json",
+        "apiSource":
+        {
+            "location":
+            {
+                "dateChangedField": "",
+                "idField": "0.id",
+                "objects": "#"
+            },
+            "mappingIn": [],
+            "mappingOut":
+            {
+                "object": "object | array",
+                "object_meta": "function+department+skills | concatenation <br/>",
+                "title": "contact.voornaam+contact.voorvoegselAchternaam+contact.achternaam | concatenation &nbsp;",
+                "self": "'/api/medewerkers/'+_self.id | concatenation",
+                "id": "'smoelenboek_'+_self.id | concatenation"
+            },
+            "queryMethod": "page",
+            "skeletonIn": [],
+            "skeletonOut":
+            {
+                "object_bron": "Smoelenboek",
+                "title": "medewerker"
+            },
+            "sourceLeading": false,
+            "syncFromList": true,
+            "translationsIn": [],
+            "translationsOut": [],
+            "unavailablePropertiesOut": ["availabilities", "contact", "department", "description", "function", "replacement", "skills", "_self"]
+        },
+        "callService": [
+            {
+                "key": "method",
+                "value": "POST"
+            }
+        ],
+        "replaceTwigLocation": "",
+        "useDataFromCollection": false,
+        "queryParams": [],
+        "owner": "",
+        "actionConditions": []
+    }
+}

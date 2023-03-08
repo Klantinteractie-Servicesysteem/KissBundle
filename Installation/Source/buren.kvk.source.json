@@ -1,0 +1,38 @@
+{
+    "title": "Kvk API",
+    "$id": "https://buren.nl/source/buren.kvk.source.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Gateway.schema.json",
+    "version": "0.0.1",
+    "description": "Proeftuinomgeving iConnectAPI",
+    "location": "https://lab.api.mijniconnect.nl/iconnect/apikvk/zoeken/v1/v1/zoeken",
+    "headers": {
+        "accept" : "application/json",
+        "x-origin-oin": "00000003273229750000",
+        "apikey": "l7xx1f2691f2520d487b902f4e0b57a0b197"
+    },
+    "auth": "apikey",
+    "apikey": "secret",
+    "authorizationHeader": "apikey",
+    "configuration": {
+        "verify": false,
+        "cert": "-----BEGIN CERTIFICATE-----\\nCertificate-placeholder\\n-----END CERTIFICATE-----",
+        "ssl_key": [
+            "-----BEGIN ENCRYPTED PRIVATE KEY-----\\nEncryptedPrivateKey-placeholder\\n-----END ENCRYPTED PRIVATE KEY-----",
+            "password-placeholder"
+        ]
+    },
+    "endpointsConfig": {
+        "global": {
+            "out": {
+                "query": {
+                    "mapping": "https://buren.nl/mapping/buren.kvkSourceOutQuery.mapping.json"
+                }
+            },
+            "in": {
+                "body": {
+                    "mapping": "https://buren.nl/mapping/buren.kvkSourceInBody.mapping.json"
+                }
+            }
+        }
+    }
+}

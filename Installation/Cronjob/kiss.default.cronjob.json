@@ -1,0 +1,11 @@
+{
+    "title": "Kiss",
+    "$id": "https://kissdevelopment.commonground.nu/cronjob/kiss.default.cronjob.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Cronjob.schema.json",
+    "version": "0.0.1",
+    "description": "This cronjob fires all the kiss actions every minute",
+    "crontab": "*/1 * * * *",
+    "throws": [
+        "kiss.default.listens"
+    ]
+}

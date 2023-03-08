@@ -1,3 +1,102 @@
 {
-  "installationService": "Kiss\\KissBundle\\Service\\InstallationService"
+  "installationService": "Kiss\\KissBundle\\Service\\InstallationService",
+  "collections": [
+    {
+      "reference": "https://kissdevelopment.commonground.nu/collection/kiss.default.collection.json",
+      "schemaPrefix": "https://kissdevelopment.commonground.nu/kiss"
+    }
+  ],
+  "cards": {
+    "schemas": [
+      "https://kissdevelopment.commonground.nu/kiss.openpubSkill.schema.json",
+      "https://kissdevelopment.commonground.nu/kiss.resultaatypeomschrijvinggeneriek.schema.json",
+      "https://kissdevelopment.commonground.nu/kiss.link.schema.json",
+      "https://kissdevelopment.commonground.nu/kiss.afdelingsnaam.schema.json"
+    ]
+  },
+  "actions": {
+    "handlers": [
+      {
+        "name": "HandelsRegisterSearchAction",
+        "reference": "https://kissdevelopment.commonground.nu/action/kiss.HandelsRegisterSearchAction.action.json",
+        "actionHandler": "Kiss\\KissBundle\\ActionHandler\\HandelsRegisterSearchHandler",
+        "listens": ["commongateway.response.pre"]
+      }
+    ],
+    "fixConfigRef": [
+      "https://kissdevelopment.commonground.nu/action/kiss.SendReviewMailAction.action.json",
+      "https://kissdevelopment.commonground.nu/action/kiss.SyncKennisArtikelElasticAction.action.json",
+      "https://kissdevelopment.commonground.nu/action/kiss.SyncEmployeeElasticAction.action.json",
+      "https://kissdevelopment.commonground.nu/action/kiss.SyncPubAction.action.json",
+      "https://kissdevelopment.commonground.nu/action/kiss.SyncZakenAction.action.json"
+    ]
+  },
+  "endpoints": {
+    "sources": [
+      {
+        "name": "Elasticsearch proxy endpoint",
+        "reference": "https://kissdevelopment.commonground.nu/source/kiss.enterpriseSearchSearch.source.json",
+        "path": "elastic",
+        "methods": ["POST"]
+      },
+      {
+        "name": "OpenPub WP proxy endpoint",
+        "reference": "https://kissdevelopment.commonground.nu/source/kiss.OpenPub.source.json",
+        "path": "openpub",
+        "methods": ["GET"]
+      }
+    ],
+    "schemas": [
+      {
+        "reference": "https://kissdevelopment.commonground.nu/kiss.pubPublicatie.schema.json",
+        "path": "kiss_openpub_pub",
+        "methods": []
+      },
+      {
+        "reference": "https://kissdevelopment.commonground.nu/kiss.openpubSkill.schema.json",
+        "path": "ref/openpub_skill",
+        "methods": []
+      },
+      {
+        "reference": "https://kissdevelopment.commonground.nu/kiss.openpubType.schema.json",
+        "path": "ref/openpub_type",
+        "methods": []
+      },
+      {
+        "reference": "https://kissdevelopment.commonground.nu/kiss.afdelingsnaam.schema.json",
+        "path": "ref/afdelingsnamen",
+        "methods": []
+      },
+      {
+        "reference": "https://kissdevelopment.commonground.nu/kiss.resultaatypeomschrijvinggeneriek.schema.json",
+        "path": "ref/resultaattypeomschrijvingen",
+        "methods": []
+      },
+      {
+        "reference": "https://kissdevelopment.commonground.nu/kiss.link.schema.json",
+        "path": "kiss/links",
+        "methods": []
+      },
+      {
+        "reference": "https://kissdevelopment.commonground.nu/kiss.sdgProduct.schema.json",
+        "path": "sdg/kennisartikelen",
+        "methods": []
+      },
+      {
+        "reference": "https://kissdevelopment.commonground.nu/kiss.medewerker.schema.json",
+        "path": "medewerkers",
+        "methods": []
+      },
+      {
+        "reference": "https://kissdevelopment.commonground.nu/kiss.medewerkerAvailabilities.schema.json",
+        "path": "mederwerkerAvailabilities",
+        "methods": []
+      },
+      {
+        "reference": "https://kissdevelopment.commonground.nu/kiss.review.schema.json",
+        "path": "reviews",
+        "methods": []
+      }
+    ]
+  }
 }

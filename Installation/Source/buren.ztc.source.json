@@ -1,0 +1,16 @@
+{
+    "title": "OpenZaak ZTC API",
+    "$id": "https://buren.nl/source/buren.ztc.source.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Gateway.schema.json",
+    "version": "0.0.3",
+    "description": "Een API om een zaaktypecatalogus (ZTC) te benaderen.",
+    "location": "https://open-zaak.test.buren.opengem.nl/catalogi/api/v1",
+    "headers": {
+        "accept" : "application/json",
+        "Accept-Crs": "EPSG:4326",
+        "Content-Crs": "EPSG:4326"
+    },
+    "auth": "jwt-HS256",
+    "jwtId": "client_id",
+    "secret": "secret"
+}

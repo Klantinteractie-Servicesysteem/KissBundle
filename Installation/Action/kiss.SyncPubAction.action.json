@@ -1,0 +1,45 @@
+{
+    "title": "SyncPubAction",
+    "$id": "https://kissdevelopment.commonground.nu/action/kiss.SyncPubAction.action.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Action.schema.json",
+    "version": "0.0.1",
+    "listens": ["kiss.default.listens"],
+    "conditions":
+    {
+        "==": [1, 1]
+    },
+    "class": "App\\ActionHandler\\SynchronizationCollectionHandler",
+    "configuration":
+    {
+        "location": "/kiss_openpub_pub",
+        "entity": "https://kissdevelopment.commonground.nu/kiss.pubPublicatie.schema.json",
+        "source": "https://kissdevelopment.commonground.nu/source/kiss.OpenPub.source.json",
+        "apiSource":
+        {
+            "location":
+            {
+                "objects": "#",
+                "object": "#",
+                "idField": "id",
+                "dateChangedField": "modified_gmt"
+            },
+            "sourcePaginated": true,
+            "syncFromList": true,
+            "sourceLeading": true,
+            "mappingIn":
+            {
+                "acf.publicationContent": "acf.publication_content",
+                "acf.publicationFeatured": "acf.publication_featured",
+                "acf.publicationEndDate": "acf.publication_end_date",
+                "acf.publicationType": "acf.publication_type",
+                "acf.publicationSkill": "acf.publication_skill"
+            },
+            "mappingOut": [],
+            "translationsIn": [],
+            "translationsOut": [],
+            "skeletonIn": [],
+            "skeletonOut": [],
+            "collectionDelete": true
+        }
+    }
+}

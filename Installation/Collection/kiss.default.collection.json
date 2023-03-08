@@ -1,0 +1,8 @@
+{
+    "title": "Kiss",
+    "$id": "https://kissdevelopment.commonground.nu/collection/kiss.default.collection.json",
+    "$schema": "https://docs.commongateway.nl/schemas/CollectionEntity.schema.json",
+    "version": "0.0.1",
+    "prefix": null,
+    "plugin": "KissBundle"
+}
