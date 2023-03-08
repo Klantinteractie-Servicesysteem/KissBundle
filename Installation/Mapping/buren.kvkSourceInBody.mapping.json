@@ -5,10 +5,11 @@
   "version": "0.0.1",
   "passTrough": false,
   "mapping": {
-    "results": "resultaten",
+    "results": "[{%for resultaat in resultaten%}{% if not loop.first %},{% endif %}{{ map(\"https://buren.nl/mapping/buren.kvkResult.mapping.json\", resultaat)|json_encode }}{%endfor%}]",
     "total": "totaal",
-    "page": "pagina",
-    "results.0.eersteHandelsnaam": "resultaten.0.handelsnaam",
-    "todo": "This^ only works for the first item in the list, we need it to work for all results.eersteHandelsnaam"
+    "page": "pagina"
+  },
+  "cast": {
+    "results": "jsonToArray"
   }
 }

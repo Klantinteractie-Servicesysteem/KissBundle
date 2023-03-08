@@ -7,7 +7,8 @@
     "location": "https://lab.api.mijniconnect.nl/iconnect/apikvk/zoeken/v1/v1/zoeken",
     "headers": {
         "accept" : "application/json",
-        "x-origin-oin": "00000003273229750000"
+        "x-origin-oin": "00000003273229750000",
+        "apikey": "l7xx1f2691f2520d487b902f4e0b57a0b197"
     },
     "auth": "apikey",
     "apikey": "secret",
