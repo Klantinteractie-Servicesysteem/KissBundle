@@ -27,7 +27,8 @@
       "https://kissdevelopment.commonground.nu/action/kiss.SendReviewMailAction.action.json",
       "https://kissdevelopment.commonground.nu/action/kiss.SyncKennisArtikelElasticAction.action.json",
       "https://kissdevelopment.commonground.nu/action/kiss.SyncEmployeeElasticAction.action.json",
-      "https://kissdevelopment.commonground.nu/action/kiss.SyncPubAction.action.json"
+      "https://kissdevelopment.commonground.nu/action/kiss.SyncPubAction.action.json",
+      "https://kissdevelopment.commonground.nu/action/kiss.SyncZakenAction.action.json"
     ]
   },
   "endpoints": {
