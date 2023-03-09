@@ -5,9 +5,15 @@
   "version": "0.0.1",
   "passTrough": true,
   "mapping": {
-    "embedded.geboorte": "geboorte"
+    "embedded.geboorte": "geboorte",
+    "embedded.geboorte.embedded.datumOnvolledig": "geboorte.datum",
+    "embedded.naam": "naam",
+    "embedded.verblijfplaats": "verblijfplaats",
+    "embedded.verblijfplaats.embedded.gemeenteVanInschrijving": "verblijfplaats.gemeenteVanInschrijving"
   },
   "unset": [
-    "geboorte"
+    "geboorte",
+    "naam",
+    "verblijfplaats"
   ]
 }
