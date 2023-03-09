@@ -18,7 +18,7 @@
     "require": {
         "php": ">=7.4",
 		"commongateway/corebundle": ">=1.0.21",
-		"common-gateway/brp-bundle": ">=0.0.20",
+		"common-gateway/brp-bundle": ">=0.0.21",
 		"common-gateway/zgw-bundle": ">=0.1.26",
 		"common-gateway/klanten-bundle": ">=0.0.32",
         "common-gateway/kvk-bundle": ">=0.0.20"

@@ -48,6 +48,25 @@ class InstallationService implements InstallerInterface
     }
     
     /**
+     * Update all existing brp endpoints and remove any prefixes
+     *
+     * @return void
+     */
+    private function cleanBrpEndpointPrefixes()
+    {
+        (isset($this->io)?$this->io->writeln(['','<info>Removing BRP endpoint prefixes</info>']):'');
+        
+        $collections = $this->entityManager->getRepository('App:CollectionEntity')->findBy(['plugin' => 'BRPBundle']);
+        (isset($this->io)?$this->io->writeln('Found '.count($collections).' Collections'):'');
+        
+        foreach ($collections as $collection) {
+            (isset($this->io)?$this->io->writeln("Removing prefix {$collection->getPrefix()}") : '');
+            $this->removeEntityEndpointsPrefix($collection);
+            (isset($this->io)?$this->io->newLine() : '');
+        }
+    }
+    
+    /**
      * Remove prefixes from zgw endpoints, loop through all entities of a collection and remove prefix from all connected endpoints
      *
      * @return void
@@ -84,6 +103,8 @@ class InstallationService implements InstallerInterface
     {
         // Clean up prefixes from all ZGW endpoints
         $this->cleanZgwEndpointPrefixes();
+        // Clean up prefixes from all BRP endpoints
+        $this->cleanBrpEndpointPrefixes();
 
         $this->entityManager->flush();
     }
