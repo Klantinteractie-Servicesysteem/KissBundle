@@ -1,11 +1,13 @@
 {
-  "title": "kvkResult",
-  "$id": "https://buren.nl/mapping/buren.kvkResult.mapping.json",
+  "title": "kvkSourceInBodyResult",
+  "$id": "https://buren.nl/mapping/buren.kvkSourceInBodyResult.mapping.json",
   "$schema": "https://docs.commongateway.nl/schemas/Mapping.schema.json",
   "version": "0.0.1",
   "passTrough": true,
   "mapping": {
     "eersteHandelsnaam": "handelsnaam"
   },
-  "unset": ["handelsnaam"]
+  "unset": [
+    "handelsnaam"
+  ]
 }
