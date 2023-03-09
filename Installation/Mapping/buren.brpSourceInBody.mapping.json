@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "passTrough": false,
   "mapping": {
-    "results": "[{%for ingeschrevenpersoon in _embedded.ingeschrevenpersonen%}{% if not loop.first %},{% endif %}{{ map(\"https://buren.nl/mapping/buren.brpSourceInBodyResult.mapping.json\", ingeschrevenpersoon)|json_encode }}{%endfor%}]",
+    "results": "[{%for ingeschrevenpersoon in _embedded.ingeschrevenpersonen%}{% if not loop.first %},{% endif %}{{ map(\"https://buren.nl/mapping/buren.brpSourceInBodyResult.mapping.json\", ingeschrevenpersoon)|json_encode }}{%endfor%}]"
   },
   "cast": {
     "results": "jsonToArray"
