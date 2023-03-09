@@ -20,7 +20,7 @@ class InstallationService implements InstallerInterface
         $this->checkDataConsistency();
     }
 
-    public function update(){
+    public function update() {
         $this->checkDataConsistency();
     }
 
@@ -61,6 +61,10 @@ class InstallationService implements InstallerInterface
             }
             (isset($this->io)?$this->io->writeln("Found ".count($endpoints)." endpoint(s) for : {$entity->getName()}, start removing prefix") : '');
             foreach ($endpoints as $endpoint) {
+                // todo: this works, we should go to php 8.0 later
+                if (str_contains($endpoint->getPathRegex(), $collection->getPrefix()) === false) {
+                    continue;
+                }
                 // Update pathRegex, removing prefix
                 $endpoint->setPathRegex(str_replace($collection->getPrefix().'/', '', $endpoint->getPathRegex()));
             
