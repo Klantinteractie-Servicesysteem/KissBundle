@@ -13,7 +13,8 @@
   "unset": [
     "embedded&#46;geboorte&#46;embedded&#46;datumOnvolledig&#46;datum",
     "embedded&#46;verblijfplaats&#46;postcode",
-    "embedded&#46;verblijfplaats&#46;huisnummer"
+    "embedded&#46;verblijfplaats&#46;huisnummer",
+    "extend"
   ],
   "cast": {
     "geboorte__datum": "unsetIfValue==embedded&#46;geboorte&#46;embedded&#46;datumOnvolledig&#46;datum",
