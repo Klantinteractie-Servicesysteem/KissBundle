@@ -14,6 +14,12 @@
     "pages": 1
   },
   "cast": {
-    "results": "jsonToArray"
+    "results": "jsonToArray",
+    "count": "int",
+    "limit": "int",
+    "total": "int",
+    "offset": "int",
+    "page": "int",
+    "pages": "int"
   }
 }
