@@ -6,7 +6,9 @@
     "description": "Proeftuinomgeving iConnectAPI",
     "location": "https://lab.api.mijniconnect.nl/iconnect/apihcbrp/mks/v1/ingeschrevenpersonen",
     "headers": {
-        "accept" : "application/json"
+        "accept" : "application/json",
+        "x-doelbinding": "AlgemeneTaken",
+        "x-origin-oin": "00000003273229750000"
     },
     "auth": "none",
     "configuration": {
