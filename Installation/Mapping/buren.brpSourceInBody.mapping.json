@@ -5,7 +5,13 @@
   "version": "0.0.1",
   "passTrough": false,
   "mapping": {
-    "results": "[{%for ingeschrevenpersoon in _embedded.ingeschrevenpersonen%}{% if not loop.first %},{% endif %}{{ map(\"https://buren.nl/mapping/buren.brpSourceInBodyResult.mapping.json\", ingeschrevenpersoon)|json_encode }}{%endfor%}]"
+    "results": "[{%for ingeschrevenpersoon in _embedded.ingeschrevenpersonen%}{% if not loop.first %},{% endif %}{{ map(\"https://buren.nl/mapping/buren.brpSourceInBodyResult.mapping.json\", ingeschrevenpersoon)|json_encode }}{%endfor%}]",
+    "count": "{{_embedded.ingeschrevenpersonen|length}}",
+    "limit": 30,
+    "total": "{{_embedded.ingeschrevenpersonen|length}}",
+    "offset": 0,
+    "page": 1,
+    "pages": 1
   },
   "cast": {
     "results": "jsonToArray"

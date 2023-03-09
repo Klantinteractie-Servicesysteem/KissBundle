@@ -5,15 +5,19 @@
   "version": "0.0.1",
   "passTrough": true,
   "mapping": {
-    "embedded.geboorte": "geboorte",
     "embedded.geboorte.embedded.datumOnvolledig": "geboorte.datum",
     "embedded.naam": "naam",
     "embedded.verblijfplaats": "verblijfplaats",
-    "embedded.verblijfplaats.embedded.gemeenteVanInschrijving": "verblijfplaats.gemeenteVanInschrijving"
+    "embedded.verblijfplaats.embedded.gemeenteVanInschrijving": "verblijfplaats.gemeenteVanInschrijving",
+    "embedded.verblijfplaats.embedded.datumAanvangAdreshouding": "verblijfplaats.datumAanvangAdreshouding",
+    "embedded.verblijfplaats.embedded.datumIngangGeldigheid": "verblijfplaats.datumIngangGeldigheid"
   },
   "unset": [
     "geboorte",
     "naam",
-    "verblijfplaats"
+    "verblijfplaats",
+    "embedded.verblijfplaats.gemeenteVanInschrijving",
+    "embedded.verblijfplaats.datumAanvangAdreshouding",
+    "embedded.verblijfplaats.datumIngangGeldigheid"
   ]
 }
