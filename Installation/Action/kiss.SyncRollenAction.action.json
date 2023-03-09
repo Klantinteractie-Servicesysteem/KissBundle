@@ -1,6 +1,6 @@
 {
-  "title": "SyncZakenAction",
-  "$id": "https://kissdevelopment.commonground.nu/action/kiss.SyncZakenAction.action.json",
+  "title": "SyncRollenAction",
+  "$id": "https://kissdevelopment.commonground.nu/action/kiss.SyncRollenAction.action.json",
   "$schema": "https://docs.commongateway.nl/schemas/Action.schema.json",
   "version": "0.0.1",
   "listens": [
@@ -15,8 +15,8 @@
   "class": "App\\ActionHandler\\SynchronizationCollectionHandler",
   "configuration": {
     "useDataFromCollection": true,
-    "location": "/zaken",
-    "entity": "https://vng.opencatalogi.nl/schemas/zrc.zaak.schema.json",
+    "location": "/rollen",
+    "entity": "https://vng.opencatalogi.nl/schemas/zrc.rol.schema.json",
     "source": "https://buren.nl/source/buren.zrc.source.json",
     "apiSource": {
       "location": {
