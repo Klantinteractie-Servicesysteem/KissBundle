@@ -5,11 +5,21 @@
   "version": "0.0.1",
   "passTrough": false,
   "mapping": {
-    "results": "[{%for resultaat in resultaten%}{% if not loop.first %},{% endif %}{{ map(\"https://buren.nl/mapping/buren.kvkResult.mapping.json\", resultaat)|json_encode }}{%endfor%}]",
+    "results": "[{%for resultaat in resultaten%}{% if not loop.first %},{% endif %}{{ map(\"https://buren.nl/mapping/buren.kvkSourceInBodyResult.mapping.json\", resultaat)|json_encode }}{%endfor%}]",
+    "count": "totaal",
+    "limit": 30,
     "total": "totaal",
-    "page": "pagina"
+    "offset": 0,
+    "page": "pagina",
+    "pages": "pagina"
   },
   "cast": {
-    "results": "jsonToArray"
+    "results": "jsonToArray",
+    "count": "int",
+    "limit": "int",
+    "total": "int",
+    "offset": "int",
+    "page": "int",
+    "pages": "int"
   }
 }
