@@ -6,8 +6,14 @@
   "passTrough": true,
   "mapping": {
     "embedded.geboorte.embedded.datumOnvolledig": "geboorte.datum",
+    "embedded.geboorte.land": "{{ \"\" }}",
+    "embedded.geboorte.plaats": "{{ \"\" }}",
     "embedded.naam": "naam",
+    "embedded.naam.voorvoegsel": "{{ \"\" }}",
     "embedded.verblijfplaats": "verblijfplaats",
+    "embedded.verblijfplaats.woonplaats": "{{ \"\" }}",
+    "embedded.verblijfplaats.huisletter": "{{ \"\" }}",
+    "embedded.verblijfplaats.huisnummertoevoeging": "{{ \"\" }}",
     "embedded.verblijfplaats.embedded.gemeenteVanInschrijving": "verblijfplaats.gemeenteVanInschrijving",
     "embedded.verblijfplaats.embedded.datumAanvangAdreshouding": "verblijfplaats.datumAanvangAdreshouding",
     "embedded.verblijfplaats.embedded.datumIngangGeldigheid": "verblijfplaats.datumIngangGeldigheid"
