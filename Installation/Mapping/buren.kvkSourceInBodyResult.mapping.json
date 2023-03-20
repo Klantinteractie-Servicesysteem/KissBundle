@@ -5,7 +5,15 @@
   "version": "0.0.1",
   "passTrough": true,
   "mapping": {
-    "eersteHandelsnaam": "handelsnaam"
+    "eersteHandelsnaam": "handelsnaam",
+    "embedded.bezoekadres.huisnummer": "{{ \"\" }}",
+    "embedded.bezoekadres.postcode": "{{ \"\" }}",
+    "embedded.bezoekadres.straatnaam": "{{ \"\" }}",
+    "embedded.bezoekadres.huisletter": "{{ \"\" }}",
+    "embedded.bezoekadres.huisnummertoevoeging": "{{ \"\" }}",
+    "embedded.bezoekadres.woonplaats": "{{ \"\" }}",
+    "telefoonnummer": "{{ \"\" }}",
+    "emailAdres": "{{ \"\" }}"
   },
   "unset": [
     "handelsnaam"
