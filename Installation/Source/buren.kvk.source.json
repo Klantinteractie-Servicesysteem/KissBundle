@@ -5,6 +5,7 @@
     "version": "0.0.1",
     "description": "Proeftuinomgeving iConnectAPI",
     "location": "https://lab.api.mijniconnect.nl/iconnect/apikvk/zoeken/v1/v1/zoeken",
+    "isEnabled" : false,
     "headers": {
         "accept" : "application/json",
         "x-origin-oin": "00000003273229750000",

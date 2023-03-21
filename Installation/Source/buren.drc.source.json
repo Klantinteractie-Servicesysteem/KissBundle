@@ -5,6 +5,7 @@
     "version": "0.0.3",
     "description": "Een API om een documentregistratiecomponent (DRC) te benaderen.",
     "location": "https://open-zaak.test.buren.opengem.nl/documenten/api/v1",
+    "isEnabled" : false,
     "headers": {
         "accept": "application/json",
         "Accept-Crs": "EPSG:4326",

@@ -3,5 +3,6 @@
     "$id": "https://buren.nl/source/buren.pub.source.json",
     "$schema": "https://docs.commongateway.nl/schemas/Gateway.schema.json",
     "version": "0.0.1",
-    "location": "https://gemeenteburen-openpub.accept02.yard.nl/wp-json/owc/openpub/v1/items"
+    "location": "https://gemeenteburen-openpub.accept02.yard.nl/wp-json/owc/openpub/v1/items",
+    "isEnabled" : false
 }

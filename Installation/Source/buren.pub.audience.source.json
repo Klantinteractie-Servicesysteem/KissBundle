@@ -5,6 +5,7 @@
     "version": "0.0.1",
     "description": "Wordpress V2 Openpub Audience",
     "location": "https://openpub.buren.nl/wp-json/wp/v2/openpub-audience",
+    "isEnabled" : false,
     "auth": "none",
     "endpointsConfig": {
         "global": {
