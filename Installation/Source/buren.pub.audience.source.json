@@ -1,0 +1,18 @@
+{
+    "title": "Wordpress V2 Openpub Audience",
+    "$id": "https://buren.nl/source/buren.pub.audience.source.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Gateway.schema.json",
+    "version": "0.0.1",
+    "description": "Wordpress V2 Openpub Audience",
+    "location": "https://openpub.buren.nl/wp-json/wp/v2/openpub-audience",
+    "auth": "none",
+    "endpointsConfig": {
+        "global": {
+            "in": {
+                "body": {
+                    "mapping": "https://buren.nl/mappings/openPubTypes.mapping.json"
+                }
+            }
+        }
+    }
+}

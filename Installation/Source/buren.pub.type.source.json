@@ -1,0 +1,9 @@
+{
+    "title": "Wordpress V2 Openpub Typ",
+    "$id": "https://buren.nl/source/buren.pub.type.source.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Gateway.schema.json",
+    "version": "0.0.1",
+    "description": "Wordpress v2 api for taxonomies",
+    "location": "https://openpub.buren.nl/wp-json/wp/v2/openpub-type",
+    "auth": "none"
+}

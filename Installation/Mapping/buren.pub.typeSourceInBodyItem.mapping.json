@@ -1,0 +1,11 @@
+{
+  "title": "pub.typeSourceInBodyItem",
+  "$id": "https://buren.nl/mapping/buren.pub.typeSourceInBodyItem.mapping.json",
+  "$schema": "https://docs.commongateway.nl/schemas/Mapping.schema.json",
+  "version": "0.0.1",
+  "passTrough": true,
+  "mapping": {
+    "name": "{{name|trans({'Algemeen': 'Nieuws', 'Nieuwsbericht': 'Werkinstructie'}, '', 'en')}}",
+    "slug": "{{name|trans({'algemeen': 'nieuws', 'nieuwsbericht': 'werkinstructie'}, '', 'en')}}"
+  }
+}
