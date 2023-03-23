@@ -7,7 +7,7 @@
   "mapping": {
     "results": "[{%for resultaat in resultaten%}{% if not loop.first %},{% endif %}{{ map(\"https://buren.nl/mapping/buren.kvkSourceInBodyResult.mapping.json\", resultaat)|json_encode }}{%endfor%}]",
     "count": "totaal",
-    "limit": 30,
+    "limit": "aantal",
     "total": "totaal",
     "offset": 0,
     "page": "pagina",
